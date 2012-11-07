@@ -220,22 +220,24 @@
       <wrap>no</wrap>
     </action>
   </keybind>
-  <keybind key="W-F1">
+
+  <!-- use WIN+numeric keypad for workspace switching -->
+  <keybind key="W-KP_1">
     <action name="Desktop">
       <desktop>1</desktop>
     </action>
   </keybind>
-  <keybind key="W-F2">
+  <keybind key="W-KP_2">
     <action name="Desktop">
       <desktop>2</desktop>
     </action>
   </keybind>
-  <keybind key="W-F3">
+  <keybind key="W-KP_3">
     <action name="Desktop">
       <desktop>3</desktop>
     </action>
   </keybind>
-  <keybind key="W-F4">
+  <keybind key="W-KP_4">
     <action name="Desktop">
       <desktop>4</desktop>
     </action>
