@@ -25,12 +25,12 @@
        mouse into it, also raise the window -->
   </focus>
   <placement>
-    <policy>Smart</policy>
+    <policy>UnderMouse</policy>
     <!-- 'Smart' or 'UnderMouse' -->
-    <center>yes</center>
+    <center>no</center>
     <!-- whether to place windows in the center of the free area found or
        the top left corner -->
-    <monitor>Any</monitor>
+    <monitor>Mouse</monitor>
     <!-- with Smart placement on a multi-monitor system, try to place new windows
        on: 'Any' - any monitor, 'Mouse' - where the mouse is, 'Active' - where
        the active window is -->
