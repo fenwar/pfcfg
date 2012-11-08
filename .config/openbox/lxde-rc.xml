@@ -858,7 +858,6 @@
       <focus>no</focus>
     </application>
     <application name="hwengine">
-      <maximized>true</maximized>
       <decor>no</decor>
     </application>
     <!--
