@@ -222,22 +222,22 @@
   </keybind>
 
   <!-- use WIN+numeric keypad for workspace switching -->
-  <keybind key="W-KP_1">
+  <keybind key="C-A-KP_1">
     <action name="Desktop">
       <desktop>1</desktop>
     </action>
   </keybind>
-  <keybind key="W-KP_2">
+  <keybind key="C-A-KP_2">
     <action name="Desktop">
       <desktop>2</desktop>
     </action>
   </keybind>
-  <keybind key="W-KP_3">
+  <keybind key="C-A-KP_3">
     <action name="Desktop">
       <desktop>3</desktop>
     </action>
   </keybind>
-  <keybind key="W-KP_4">
+  <keybind key="C-A-KP_4">
     <action name="Desktop">
       <desktop>4</desktop>
     </action>
