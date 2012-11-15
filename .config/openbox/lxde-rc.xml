@@ -837,9 +837,9 @@
       <desktop>all</desktop>
       <focus>no</focus>
     </application>
-    <application name="hwengine">
+    <!--<application name="hwengine">
       <decor>no</decor>
-    </application>
+    </application>-->
     <!--
   # this is an example with comments through out. use these to make your
   # own rules, but without the comments of course.
