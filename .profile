@@ -21,28 +21,6 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-# and my scripts please
-if [ -d "$HOME/.scripts" ] ; then
-    PATH="$HOME/.scripts:$PATH"
-fi
-
-# and shome Java for Jedit
-JAVA_HOME=/usr/lib/jvm/java-6-sun/jre
-
-# LFS root
-export LFS=/mnt/lfs
-
-# touchpad scrolly area that I keep hitting by mistake
-synclient RightEdge=5600
-
-# easier than hacking hosts
-export XPHOME=192.168.11.2
-export HISENSE=192.168.11.7
-
-export CLASSPATH=$CLASSPATH:/usr/share/jedit/jedit.jar:/home/paul/.jedit/jars/ProjectViewer.jar
-
-# gvfs-mount smb://192.168.1.1/downloads/
-
 source /usr/local/bin/virtualenvwrapper.sh
 export PATH
 
