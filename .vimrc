@@ -6,6 +6,7 @@ set expandtab
 set autoindent
 set ignorecase
 hi ColorColumn ctermbg=0
+set cc=80
 hi MatchParen ctermfg=yellow cterm=bold ctermbg=17
 hi CursorLine cterm=None ctermbg=17
 set cursorline
