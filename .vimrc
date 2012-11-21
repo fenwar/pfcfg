@@ -24,3 +24,6 @@ hi StatusLine ctermfg=0 ctermbg=11
 hi StatusLineNC ctermfg=0 ctermbg=3
 hi Todo term=bold ctermfg=11 ctermbg=none
 
+" Create new split windows *after* the current one "
+set splitbelow
+set splitright
