@@ -868,6 +868,14 @@
       <desktop>all</desktop>
       <focus>no</focus>
     </application>
+    <application name="main.linux">
+        <maximized>vertical</maximized>
+        <position>
+            <x>0</x>
+            <y>0</y>
+            <monitor>2</monitor>
+        </position>
+    </application>
     <!--<application name="hwengine">
       <decor>no</decor>
     </application>-->
