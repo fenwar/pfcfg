@@ -881,24 +881,6 @@
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
   <applications>
-    <application name="*">
-      <focus>yes</focus>
-    </application>
-    <application name="Exaile Desktop Cover">
-      <desktop>all</desktop>
-      <focus>no</focus>
-    </application>
-    <application name="main.linux">
-        <maximized>vertical</maximized>
-        <position>
-            <x>-0</x>
-            <y>0</y>
-            <monitor>2</monitor>
-        </position>
-    </application>
-    <!--<application name="hwengine">
-      <decor>no</decor>
-    </application>-->
     <!--
   # this is an example with comments through out. use these to make your
   # own rules, but without the comments of course.
@@ -970,5 +952,23 @@
 
   # end of the example
 -->
+    <application name="*">
+      <focus>yes</focus>
+    </application>
+    <application name="Exaile Desktop Cover">
+      <desktop>all</desktop>
+      <focus>no</focus>
+    </application>
+    <application name="main.linux">
+        <maximized>vertical</maximized>
+        <position>
+            <x>-0</x>
+            <y>0</y>
+            <monitor>2</monitor>
+        </position>
+    </application>
+    <!--<application name="hwengine">
+      <decor>no</decor>
+    </application>-->
   </applications>
 </openbox_config>
