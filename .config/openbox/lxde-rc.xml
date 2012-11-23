@@ -959,6 +959,14 @@
       <desktop>all</desktop>
       <focus>no</focus>
     </application>
+    <application name="mgdiff">
+      <fullscreen>yes</fullscreen>
+      <position>
+        <x>center</x>
+        <y>center</y>
+        <monitor>mouse</monitor>
+      </position>
+    </application>
     <application name="main.linux">
         <maximized>vertical</maximized>
         <position>
