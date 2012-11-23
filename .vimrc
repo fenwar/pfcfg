@@ -1,3 +1,4 @@
+
 set t_Co=256
 syntax on
 set tabstop=4
@@ -17,6 +18,9 @@ augroup CursorLine
     au WinLeave * setlocal nocursorline|setlocal cc=0
 augroup END
 ""set cursorline
+" Change cursorline colour when in insert mode "
+autocmd InsertEnter * hi CursorLine cterm=None ctermbg=22
+autocmd InsertLeave * hi CursorLine cterm=None ctermbg=17
 
 set nowrap
 hi VertSplit ctermfg=0 ctermbg=17
