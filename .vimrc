@@ -27,6 +27,7 @@ hi VertSplit ctermfg=0 ctermbg=17
 hi StatusLine ctermfg=0 ctermbg=11
 hi StatusLineNC ctermfg=0 ctermbg=3
 
+hi Constant ctermfg=249
 hi Todo term=bold ctermfg=11 ctermbg=none
 
 set hlsearch
