@@ -26,7 +26,11 @@ set nowrap
 hi VertSplit ctermfg=0 ctermbg=17
 hi StatusLine ctermfg=0 ctermbg=11
 hi StatusLineNC ctermfg=0 ctermbg=3
+
 hi Todo term=bold ctermfg=11 ctermbg=none
+
+set hlsearch
+hi Search ctermbg=20
 
 " Create new split windows *after* the current one "
 set splitbelow
