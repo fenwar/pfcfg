@@ -294,12 +294,20 @@
   <!-- Fast access to Terminal -->
   <keybind key="C-A-T">
     <action name="Execute">
-      <command>gnome-terminal</command>
+      <command>rxvt</command>
     </action>
   </keybind>
   <keybind key="W-t">
     <action name="Execute">
-      <command>gnome-terminal</command>
+      <command>rxvt</command>
+      <startupnotify>
+        <enabled>true</enabled>
+      </startupnotify>
+    </action>
+  </keybind>
+  <keybind key="W-S-t">
+    <action name="Execute">
+      <command>rxvt -bg [25]\#000000 -fg \#ffff00</command>
       <startupnotify>
         <enabled>true</enabled>
       </startupnotify>
@@ -446,7 +454,7 @@
   <!-- Launch Task Manager with Ctrl+Shift+Esc -->
   <keybind key="C-S-Esc">
     <action name="Execute">
-      <command>gnome-system-monitor</command>
+      <command>rxvt</command>
     </action>
   </keybind>
   <!-- Show logout menu with Ctrl+Alt+Del -->
