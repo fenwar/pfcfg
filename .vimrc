@@ -35,3 +35,5 @@ hi Search ctermbg=20
 " Create new split windows *after* the current one "
 set splitbelow
 set splitright
+
+set tags=./tags;/
