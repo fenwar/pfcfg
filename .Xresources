@@ -1,20 +1,22 @@
-# Use lightdm to provide user switching
+! Use lightdm to provide user switching
 *newLoginCommand: dm-tool switch-to-greeter
 
-# Green text on translucent black background
+! Green text on translucent black background
 URxvt*.depth: 32
 URxvt*.background: [85]#000000
 URxvt*.foreground: #00ff00
 
-# Fix blue for dark backgrounds
+! Fix blue for dark backgrounds
 URxvt*.color4: #3333ff
 URxvt*.color12: #6666ff
 
 URxvt*.geometry: 120x40
 URxvt*.scrollBar: false
 
-URxvt*.font: xft:DejaVu Sans Mono:size=10
-URxvt*.letterSpace: -1
+URxvt*.font: xft:DejaVu Sans Mono:size=11,antialias=false,\
+             xft:Code2000:antialias=false
+
+!URxvt*.letterSpace: -1
 
 URxvt*.cursorBlink: true
 URxvt*.cursorUnderline: true
@@ -23,3 +25,4 @@ URxvt*.pointerBlankDelay: 10
 
 URxvt*.loginShell: true
 
+URxvt*.iconFile: /usr/share/icons/Mint-X/apps/scalable/openterm.svg
