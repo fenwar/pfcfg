@@ -26,5 +26,3 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[00;32m\]\u@\h:\[\033[01;34m\]\w\[\
 source /usr/local/bin/virtualenvwrapper.sh
 export PATH
 
-export TERM='xterm-256color'
-

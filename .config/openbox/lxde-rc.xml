@@ -283,12 +283,12 @@
   <!-- Fast access to filemanager -->
   <keybind key="W-e">
     <action name="Execute">
-      <command>nautilus</command>
+      <command>pcmanfm</command>
     </action>
   </keybind>
   <keybind key="C-A-e">
     <action name="Execute">
-      <command>nautilus</command>
+      <command>pcmanfm</command>
     </action>
   </keybind>
   <!-- Fast access to Terminal -->
@@ -452,9 +452,9 @@
     </keybind>
   </keybind>
   <!-- Launch Task Manager with Ctrl+Shift+Esc -->
-  <keybind key="C-S-Esc">
+  <keybind key="C-S-Escape">
     <action name="Execute">
-      <command>rxvt</command>
+      <command>rxvt -bg [25]\#000000 -fg \#ffff00 -e top</command>
     </action>
   </keybind>
   <!-- Show logout menu with Ctrl+Alt+Del -->
