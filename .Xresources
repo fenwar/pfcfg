@@ -13,8 +13,20 @@ URxvt*.color12: #6666ff
 URxvt*.geometry: 120x40
 URxvt*.scrollBar: false
 
+! Set my default preferred font
 URxvt*.font: xft:DejaVu Sans Mono:size=11,antialias=false,\
              xft:Code2000:antialias=false
+
+! Include perl font-size extension
+! See https://github.com/majutsushi/urxvt-font-size
+URxvt*.perl-ext-common: font-size
+URxvt*.keysym.C-Up: perl:font-size:increase
+URxvt*.keysym.C-Down: perl:font-size:decrease
+URxvt*.keysym.C-S-Up: perl:font-size:increase
+URxvt*.keysym.C-S-Down: perl:font-size:decrease
+
+! Disable iso14755 which is bound to C-S-Up/Down
+URxvt*.iso14755: false
 
 !URxvt*.letterSpace: -1
 
