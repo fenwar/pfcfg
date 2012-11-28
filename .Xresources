@@ -12,6 +12,7 @@ URxvt*.color12: #6666ff
 
 URxvt*.geometry: 120x40
 URxvt*.scrollBar: false
+URxvt*.iconFile: /usr/share/icons/oxygen/48x48/apps/utilities-terminal.png
 
 URxvt*.font: xft:DejaVu Sans Mono:size=10
 URxvt*.letterSpace: -1
@@ -23,3 +24,6 @@ URxvt*.pointerBlankDelay: 10
 
 URxvt*.loginShell: true
 
+! Other settings to experiment with
+URxvt*.saveLines: 8192
+! internalBorder - externalBorder
