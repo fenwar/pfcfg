@@ -447,6 +447,42 @@
     <action name="MoveToEdgeNorth" />
     <action name="MoveToEdgeWest" />
   </keybind>
+  <keybind key="W-KP_5">
+    <action name="Unmaximize" />
+    <action name="MoveResizeTo">
+      <x>center</x>
+      <y>center</y>
+    </action>
+  </keybind>
+  <keybind key="W-S-KP_5">
+    <action name="MoveResizeTo">
+      <monitor>next</monitor>
+    </action>
+  </keybind>
+  <keybind key="W-KP_Add">
+    <action name="ResizeRelative">
+      <top>5</top>
+      <bottom>5</bottom>
+    </action>
+  </keybind>
+  <keybind key="W-KP_Subtract">
+    <action name="ResizeRelative">
+      <top>-5</top>
+      <bottom>-5</bottom>
+    </action>
+  </keybind>
+  <keybind key="W-S-KP_8">
+    <action name="GrowToEdgeNorth" />
+  </keybind>
+  <keybind key="W-S-KP_6">
+    <action name="GrowToEdgeEast" />
+  </keybind>
+  <keybind key="W-S-KP_2">
+    <action name="GrowToEdgeSouth" />
+  </keybind>
+  <keybind key="W-S-KP_4">
+    <action name="GrowToEdgeWest" />
+  </keybind>
 
   <keybind key="W-x">
     <keybind key="r">
