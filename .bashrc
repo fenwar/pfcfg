@@ -29,6 +29,9 @@ if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 
+. $HOME/management/util/run_scripts
+run_scripts .bashrc.d 
+
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
     (xterm-color | xterm-256color | rxvt-unicode-256color ) color_prompt=yes;;
