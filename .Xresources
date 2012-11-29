@@ -38,3 +38,7 @@ URxvt*.pointerBlankDelay: 10
 URxvt*.loginShell: true
 
 URxvt*.iconFile: /usr/share/icons/Mint-X/apps/scalable/openterm.svg
+
+! Other settings to experiment with
+URxvt*.saveLines: 8192
+! internalBorder - externalBorder

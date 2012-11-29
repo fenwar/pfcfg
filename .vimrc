@@ -23,12 +23,12 @@ autocmd InsertEnter * hi CursorLine cterm=None ctermbg=0
 autocmd InsertLeave * hi CursorLine cterm=None ctermbg=17
 
 set nowrap
-hi VertSplit ctermfg=0 ctermbg=17
-hi StatusLine ctermfg=0 ctermbg=11
-hi StatusLineNC ctermfg=0 ctermbg=3
+hi VertSplit ctermfg=235 ctermbg=235 cterm=None
+hi StatusLine ctermfg=0 ctermbg=11 cterm=reverse,bold,italic
+hi StatusLineNC ctermfg=235 ctermbg=106 cterm=reverse,italic
 
-hi Constant ctermfg=249
-hi Comment ctermfg=12 cterm=None
+""hi Constant ctermfg=249
+""hi Comment ctermfg=12 cterm=None
 hi Todo term=bold ctermfg=11 ctermbg=none
 
 set hlsearch

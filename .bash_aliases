@@ -8,3 +8,8 @@ alias gsi="git status -u --ignored"
 alias gc="git commit"
 alias gcm="git commit -m"
 alias gpf="git pull -ff"
+
+alias ap="aptitude"
+alias sau="sudo aptitude update"
+alias asus="sudo aptitude safe-upgrade -sy"
+alias asuy="sudo aptitude safe-upgrade -y"
