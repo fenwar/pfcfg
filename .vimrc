@@ -19,11 +19,11 @@ augroup CursorLine
 augroup END
 ""set cursorline
 " Change cursorline colour when in insert mode "
-autocmd InsertEnter * hi CursorLine cterm=None ctermbg=22
+autocmd InsertEnter * hi CursorLine cterm=None ctermbg=0
 autocmd InsertLeave * hi CursorLine cterm=None ctermbg=17
 
 set nowrap
-hi VertSplit ctermfg=236 ctermbg=235
+hi VertSplit ctermfg=235 ctermbg=235 cterm=None
 hi StatusLine ctermfg=0 ctermbg=11 cterm=reverse,bold,italic
 hi StatusLineNC ctermfg=235 ctermbg=106 cterm=reverse,italic
 
