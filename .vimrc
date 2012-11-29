@@ -6,7 +6,7 @@ set shiftwidth=4
 set expandtab
 set autoindent
 set ignorecase
-hi ColorColumn ctermbg=0
+hi ColorColumn ctermbg=233
 ""set cc=80
 hi MatchParen ctermfg=yellow cterm=bold ctermbg=17
 
@@ -19,16 +19,16 @@ augroup CursorLine
 augroup END
 ""set cursorline
 " Change cursorline colour when in insert mode "
-autocmd InsertEnter * hi CursorLine cterm=None ctermbg=0
+autocmd InsertEnter * hi CursorLine cterm=None ctermbg=233
 autocmd InsertLeave * hi CursorLine cterm=None ctermbg=17
 
 set nowrap
 hi VertSplit ctermfg=235 ctermbg=235 cterm=None
-hi StatusLine ctermfg=0 ctermbg=11 cterm=reverse,bold,italic
+hi StatusLine ctermfg=233 ctermbg=11 cterm=reverse,bold,italic
 hi StatusLineNC ctermfg=235 ctermbg=106 cterm=reverse,italic
 
-""hi Constant ctermfg=249
-""hi Comment ctermfg=12 cterm=None
+hi Constant ctermfg=131
+hi Comment ctermfg=69 cterm=None
 hi Todo term=bold ctermfg=11 ctermbg=none
 
 set hlsearch
