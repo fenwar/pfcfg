@@ -39,3 +39,6 @@ hi Search ctermbg=20
 set splitbelow
 set splitright
 set tags=./tags;/
+
+" Fix mouse wheel behaviour in urxvt "
+set mouse=a
