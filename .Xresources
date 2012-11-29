@@ -12,10 +12,24 @@ URxvt*.color12: #6666ff
 
 URxvt*.geometry: 120x40
 URxvt*.scrollBar: false
-URxvt*.iconFile: /usr/share/icons/oxygen/48x48/apps/utilities-terminal.png
 
-URxvt*.font: xft:DejaVu Sans Mono:size=10
 URxvt*.letterSpace: -1
+! Set my default preferred font
+URxvt*.font: xft:DejaVu Sans Mono:size=10,antialias=false,\
+             xft:Code2000:antialias=false
+
+! Include perl font-size extension
+! See https://github.com/majutsushi/urxvt-font-size
+URxvt*.perl-ext-common: font-size
+URxvt*.keysym.C-Up: perl:font-size:increase
+URxvt*.keysym.C-Down: perl:font-size:decrease
+URxvt*.keysym.C-S-Up: perl:font-size:increase
+URxvt*.keysym.C-S-Down: perl:font-size:decrease
+
+! Disable iso14755 which is bound to C-S-Up/Down
+URxvt*.iso14755: false
+
+!URxvt*.letterSpace: -1
 
 URxvt*.cursorBlink: true
 URxvt*.cursorUnderline: true
@@ -23,6 +37,8 @@ URxvt*.pointerBlank: true
 URxvt*.pointerBlankDelay: 10
 
 URxvt*.loginShell: true
+
+URxvt*.iconFile: /usr/share/icons/oxygen/48x48/apps/utilities-terminal.png
 
 ! Other settings to experiment with
 URxvt*.saveLines: 8192
