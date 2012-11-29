@@ -13,7 +13,6 @@ URxvt*.color12: #6666ff
 URxvt*.geometry: 120x40
 URxvt*.scrollBar: false
 
-URxvt*.letterSpace: -1
 ! Set my default preferred font
 URxvt*.font: xft:DejaVu Sans Mono:size=10,antialias=false,\
              xft:Code2000:antialias=false
@@ -29,7 +28,7 @@ URxvt*.keysym.C-S-Down: perl:font-size:decrease
 ! Disable iso14755 which is bound to C-S-Up/Down
 URxvt*.iso14755: false
 
-!URxvt*.letterSpace: -1
+URxvt*.letterSpace: -1
 
 URxvt*.cursorBlink: true
 URxvt*.cursorUnderline: true
