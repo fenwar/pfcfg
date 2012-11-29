@@ -1024,6 +1024,14 @@
             <monitor>2</monitor>
         </position>
     </application>
+    <!-- Failed attempt to use xloadimage to display wallpaper on one monitor only.
+    <application name="xloadimage">
+        <decor>no</decor>
+        <desktop>all</desktop>
+        <layer>below</layer>
+        <skip_pager>yes</skip_pager>
+        <skip_taskbar>yes</skip_taskbar>
+    </application>-->
     <!--<application name="hwengine">
       <decor>no</decor>
     </application>-->
