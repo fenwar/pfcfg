@@ -262,6 +262,11 @@
       <menu>client-menu</menu>
     </action>
   </keybind>
+  <keybind key="W-space">
+    <action name="ShowMenu">
+      <menu>client-menu</menu>
+    </action>
+  </keybind>
   <!-- Keybindings for window switching -->
   <keybind key="A-Tab">
     <action name="NextWindow">
@@ -441,6 +446,42 @@
   <keybind key="W-KP_7">
     <action name="MoveToEdgeNorth" />
     <action name="MoveToEdgeWest" />
+  </keybind>
+  <keybind key="W-KP_5">
+    <action name="Unmaximize" />
+    <action name="MoveResizeTo">
+      <x>center</x>
+      <y>center</y>
+    </action>
+  </keybind>
+  <keybind key="W-S-KP_5">
+    <action name="MoveResizeTo">
+      <monitor>next</monitor>
+    </action>
+  </keybind>
+  <keybind key="W-KP_Add">
+    <action name="ResizeRelative">
+      <top>5</top>
+      <bottom>5</bottom>
+    </action>
+  </keybind>
+  <keybind key="W-KP_Subtract">
+    <action name="ResizeRelative">
+      <top>-5</top>
+      <bottom>-5</bottom>
+    </action>
+  </keybind>
+  <keybind key="W-S-KP_8">
+    <action name="GrowToEdgeNorth" />
+  </keybind>
+  <keybind key="W-S-KP_6">
+    <action name="GrowToEdgeEast" />
+  </keybind>
+  <keybind key="W-S-KP_2">
+    <action name="GrowToEdgeSouth" />
+  </keybind>
+  <keybind key="W-S-KP_4">
+    <action name="GrowToEdgeWest" />
   </keybind>
 
   <keybind key="W-x">
@@ -889,23 +930,6 @@
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
   <applications>
-    <application name="*">
-      <focus>yes</focus>
-    </application>
-    <application name="Exaile Desktop Cover">
-      <desktop>all</desktop>
-      <focus>no</focus>
-    </application>
-    <application name="main.linux">
-        <maximized>vertical</maximized>
-        <position>
-            <x>-0</x>
-            <y>0</y>
-        </position>
-    </application>
-    <!--<application name="hwengine">
-      <decor>no</decor>
-    </application>-->
     <!--
   # this is an example with comments through out. use these to make your
   # own rules, but without the comments of course.
@@ -977,5 +1001,30 @@
 
   # end of the example
 -->
+    <application name="*">
+      <focus>yes</focus>
+    </application>
+    <application name="Exaile Desktop Cover">
+      <desktop>all</desktop>
+      <focus>no</focus>
+    </application>
+    <application name="mgdiff">
+      <fullscreen>yes</fullscreen>
+      <position>
+        <x>center</x>
+        <y>center</y>
+        <monitor>mouse</monitor>
+      </position>
+    </application>
+    <application name="main.linux">
+        <maximized>vertical</maximized>
+        <position>
+            <x>-0</x>
+            <y>0</y>
+        </position>
+    </application>
+    <!--<application name="hwengine">
+      <decor>no</decor>
+    </application>-->
   </applications>
 </openbox_config>
