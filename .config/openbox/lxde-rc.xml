@@ -1008,6 +1008,10 @@
       <desktop>all</desktop>
       <focus>no</focus>
     </application>
+    <application name="Exaile">
+        <skip_pager>yes</skip_pager>
+        <skip_taskbar>no</skip_taskbar>
+    </application>
     <application name="mgdiff">
       <fullscreen>yes</fullscreen>
       <position>
