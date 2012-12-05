@@ -1016,6 +1016,13 @@
         <monitor>mouse</monitor>
       </position>
     </application>
+    <application name="main.py">
+        <maximized>vertical</maximized>
+        <position>
+            <x>-0</x>
+            <y>0</y>
+        </position>
+    </application>
     <application name="main.linux">
         <maximized>vertical</maximized>
         <position>
