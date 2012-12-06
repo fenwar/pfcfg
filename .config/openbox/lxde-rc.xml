@@ -1028,6 +1028,9 @@
             <monitor>2</monitor>
         </position>
     </application>
+    <application title="Web Inspector *">
+        <maximized>yes</maximized>
+    </application>
     <!-- Failed attempt to use xloadimage to display wallpaper on one monitor only.
     <application name="xloadimage">
         <decor>no</decor>
