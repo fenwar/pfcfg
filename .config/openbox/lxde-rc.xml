@@ -1020,6 +1020,14 @@
         <monitor>mouse</monitor>
       </position>
     </application>
+    <application title="Pdb Console">
+        <maximized>vertical</maximized>
+        <position>
+            <x>800</x>
+            <y>0</y>
+            <monitor>2</monitor>
+        </position>
+    </application>
     <application name="main.py">
         <maximized>vertical</maximized>
         <position>
