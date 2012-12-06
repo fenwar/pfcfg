@@ -334,11 +334,11 @@
       <command>lxpanelctl run</command>
     </action>
   </keybind>
-  <keybind key="C-Escape">
+  <!--<keybind key="C-Escape">
     <action name="Execute">
       <command>lxpanelctl menu</command>
     </action>
-  </keybind>
+  </keybind>-->
   <keybind key="W-Z">
     <action name="Execute">
       <command>lxpanelctl menu</command>
