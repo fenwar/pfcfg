@@ -40,7 +40,15 @@ hi Search ctermbg=20
 " Create new split windows *after* the current one "
 set splitbelow
 set splitright
+
+" Always show the status line "
+set laststatus=2
+
+" Search upwards for ctags file "
 set tags=./tags;/
 
 " Fix mouse wheel behaviour in urxvt "
 set mouse=a
+
+" Use ant for project builds by default; search upwards for build.xml "
+set makeprg=ant\ -s\ build.xml\ $*
