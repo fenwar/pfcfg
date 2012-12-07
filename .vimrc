@@ -44,3 +44,6 @@ set tags=./tags;/
 
 " Fix mouse wheel behaviour in urxvt "
 set mouse=a
+
+" Use bash login but don't run .bashrc (avoids recursive virtualenv problem) "
+set shell=/bin/bash\ --login\ --norc
