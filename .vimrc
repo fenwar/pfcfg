@@ -28,6 +28,9 @@ hi StatusLine ctermfg=236 ctermbg=11 cterm=reverse,bold,italic
 hi StatusLineNC ctermfg=233 ctermbg=106 cterm=reverse,italic
 hi Pmenu ctermfg=242 ctermbg=0 cterm=italic
 hi PmenuSel ctermfg=253 ctermbg=22 cterm=italic
+hi TabLine cterm=Italic ctermbg=233
+hi TabLineSel cterm=Italic ctermbg=none ctermfg=11
+hi TabLineFill cterm=Italic ctermbg=233 ctermfg=106
 
 hi Constant ctermfg=131
 hi Comment ctermfg=69 cterm=None
