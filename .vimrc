@@ -28,6 +28,9 @@ hi StatusLine ctermfg=236 ctermbg=11 cterm=reverse,bold,italic
 hi StatusLineNC ctermfg=233 ctermbg=106 cterm=reverse,italic
 hi Pmenu ctermfg=242 ctermbg=0 cterm=italic
 hi PmenuSel ctermfg=253 ctermbg=22 cterm=italic
+hi TabLine cterm=Bold,Italic ctermbg=233 ctermfg=106
+hi TabLineSel cterm=Bold,Italic ctermbg=none ctermfg=11
+hi TabLineFill cterm=Italic ctermbg=233 ctermfg=106
 
 hi Constant ctermfg=131
 hi Comment ctermfg=69 cterm=None
@@ -40,10 +43,21 @@ hi Search ctermbg=20
 " Create new split windows *after* the current one "
 set splitbelow
 set splitright
+
+" Always show the status line "
+set laststatus=2
+
+" Search upwards for ctags file "
 set tags=./tags;/
 
 " Fix mouse wheel behaviour in urxvt "
 set mouse=a
+
+" Use ant for project builds by default; search upwards for build.xml "
+set makeprg=ant\ -s\ build.xml\ $*
+
+" Don't collect errors from Ant builds: "
+set makeef=/dev/null
 
 " Use bash login but don't run .bashrc (avoids recursive virtualenv problem) "
 set shell=/bin/bash\ --login\ --norc
