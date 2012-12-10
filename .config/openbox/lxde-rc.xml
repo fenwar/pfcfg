@@ -578,7 +578,20 @@
     <action name="Execute">
       <command>amixer set Master 2%- -q</command>
     </action>
-  </keybind></keyboard>
+  </keybind>
+  
+  <keybind key="C-W-h">
+    <action name="Execute">
+      <command>amixer sset 'Independent HP' 'OFF'</command>
+    </action>
+  </keybind>
+  <keybind key="C-W-S-h">
+    <action name="Execute">
+      <command>amixer sset 'Independent HP' 'ON'</command>
+    </action>
+  </keybind>
+  
+  </keyboard>
   <mouse>
     <dragThreshold>8</dragThreshold>
     <!-- number of pixels the mouse must move before a drag begins -->
