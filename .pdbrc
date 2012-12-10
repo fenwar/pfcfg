@@ -1,0 +1,12 @@
+# Imports required for autocompletion within Pdb:
+import os
+import sys
+import rlcompleter
+os.system("stty sane")
+
+# Load Pdb helper functions from an external file:
+execfile(os.path.expanduser("~/.pdbrc.py")
+
+# Monkey-patch Pdb autocompletion
+sys._getframe(1).f_globals['Pdb'].complete = complete
+sys._getframe(1).f_locals['self'].use_rawinput = 1
