@@ -55,3 +55,9 @@ set mouse=a
 
 " Use ant for project builds by default; search upwards for build.xml "
 set makeprg=ant\ -s\ build.xml\ $*
+
+" Don't collect errors from Ant builds: "
+set makeef=/dev/null
+
+" Use bash login but don't run .bashrc (avoids recursive virtualenv problem) "
+set shell=/bin/bash\ --login\ --norc
