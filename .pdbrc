@@ -5,7 +5,7 @@ import rlcompleter
 os.system("stty sane")
 
 # Load Pdb helper functions from an external file:
-execfile(os.path.expanduser("~/.pdbrc.py")
+execfile(os.path.expanduser("~/.pdbrc.py"))
 
 # Monkey-patch Pdb autocompletion
 sys._getframe(1).f_globals['Pdb'].complete = complete
