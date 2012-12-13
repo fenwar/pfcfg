@@ -61,3 +61,7 @@ set makeef=/dev/null
 
 " Use bash login but don't run .bashrc (avoids recursive virtualenv problem) "
 set shell=/bin/bash\ --login\ --norc
+
+" Use friendlier autocompletion "
+set wildmenu
+set wildmode=list:full
