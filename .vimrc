@@ -65,3 +65,6 @@ set shell=/bin/bash\ --login\ --norc
 " Use friendlier autocompletion "
 set wildmenu
 set wildmode=list:full
+
+" Allow buffers with changes to be hidden "
+set hidden
