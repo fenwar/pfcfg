@@ -38,7 +38,7 @@ hi Directory ctermfg=69 cterm=None
 hi Todo term=bold ctermfg=11 ctermbg=none
 
 set hlsearch
-hi Search ctermbg=20
+hi Search ctermfg=None ctermbg=20
 
 " Create new split windows *after* the current one "
 set splitbelow
@@ -57,7 +57,7 @@ set mouse=a
 set makeprg=ant\ -s\ build.xml\ $*
 
 " Default to recursive grepping inside vim "
-set grepprg=grep\ -rnI\ $*\ .
+set grepprg=grep\ -rnI\ --exclude=tags\ $*\ .
 
 " Use bash login but don't run .bashrc (avoids recursive virtualenv problem) "
 set shell=/bin/bash\ --login\ --norc
