@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/home/paul/work/bptrti3b/src/bptrti'
-let g:netrw_dirhist_2='/home/paul/work/bptrti3b/src'
-let g:netrw_dirhist_3='/home/paul/work/bptrti3b/src/mysite'
-let g:netrw_dirhist_4='/home/paul/work/bptrti3b/src/bptrtistatic'
-let g:netrw_dirhist_5='/home/paul/work/bptrti3b/src/bptrtistatic/helpers'
-let g:netrw_dirhist_6='/home/paul/work/bptrti3b/src/mysite'
-let g:netrw_dirhist_7='/home/paul/.vim/doc'
