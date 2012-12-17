@@ -312,7 +312,7 @@
   </keybind>
   <keybind key="W-S-t">
     <action name="Execute">
-      <command>rxvt -bg [25]\#000000 -fg \#ffff00</command>
+      <command>rxvt -bg black</command>
       <startupnotify>
         <enabled>true</enabled>
       </startupnotify>
