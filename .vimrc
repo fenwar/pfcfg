@@ -56,8 +56,8 @@ set mouse=a
 " Use ant for project builds by default; search upwards for build.xml "
 set makeprg=ant\ -s\ build.xml\ $*
 
-" Don't collect errors from Ant builds: "
-set makeef=/dev/null
+" Default to recursive grepping inside vim "
+set grepprg=grep\ -rnI\ $*\ .
 
 " Use bash login but don't run .bashrc (avoids recursive virtualenv problem) "
 set shell=/bin/bash\ --login\ --norc
@@ -68,3 +68,8 @@ set wildmode=list:full
 
 " Allow buffers with changes to be hidden "
 set hidden
+
+" NERDTree stuff "
+let NERDTreeIgnore=['\.pyc$']
+map <leader>q :NERDTreeToggle<cr>
+map <leader>r :setlocal nocursorline<cr>:setlocal cc=0<cr>:NERDTreeFind<cr>:setlocal cursorline<cr>
