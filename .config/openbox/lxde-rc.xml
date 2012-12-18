@@ -1034,6 +1034,7 @@
       </position>
     </application>
     <application title="Pdb Console">
+        <skip_taskbar>yes</skip_taskbar>
         <maximized>vertical</maximized>
         <position>
             <x>800</x>
