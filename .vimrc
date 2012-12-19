@@ -76,3 +76,14 @@ map <leader>Q :NERDTreeToggle<cr>
 map <leader>r :setlocal nocursorline<cr>:setlocal cc=0<cr>:NERDTreeFind<cr>:setlocal cursorline<cr>
 
 map <leader>m :make<Up><cr>
+
+" Tab and window switching, the easy way. "
+map [5^ :wincmd W<cr>
+map! [5^ :wincmd W<cr>
+map [6^ :wincmd w<cr>
+map! [6^ :wincmd w<cr>
+
+map [5@ :tabprev<cr>
+map! [5@ :tabprev<cr>
+map [6@ :tabnext<cr>
+map! [6@ :tabnext<cr>
