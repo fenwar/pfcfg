@@ -40,7 +40,7 @@ URxvt*.pointerBlankDelay: 10
 
 URxvt*.loginShell: true
 
-URxvt*.iconFile: /usr/share/icons/Mint-X/apps/scalable/openterm.svg
+URxvt*.iconFile: /usr/share/icons/oxygen/48x48/apps/utilities-terminal.png
 
 ! Other settings to experiment with
 URxvt*.saveLines: 8192
