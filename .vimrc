@@ -87,3 +87,7 @@ map [5@ :tabprev<cr>
 map! [5@ :tabprev<cr>
 map [6@ :tabnext<cr>
 map! [6@ :tabnext<cr>
+
+" Quickly get rid of search highlighting. "
+
+map <leader>/ :nohls<cr>
