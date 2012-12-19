@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ "$4" == "" ] ; then
+    echo 'Usage: frep PATH "GLOB" "FIND EXPR" "REPLACE EXPR"'
+    exit 1
+fi
+
+PTH=$1
+FILE=$2
+FIND=$3
+REPL=$4
+
+grep -Rl --include=${FILE} "${FIND}" ${PTH} | xargs sed -i -e"s/${FIND}/${REPL}/g"

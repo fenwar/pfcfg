@@ -1,0 +1,47 @@
+! Use lightdm to provide user switching
+*newLoginCommand: dm-tool switch-to-greeter
+
+! Green text on translucent black background
+URxvt*.depth: 32
+URxvt*.background: [80]#000000
+URxvt*.foreground: #00ff00
+
+! Fix blue for dark backgrounds
+URxvt*.color4: #3333ff
+URxvt*.color12: #6666ff
+
+URxvt*.geometry: 120x40
+URxvt*.scrollBar: false
+
+! Set my default preferred font
+URxvt*.font: xft:DejaVu Sans Mono:size=10,antialias=false,\
+             xft:Code2000:antialias=false
+
+! Include perl font-size extension
+! See https://github.com/majutsushi/urxvt-font-size
+URxvt*.perl-ext-common: font-size
+URxvt*.keysym.C-Up: perl:font-size:increase
+URxvt*.keysym.C-Down: perl:font-size:decrease
+URxvt*.keysym.C-S-Up: perl:font-size:increase
+URxvt*.keysym.C-S-Down: perl:font-size:decrease
+
+URxvt.keysym.Control-Left:    \033[1;5D
+URxvt.keysym.Control-Right:    \033[1;5C
+
+! Disable iso14755 which is bound to C-S-Up/Down
+URxvt*.iso14755: false
+
+URxvt*.letterSpace: -1
+
+URxvt*.cursorBlink: true
+URxvt*.cursorUnderline: true
+URxvt*.pointerBlank: true
+URxvt*.pointerBlankDelay: 10
+
+URxvt*.loginShell: true
+
+URxvt*.iconFile: /usr/share/icons/oxygen/48x48/apps/utilities-terminal.png
+
+! Other settings to experiment with
+URxvt*.saveLines: 8192
+! internalBorder - externalBorder
