@@ -27,3 +27,4 @@ export PATH
 
 export ANT_HOME=/usr/share/ant
 export EDITOR=vim
+export PYTHONSTARTUP=${HOME}/.pythonrc
