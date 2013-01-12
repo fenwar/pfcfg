@@ -75,6 +75,9 @@ map <leader>q :NERDTree<cr>
 map <leader>Q :NERDTreeToggle<cr>
 map <leader>r :setlocal nocursorline<cr>:setlocal cc=0<cr>:NERDTreeFind<cr>:setlocal cursorline<cr>
 
+" LustyExplorer triggers "
+map <leader>b :LustyBufferExplorer<cr>
+
 map <leader>m :make<Up><cr><cr>
 
 " Tab and window switching, the easy way. "
