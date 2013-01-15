@@ -112,14 +112,14 @@
     <number>6</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>Ein</name>
-      <name>Zwei</name>
-      <name>Drei</name>
-      <name>Vier</name>
-      <name>Funf</name>
-      <name>Sechs</name>
-      <name>Sieben</name>
-      <name>Acht</name>
+      <name>Desktop 1</name>
+      <name>Personal</name>
+      <name>Windows VM</name>
+      <name>BPT-RTI</name>
+      <name>Quick Tasks</name>
+      <name>Remmina</name>
+      <name>Desktop 7</name>
+      <name>Desktop 8</name>
     </names>
     <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -169,42 +169,7 @@
     <moveButton>Middle</moveButton>
     <!-- 'Left', 'Middle', 'Right' -->
   </dock>
-  <keyboard><chainQuitKey>C-g</chainQuitKey><!-- Keybindings for desktop switching -->
-  <keybind key="C-A-Left"><action name="DesktopLeft"><dialog>no</dialog><wrap>no</wrap></action></keybind>
-  <keybind key="C-A-Right"><action name="DesktopRight"><dialog>no</dialog><wrap>no</wrap></action></keybind>
-  <keybind key="C-A-Up"><action name="DesktopUp"><dialog>no</dialog><wrap>no</wrap></action></keybind>
-  <keybind key="C-A-Down"><action name="DesktopDown"><dialog>no</dialog><wrap>no</wrap></action></keybind>
- 
- <keybind key="C-S-A-Left"><action name="SendToDesktopLeft"><dialog>no</dialog><wrap>no</wrap></action></keybind>
- <keybind key="C-S-A-Right"><action name="SendToDesktopRight"><dialog>no</dialog><wrap>no</wrap></action></keybind>
- <keybind key="C-S-A-Up"><action name="SendToDesktopUp"><dialog>no</dialog><wrap>no</wrap></action></keybind>
- <keybind key="C-S-A-Down"><action name="SendToDesktopDown"><dialog>no</dialog><wrap>no</wrap></action></keybind>
-
-<!-- use WIN+numeric keypad for workspace switching -->
-<keybind key="C-A-KP_1"><action name="Desktop"><desktop>1</desktop></action></keybind>
-<keybind key="C-A-KP_2"><action name="Desktop"><desktop>2</desktop></action></keybind>
-<keybind key="C-A-KP_3"><action name="Desktop"><desktop>3</desktop></action></keybind>
-<keybind key="C-A-KP_4"><action name="Desktop"><desktop>4</desktop></action></keybind>
-<keybind key="C-A-KP_5"><action name="Desktop"><desktop>5</desktop></action></keybind>
-<keybind key="C-A-KP_6"><action name="Desktop"><desktop>6</desktop></action></keybind>
-<keybind key="C-A-KP_7"><action name="Desktop"><desktop>7</desktop></action></keybind>
-<keybind key="C-A-KP_8"><action name="Desktop"><desktop>8</desktop></action></keybind>
-<keybind key="C-A-KP_9"><action name="Desktop"><desktop>9</desktop></action></keybind>
-
-<keybind key="W-d"><action name="ToggleShowDesktop"/></keybind>
-<keybind key="C-A-d"><action name="ToggleShowDesktop"/></keybind>
-
-<!-- Keybindings for windows -->
-<keybind key="A-F4"><action name="Close"/></keybind>
-<keybind key="A-Escape"><action name="Lower"/><action name="FocusToBottom"/><action name="Unfocus"/></keybind>
-<keybind key="A-space"><action name="ShowMenu"><menu>client-menu</menu></action></keybind>
-<keybind key="W-space"><action name="ShowMenu"><menu>client-menu</menu></action></keybind>
-
-<!-- Keybindings for window switching --><keybind key="A-Tab"><action name="NextWindow"><raise>yes</raise></action></keybind>
-<keybind key="A-S-Tab"><action name="PreviousWindow"><raise>yes</raise></action></keybind>
-<keybind key="C-A-Tab"><action name="NextWindow"><panels>yes</panels><desktop>yes</desktop></action></keybind>
-
-<!-- Keybindings for running applications --><!-- Fast access to filemanager --><keybind key="W-e"><action name="Execute"><command>pcmanfm</command></action></keybind><keybind key="C-A-e"><action name="Execute"><command>pcmanfm</command></action></keybind><!-- Fast access to Terminal --><keybind key="C-A-T"><action name="Execute"><command>rxvt</command></action></keybind><keybind key="W-t"><action name="Execute"><command>rxvt</command><startupnotify><enabled>true</enabled></startupnotify></action></keybind><keybind key="W-S-t"><action name="Execute"><command>rxvt -bg [99]\#000000</command><startupnotify><enabled>true</enabled></startupnotify></action></keybind><keybind key="W-i"><action name="Execute"><command>firefox</command></action></keybind><!--keybindings for LXPanel --><keybind key="W-r"><action name="Execute"><command>lxpanelctl run</command></action></keybind><keybind key="A-F2"><action name="Execute"><command>lxpanelctl run</command></action></keybind><!--<keybind key="C-Escape">
+  <keyboard><chainQuitKey>C-g</chainQuitKey><!-- Keybindings for desktop switching --><keybind key="C-A-Left"><action name="DesktopLeft"><dialog>no</dialog><wrap>no</wrap></action></keybind><keybind key="C-A-Right"><action name="DesktopRight"><dialog>no</dialog><wrap>no</wrap></action></keybind><keybind key="C-A-Up"><action name="DesktopUp"><dialog>no</dialog><wrap>no</wrap></action></keybind><keybind key="C-A-Down"><action name="DesktopDown"><dialog>no</dialog><wrap>no</wrap></action></keybind><keybind key="C-S-A-Left"><action name="SendToDesktopLeft"><dialog>no</dialog><wrap>no</wrap></action></keybind><keybind key="C-S-A-Right"><action name="SendToDesktopRight"><dialog>no</dialog><wrap>no</wrap></action></keybind><keybind key="C-S-A-Up"><action name="SendToDesktopUp"><dialog>no</dialog><wrap>no</wrap></action></keybind><keybind key="C-S-A-Down"><action name="SendToDesktopDown"><dialog>no</dialog><wrap>no</wrap></action></keybind><!-- use WIN+numeric keypad for workspace switching --><keybind key="C-A-KP_1"><action name="Desktop"><desktop>1</desktop></action></keybind><keybind key="C-A-KP_2"><action name="Desktop"><desktop>2</desktop></action></keybind><keybind key="C-A-KP_3"><action name="Desktop"><desktop>3</desktop></action></keybind><keybind key="C-A-KP_4"><action name="Desktop"><desktop>4</desktop></action></keybind><keybind key="C-A-KP_5"><action name="Desktop"><desktop>5</desktop></action></keybind><keybind key="C-A-KP_6"><action name="Desktop"><desktop>6</desktop></action></keybind><keybind key="C-A-KP_7"><action name="Desktop"><desktop>7</desktop></action></keybind><keybind key="C-A-KP_8"><action name="Desktop"><desktop>8</desktop></action></keybind><keybind key="C-A-KP_9"><action name="Desktop"><desktop>9</desktop></action></keybind><keybind key="W-d"><action name="ToggleShowDesktop"/></keybind><keybind key="C-A-d"><action name="ToggleShowDesktop"/></keybind><!-- Keybindings for windows --><keybind key="A-F4"><action name="Close"/></keybind><keybind key="A-Escape"><action name="Lower"/><action name="FocusToBottom"/><action name="Unfocus"/></keybind><keybind key="A-space"><action name="ShowMenu"><menu>client-menu</menu></action></keybind><keybind key="W-space"><action name="ShowMenu"><menu>client-menu</menu></action></keybind><!-- Keybindings for window switching --><keybind key="A-Tab"><action name="NextWindow"><raise>yes</raise></action></keybind><keybind key="A-S-Tab"><action name="PreviousWindow"><raise>yes</raise></action></keybind><keybind key="C-A-Tab"><action name="NextWindow"><panels>yes</panels><desktop>yes</desktop></action></keybind><!-- Keybindings for running applications --><!-- Fast access to filemanager --><keybind key="W-e"><action name="Execute"><command>pcmanfm</command></action></keybind><keybind key="C-A-e"><action name="Execute"><command>pcmanfm</command></action></keybind><!-- Fast access to Terminal --><keybind key="C-A-T"><action name="Execute"><command>rxvt</command></action></keybind><keybind key="W-t"><action name="Execute"><command>rxvt</command><startupnotify><enabled>true</enabled></startupnotify></action></keybind><keybind key="W-S-t"><action name="Execute"><command>rxvt -bg [99]\#000000</command><startupnotify><enabled>true</enabled></startupnotify></action></keybind><keybind key="W-i"><action name="Execute"><command>firefox</command></action></keybind><!--keybindings for LXPanel --><keybind key="W-r"><action name="Execute"><command>lxpanelctl run</command></action></keybind><keybind key="A-F2"><action name="Execute"><command>lxpanelctl run</command></action></keybind><!--<keybind key="C-Escape">
     <action name="Execute">
       <command>lxpanelctl menu</command>
     </action>
