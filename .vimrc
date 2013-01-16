@@ -78,6 +78,12 @@ map <leader>r :setlocal nocursorline<cr>:setlocal cc=0<cr>:NERDTreeFind<cr>:setl
 " LustyExplorer triggers "
 map <leader>b :LustyBufferExplorer<cr>
 
+" Taglist triggers "
+map <leader>t :TlistOpen<cr>
+map <leader>T :TlistClose<cr>
+
+set updatetime=250
+
 map <leader>m :make<Up><cr><cr>
 
 " Tab and window switching, the easy way. "
