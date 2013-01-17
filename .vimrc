@@ -77,6 +77,7 @@ map <leader>r :setlocal nocursorline<cr>:setlocal cc=0<cr>:NERDTreeFind<cr>:setl
 
 " LustyExplorer triggers "
 map <leader>b :LustyBufferExplorer<cr>
+map <leader>f :LustyFilesystemExplorer<cr>
 
 " Taglist triggers "
 map <leader>t :TlistOpen<cr>
