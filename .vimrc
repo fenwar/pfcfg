@@ -65,6 +65,7 @@ set shell=/bin/bash\ --login\ --norc
 " Use friendlier autocompletion "
 set wildmenu
 set wildmode=list:full
+set wildignore+=*.pyc,*.swp
 
 " Allow buffers with changes to be hidden "
 set hidden
@@ -78,6 +79,9 @@ map <leader>r :setlocal nocursorline<cr>:setlocal cc=0<cr>:NERDTreeFind<cr>:setl
 " LustyExplorer triggers "
 map <leader>b :LustyBufferExplorer<cr>
 map <leader>f :LustyFilesystemExplorer<cr>
+map <leader>F :LustyFilesystemExplorerFromHere<cr>
+
+hi LustySelected ctermfg=3 ctermbg=17
 
 " Taglist triggers "
 map <leader>t :TlistOpen<cr>

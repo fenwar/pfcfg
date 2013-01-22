@@ -27,6 +27,9 @@
   <placement>
     <policy>Smart</policy>
     <!-- 'Smart' or 'UnderMouse' -->
+    <center>yes</center>
+    <monitor>Any</monitor>
+    <primaryMonitor></primaryMonitor>
   </placement>
   <theme>
     <name>Onyx-black</name>
