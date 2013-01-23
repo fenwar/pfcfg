@@ -29,9 +29,11 @@ if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 
-. $HOME/management/util/run_scripts
-run_scripts .bashrc.d 
 
 if [ -f "$HOME/.bash_aliases" ]; then
     source "$HOME/.bash_aliases"
 fi
+
+. $HOME/management/util/run_scripts
+run_scripts $HOME/.bashrc.d 
+

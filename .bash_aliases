@@ -7,7 +7,7 @@ alias gsu="git status -u"
 alias gsi="git status -u --ignored"
 alias gc="git commit"
 alias gcm="git commit -m"
-alias gpf="git pull -ff"
+alias gpf="git pull --ff"
 
 alias ap="aptitude"
 alias sau="sudo aptitude update"
