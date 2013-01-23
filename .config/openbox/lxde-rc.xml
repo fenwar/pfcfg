@@ -311,7 +311,6 @@
     <keybind key="A-Tab">
       <action name="NextWindow">
         <raise>yes</raise>
-        <dialog>icons</dialog>
       </action>
     </keybind>
     <keybind key="A-S-Tab">
