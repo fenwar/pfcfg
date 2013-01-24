@@ -129,4 +129,4 @@ map [29~ i
 imap [29~ <ESC>l
 
 
-
+" TODO: why won't rxvt let me map shift-enter/ctrl-enter? "
