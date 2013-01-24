@@ -115,6 +115,18 @@ map! [8^ :bnext<cr>
 
 map <leader>/ :nohls<cr>
 
+map ]] :cn<cr>
+map [[ :cp<cr>
+
+autocmd QuickFixCmdPost * nested copen
+
+
 " Nicer ways to get out of insert mode? "
+"" inoremap <CR> <ESC>l
 map <ESC>; :
 map! <ESC>; <ESC>:
+map [29~ i
+imap [29~ <ESC>l
+
+
+
