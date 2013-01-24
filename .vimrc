@@ -38,6 +38,8 @@ hi Comment ctermfg=69 cterm=None
 hi Directory ctermfg=69 cterm=None
 hi Todo term=bold ctermfg=11 ctermbg=none
 
+hi ModeMsg cterm=bold ctermbg=52 ctermfg=11
+
 set hlsearch
 hi Search ctermfg=None ctermbg=20
 
