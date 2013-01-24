@@ -6,6 +6,7 @@ set shiftwidth=4
 set expandtab
 set autoindent
 set ignorecase
+set smartcase
 hi ColorColumn ctermbg=236
 ""set cc=80
 hi MatchParen ctermfg=yellow cterm=bold ctermbg=18
