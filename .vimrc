@@ -118,7 +118,7 @@ map <leader>/ :nohls<cr>
 map ]] :cn<cr>
 map [[ :cp<cr>
 
-autocmd QuickFixCmdPost * nested copen
+autocmd QuickFixCmdPost * nested copen 5
 
 
 " Nicer ways to get out of insert mode? "
