@@ -6,6 +6,7 @@ set shiftwidth=4
 set expandtab
 set autoindent
 set ignorecase
+set smartcase
 hi ColorColumn ctermbg=236
 ""set cc=80
 hi MatchParen ctermfg=yellow cterm=bold ctermbg=18
@@ -37,6 +38,8 @@ hi Comment ctermfg=69 cterm=None
 hi Directory ctermfg=69 cterm=None
 hi Todo term=bold ctermfg=11 ctermbg=none
 
+hi ModeMsg cterm=bold ctermbg=52 ctermfg=11
+
 set hlsearch
 hi Search ctermfg=None ctermbg=20
 
@@ -57,7 +60,8 @@ set mouse=a
 set makeprg=ant\ -s\ build.xml\ $*
 
 " Default to recursive grepping inside vim "
-set grepprg=grep\ -rnI\ --exclude=tags\ $*\ .
+"" set grepprg=grep\ -rnI\ --exclude=tags\ $*\ .
+set grepprg=ack-grep\ --smart-case\ $*
 
 " Use bash login but don't run .bashrc (avoids recursive virtualenv problem) "
 set shell=/bin/bash\ --login\ --norc
@@ -111,6 +115,18 @@ map! [8^ :bnext<cr>
 
 map <leader>/ :nohls<cr>
 
+map ]] :cn<cr>
+map [[ :cp<cr>
+
+autocmd QuickFixCmdPost * nested copen 5
+
+
 " Nicer ways to get out of insert mode? "
+"" inoremap <CR> <ESC>l
 map <ESC>; :
 map! <ESC>; <ESC>:
+map [29~ i
+imap [29~ <ESC>l
+
+
+" TODO: why won't rxvt let me map shift-enter/ctrl-enter? "
