@@ -83,7 +83,7 @@ map <leader>r :setlocal nocursorline<cr>:setlocal cc=0<cr>:NERDTreeFind<cr>:setl
 " LustyExplorer triggers "
 map <leader>b :LustyBufferExplorer<cr>
 map <leader>f :LustyFilesystemExplorer<cr>
-map <leader>F :LustyFilesystemExplorerFromHere<cr>
+map <leader>h :LustyFilesystemExplorerFromHere<cr>
 
 hi LustySelected ctermfg=3 ctermbg=17
 
@@ -110,6 +110,11 @@ map [7^ :bprev<cr>
 map! [7^ :bprev<cr>
 map [8^ :bnext<cr>
 map! [8^ :bnext<cr>
+
+" Close a file without losing the window layout "
+
+command BD execute ":b#<bar>bd#"
+command BW execute ":b#<bar>bw#"
 
 " Quickly get rid of search highlighting. "
 
