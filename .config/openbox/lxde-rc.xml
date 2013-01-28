@@ -633,7 +633,10 @@
   
         
         <command>x-terminal-emulator</command>   </action> </keybind>
+
+
     <!-- Exaile controls -->
+    
     <keybind key="C-W-space">
       <action name="Execute">
         <command>exaile --play-pause</command>
@@ -649,6 +652,17 @@
         <command>exaile --next</command>
       </action>
     </keybind>
+
+    <!-- Set the focus to the Exaile mini-mode window which is hidden from window list: -->
+
+    <keybind key="C-W-m">
+      <action name="Execute">
+        <command>wmctrl -F -a "Exaile"</command>
+      </action>
+    </keybind>
+
+    <!-- Generic sound controls -->
+
     <keybind key="C-W-Up">
       <action name="Execute">
         <command>amixer set Master 2%+ -q</command>
@@ -669,11 +683,15 @@
         <command>amixer sset 'Independent HP' 'ON'</command>
       </action>
     </keybind>
+
+
     <keybind key="F12">
       <action name="ShowMenu">
         <menu>client-list-combined-menu</menu>
       </action>
     </keybind>
+
+
   </keyboard>
   <mouse>
     <dragThreshold>8</dragThreshold>
@@ -1113,13 +1131,14 @@
       <skip_taskbar>yes</skip_taskbar>
       <decor>no</decor>
     </application>
-    <application name="Exaile Desktop Cover">
+    <application title="Exaile Desktop Cover" class="Exaile.py">
       <desktop>all</desktop>
       <focus>no</focus>
     </application>
-    <application name="Exaile">
+    <application title="Exaile" class="Exaile">
+      <desktop>all</desktop>
       <skip_pager>yes</skip_pager>
-      <skip_taskbar>no</skip_taskbar>
+      <skip_taskbar>yes</skip_taskbar>
     </application>
     <application name="mgdiff">
       <fullscreen>yes</fullscreen>
