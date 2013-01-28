@@ -82,8 +82,8 @@ map <leader>r :setlocal nocursorline<cr>:setlocal cc=0<cr>:NERDTreeFind<cr>:setl
 
 " LustyExplorer triggers "
 map <leader>b :LustyBufferExplorer<cr>
-map <leader>f :LustyFilesystemExplorer<cr>
-map <leader>h :LustyFilesystemExplorerFromHere<cr>
+map <leader>h :LustyFilesystemExplorer<cr>
+map <leader>f :LustyFilesystemExplorerFromHere<cr>
 
 hi LustySelected ctermfg=3 ctermbg=17
 
