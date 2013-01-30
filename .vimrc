@@ -115,6 +115,7 @@ map! [8^ :bnext<cr>
 
 " Close a file without losing the window layout "
 
+command! Close execute ":b#<bar>bd#<bar>bp<bar>bn"
 command! BD execute ":b#<bar>bd#<bar>bp<bar>bn"
 command! BW execute ":b#<bar>bw#<bar>bp<bar>bn"
 
