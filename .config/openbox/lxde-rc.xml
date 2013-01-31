@@ -1149,11 +1149,17 @@
       </position>
     </application>
     <application title="Pdb Console">
-      <skip_taskbar>yes</skip_taskbar>
       <maximized>vertical</maximized>
       <position>
         <x>-0</x>
         <y>0</y>
+        <monitor>2</monitor>
+      </position>
+    </application>
+    <application title="Release Server *">
+      <position>
+        <x>0</x>
+        <y>-0</y>
         <monitor>2</monitor>
       </position>
     </application>
