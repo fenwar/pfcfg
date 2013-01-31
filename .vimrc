@@ -53,6 +53,8 @@ set laststatus=2
 " Search upwards for ctags file "
 set tags=./tags;/
 
+command! Tgenerate execute ":!ctags -R"
+
 " Fix mouse wheel behaviour in urxvt "
 set mouse=a
 
@@ -113,8 +115,9 @@ map! [8^ :bnext<cr>
 
 " Close a file without losing the window layout "
 
-command BD execute ":b#<bar>bd#"
-command BW execute ":b#<bar>bw#"
+command! Close execute ":b#<bar>bd#<bar>bp<bar>bn"
+command! BD execute ":b#<bar>bd#<bar>bp<bar>bn"
+command! BW execute ":b#<bar>bw#<bar>bp<bar>bn"
 
 " Quickly get rid of search highlighting. "
 
