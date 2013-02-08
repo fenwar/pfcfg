@@ -30,8 +30,8 @@
     <policy>Smart</policy>
     <!-- 'Smart' or 'UnderMouse' -->
     <center>no</center>
-    <monitor>1</monitor>
-    <primaryMonitor>1</primaryMonitor>
+    <monitor>2</monitor>
+    <primaryMonitor>2</primaryMonitor>
   </placement>
   <theme>
     <name>Onyx-black</name>
@@ -1119,14 +1119,14 @@
     <application name="*">
       <focus>yes</focus>
       <position>
-        <monitor>1</monitor>
+        <monitor>2</monitor>
       </position>
     </application>
     <application name="lxpanel" title="Run">
       <position>
         <x>center</x>
         <y>center</y>
-        <monitor>1</monitor>
+        <monitor>2</monitor>
       </position>
       <skip_taskbar>yes</skip_taskbar>
       <decor>no</decor>
@@ -1153,29 +1153,29 @@
       <position>
         <x>-0</x>
         <y>0</y>
-        <monitor>2</monitor>
+        <monitor>1</monitor>
       </position>
     </application>
     <application title="Release Server *">
       <position>
         <x>0</x>
         <y>-0</y>
-        <monitor>2</monitor>
+        <monitor>1</monitor>
       </position>
     </application>
     <application title="Basic PAYE Tools - RTI">
-      <maximized>vertical</maximized>
+      <!--<maximized>vertical</maximized>-->
       <position>
         <x>0</x>
         <y>0</y>
-        <monitor>2</monitor>
+        <monitor>1</monitor>
       </position>
     </application>
     <application title="Web Inspector *">
       <position>
         <x>0</x>
         <y>0</y>
-        <monitor>1</monitor>
+        <monitor>2</monitor>
       </position>
       <maximized>yes</maximized>
     </application>
