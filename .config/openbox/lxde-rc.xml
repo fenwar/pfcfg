@@ -224,7 +224,8 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    <!-- use WIN+numeric keypad for workspace switching -->
+
+    <!-- use CTRL+ALT+numeric keypad for workspace switching -->
     <keybind key="C-A-KP_1">
       <action name="Desktop">
         <desktop>1</desktop>
@@ -270,12 +271,60 @@
         <desktop>9</desktop>
       </action>
     </keybind>
+
+    <!-- use CTRL+ALT+SHIFT+numeric keypad for sending windows to workspaces -->
+    <keybind key="C-A-S-KP_1">
+      <action name="SendToDesktop">
+        <desktop>1</desktop>
+      </action>
+    </keybind>
+    <keybind key="C-A-S-KP_2">
+      <action name="SendToDesktop">
+        <desktop>2</desktop>
+      </action>
+    </keybind>
+    <keybind key="C-A-S-KP_3">
+      <action name="SendToDesktop">
+        <desktop>3</desktop>
+      </action>
+    </keybind>
+    <keybind key="C-A-S-KP_4">
+      <action name="SendToDesktop">
+        <desktop>4</desktop>
+      </action>
+    </keybind>
+    <keybind key="C-A-S-KP_5">
+      <action name="SendToDesktop">
+        <desktop>5</desktop>
+      </action>
+    </keybind>
+    <keybind key="C-A-S-KP_6">
+      <action name="SendToDesktop">
+        <desktop>6</desktop>
+      </action>
+    </keybind>
+    <keybind key="C-A-S-KP_7">
+      <action name="SendToDesktop">
+        <desktop>7</desktop>
+      </action>
+    </keybind>
+    <keybind key="C-A-S-KP_8">
+      <action name="SendToDesktop">
+        <desktop>8</desktop>
+      </action>
+    </keybind>
+    <keybind key="C-A-S-KP_9">
+      <action name="SendToDesktop">
+        <desktop>9</desktop>
+      </action>
+    </keybind>
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
     <keybind key="C-A-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
+
     <!-- Keybindings for windows -->
     <keybind key="A-F4">
       <action name="Close"/>
@@ -1151,7 +1200,7 @@
     <application title="Pdb Console">
       <maximized>vertical</maximized>
       <position>
-        <x>-0</x>
+        <x>0</x>
         <y>0</y>
         <monitor>1</monitor>
       </position>
@@ -1160,14 +1209,6 @@
       <position>
         <x>0</x>
         <y>-0</y>
-        <monitor>1</monitor>
-      </position>
-    </application>
-    <application title="Basic PAYE Tools - RTI">
-      <!--<maximized>vertical</maximized>-->
-      <position>
-        <x>0</x>
-        <y>0</y>
         <monitor>1</monitor>
       </position>
     </application>
