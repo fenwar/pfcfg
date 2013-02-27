@@ -623,8 +623,19 @@ Copy the file to $HOME/.config/openbox/ instead. -->
       <action name="Execute">      
                       
         <command>x-terminal-emulator</command>   </action> </keybind>
+
     <!-- Exaile controls -->
     <keybind key="C-W-space">
+      <action name="Execute">
+        <command>exaile --play-pause</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioPlay">
+      <action name="Execute">
+        <command>exaile --play-pause</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioStop">
       <action name="Execute">
         <command>exaile --play-pause</command>
       </action>
@@ -634,7 +645,17 @@ Copy the file to $HOME/.config/openbox/ instead. -->
         <command>exaile --prev</command>
       </action>
     </keybind>
+    <keybind key="XF86AudioPrev">
+      <action name="Execute">
+        <command>exaile --prev</command>
+      </action>
+    </keybind>
     <keybind key="C-W-Right">
+      <action name="Execute">
+        <command>exaile --next</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioNext">
       <action name="Execute">
         <command>exaile --next</command>
       </action>
