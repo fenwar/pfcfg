@@ -1,7 +1,7 @@
 *.swp
 .sw?
-src/main.cfg
-src/update
 tags
 .vim/.netrwbook
 .vim/.netrwhist
+src/update
+src/rti.cfg

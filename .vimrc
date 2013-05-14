@@ -56,7 +56,6 @@ set tags=./tags;/
 command! Tgenerate execute ":!ctags -R"
 
 " Fix mouse wheel behaviour in urxvt "
-
 set mouse=a
 
 " Use ant for project builds by default; search upwards for build.xml "
