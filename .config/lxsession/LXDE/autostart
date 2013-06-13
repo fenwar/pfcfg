@@ -1,3 +1,6 @@
 @xcompmgr
 @setlayout 0 3 2 3
 @volumeicon
+@quicktile --daemonize
+@/home/paulf/bin/capsesc
+@xfdesktop
