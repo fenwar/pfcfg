@@ -79,6 +79,9 @@ set wildmenu
 set wildmode=list:full
 set wildignore+=*.pyc,*.swp
 
+" Grep word accelerator "
+map <leader>w :grep <cr>
+
 " Allow buffers with changes to be hidden "
 set hidden
 
@@ -92,6 +95,7 @@ map <leader>r :setlocal nocursorline<cr>:setlocal cc=0<cr>:NERDTreeFind<cr>:setl
 map <leader>b :LustyBufferExplorer<cr>
 map <leader>h :LustyFilesystemExplorer<cr>
 map <leader>f :LustyFilesystemExplorerFromHere<cr>
+map <leader>g :LustyBufferGrep<cr>
 
 hi LustySelected ctermfg=3 ctermbg=17
 
