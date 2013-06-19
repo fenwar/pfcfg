@@ -25,7 +25,7 @@ autocmd InsertLeave,CursorMoved,CmdwinEnter * hi CursorLine cterm=None ctermbg=1
 
 set nowrap
 hi VertSplit ctermfg=233 ctermbg=233 cterm=None
-hi StatusLine ctermfg=236 ctermbg=11 cterm=reverse,bold,italic
+hi StatusLine ctermfg=234 ctermbg=11 cterm=reverse,bold,italic
 hi StatusLineNC ctermfg=233 ctermbg=106 cterm=reverse,italic
 hi Pmenu ctermfg=242 ctermbg=0 cterm=italic
 hi PmenuSel ctermfg=253 ctermbg=22 cterm=italic
@@ -42,6 +42,12 @@ hi ModeMsg cterm=bold ctermbg=52 ctermfg=11
 
 set hlsearch
 hi Search ctermfg=None ctermbg=20
+
+" Fix diff colours "
+hi DiffAdd ctermbg=22 cterm=bold ctermfg=None
+hi DiffDelete ctermbg=52 cterm=italic ctermfg=None
+hi DiffChange ctermbg=94 cterm=bold ctermfg=None
+hi DiffText ctermbg=0 cterm=bold ctermfg=15
 
 " Create new split windows *after* the current one "
 set splitbelow
