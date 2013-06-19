@@ -140,3 +140,9 @@ set title
 set titlestring=%{$TERM_TITLE}\ %t\ %m\ (%f)\ -\ VIM!
 
 " TODO: why won't rxvt let me map shift-enter/ctrl-enter? "
+
+" Pylint "
+
+au FileType python set makeprg=pylint\ --reports=n\ --output-format=parseable\ %:p
+au FileType python set efm=%A%f:%l:\ [%t%.%#]\ %m,%Z%p^^,%-C%.%#
+
