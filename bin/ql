@@ -1,0 +1,13 @@
+#!/bin/bash
+# Quick play script for Quod Libet.
+
+if [[ "$1" == "?" ]] ; then
+    quodlibet --random=album
+else
+    quodlibet --unqueue=/.*/
+    # Print-queue ensures queue is flushed before we enqueue anything else.
+    quodlibet --print-queue
+    quodlibet --enqueue="$*"
+fi
+
+quodlibet --next
