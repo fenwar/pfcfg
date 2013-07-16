@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Quod Libet
+GenericName=Music Player
+GenericName[en_GB]=Music Player
+Comment=Listen to, browse, or edit your audio collection
+Comment[en_GB]=Listen to, browse, or edit your audio collection
+Exec=quodlibet
+Terminal=false
+Type=Application
+Icon=quodlibet
+Categories=AudioVideo;Audio;Player;GTK;
+X-XFCE-Source=file:///usr/share/applications/quodlibet.desktop

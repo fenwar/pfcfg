@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Nautilus
+Comment=Nautilus
+Exec=nautilus
+Icon=nautilus
+Path=
+Terminal=false
+StartupNotify=true
