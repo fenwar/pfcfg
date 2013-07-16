@@ -24,6 +24,8 @@ autocmd InsertEnter * hi CursorLine cterm=None ctermbg=52
 autocmd InsertLeave,CursorMoved,CmdwinEnter * hi CursorLine cterm=None ctermbg=17
 
 set nowrap
+set linebreak
+
 hi VertSplit ctermfg=233 ctermbg=233 cterm=None
 hi StatusLine ctermfg=234 ctermbg=11 cterm=reverse,bold,italic
 hi StatusLineNC ctermfg=233 ctermbg=106 cterm=reverse,italic
@@ -52,6 +54,7 @@ hi DiffText ctermbg=0 cterm=bold ctermfg=15
 " Create new split windows *after* the current one "
 set splitbelow
 set splitright
+set noequalalways
 
 " Always show the status line "
 set laststatus=2
@@ -69,7 +72,7 @@ set makeprg=ant\ -s\ build.xml\ $*
 
 " Default to recursive grepping inside vim "
 "" set grepprg=grep\ -rnI\ --exclude=tags\ $*\ .
-set grepprg=ack-grep\ --smart-case\ $*
+set grepprg=ack-grep\ --ignore-file=is:tags\ --smart-case\ $*
 
 " Use bash login but don't run .bashrc (avoids recursive virtualenv problem) "
 set shell=/bin/bash\ --login\ --norc
@@ -80,7 +83,7 @@ set wildmode=list:full
 set wildignore+=*.pyc,*.swp
 
 " Grep word accelerator "
-map <leader>w :grep <cr>
+map <leader>w :grep "\\b\\b"<cr>
 
 " Allow buffers with changes to be hidden "
 set hidden
@@ -146,13 +149,19 @@ map! <ESC>; <ESC>:
 map [29~ i
 imap [29~ <ESC>l
 
-set title
+"" set title
 set titlestring=%{$TERM_TITLE}\ %t\ %m\ (%f)\ -\ VIM!
 
-" TODO: why won't rxvt let me map shift-enter/ctrl-enter? "
 
 " Pylint "
 
 au FileType python set makeprg=pylint\ --reports=n\ --output-format=parseable\ %:p
 au FileType python set efm=%A%f:%l:\ [%t%.%#]\ %m,%Z%p^^,%-C%.%#
 
+" gvim defaults "
+if has("gui_running")
+    set co=120
+    set lines=40
+    set guifont=DejaVu\ Sans\ Mono\ 10
+    colorscheme desert
+endif
