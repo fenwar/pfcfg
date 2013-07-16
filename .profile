@@ -23,8 +23,10 @@ fi
 
 PS1='${debian_chroot:+($debian_chroot)}\[\033[00;32m\]\u@\h:\[\033[01;34m\]\w\[\033[00m\]$(__git_ps1 "(%s)")\[\033[00;32m\]\$\[\033[00m\] '
 
-export PATH
-
-export ANT_HOME=/usr/share/ant
 export EDITOR=vim
-export PYTHONSTARTUP=${HOME}/.pythonrc
+export TERM=xterm-256color
+
+#export PATH
+
+#export ANT_HOME=/usr/share/ant
+#export PYTHONSTARTUP=${HOME}/.pythonrc
