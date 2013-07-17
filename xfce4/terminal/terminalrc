@@ -28,7 +28,5 @@ DropdownAnimationTime=50
 DropdownMoveToActive=FALSE
 DropdownAlwaysShowTabs=FALSE
 DropdownHeight=70
-DropdownKeepOpenDefault=TRUE
 DropdownPosition=0
-DropdownKeepAbove=FALSE
 
