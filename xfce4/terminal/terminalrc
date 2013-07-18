@@ -29,4 +29,6 @@ DropdownMoveToActive=FALSE
 DropdownAlwaysShowTabs=FALSE
 DropdownHeight=70
 DropdownPosition=0
+DropdownKeepOpenDefault=TRUE
+DropdownKeepAbove=FALSE
 
