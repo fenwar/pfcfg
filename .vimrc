@@ -149,7 +149,7 @@ map! <ESC>; <ESC>:
 map [29~ i
 imap [29~ <ESC>l
 
-"" set title
+set title
 set titlestring=%{$TERM_TITLE}\ %t\ %m\ (%f)\ -\ VIM!
 
 
