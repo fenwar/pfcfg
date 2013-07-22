@@ -1,6 +1,10 @@
 ! Use lightdm to provide user switching
 *newLoginCommand: dm-tool switch-to-greeter
 
+!!!!!!!!!!!!!!!!!!!!!!!!!
+! rxvt-unicode settings !
+!!!!!!!!!!!!!!!!!!!!!!!!!
+
 ! Green text on translucent black background
 URxvt*.depth: 32
 URxvt*.background: [80]#000000
@@ -14,7 +18,7 @@ URxvt*.geometry: 120x40
 URxvt*.scrollBar: false
 
 ! Set my default preferred font
-URxvt*.font: xft:DejaVu Sans Mono:size=10,antialias=false,\
+URxvt*.font: xft:DejaVu Sans Mono:size=10,antialias=true,\
              xft:Code2000:antialias=false
 
 ! Include perl font-size extension
@@ -30,8 +34,6 @@ URxvt.keysym.Control-Right:    \033[1;5C
 
 ! Disable iso14755 which is bound to C-S-Up/Down
 URxvt*.iso14755: false
-
-URxvt*.letterSpace: -1
 
 URxvt*.cursorBlink: true
 URxvt*.cursorUnderline: true
