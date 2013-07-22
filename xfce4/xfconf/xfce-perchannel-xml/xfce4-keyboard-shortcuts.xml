@@ -46,7 +46,6 @@
       <property name="&lt;Primary&gt;&lt;Super&gt;Return" type="string" value="quodlibet --toggle-window">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
-      <property name="&lt;Primary&gt;&lt;Super&gt;m" type="string" value="/home/paulf/bin/ql ?"/>
       <property name="&lt;Super&gt;e" type="string" value="nautilus">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
@@ -54,6 +53,9 @@
         <property name="startup-notify" type="bool" value="true"/>
       </property>
       <property name="&lt;Super&gt;space" type="string" value="xfce4-terminal --drop-down --title=&quot;Console&quot;">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="&lt;Primary&gt;&lt;Super&gt;m" type="empty">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
     </property>

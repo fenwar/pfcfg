@@ -42,7 +42,7 @@
     <property name="plugin-1" type="string" value="applicationsmenu"/>
     <property name="plugin-3" type="string" value="tasklist">
       <property name="show-handle" type="bool" value="false"/>
-      <property name="flat-buttons" type="bool" value="false"/>
+      <property name="flat-buttons" type="bool" value="true"/>
       <property name="show-labels" type="bool" value="true"/>
       <property name="sort-order" type="uint" value="4"/>
     </property>
