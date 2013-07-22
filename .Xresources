@@ -1,6 +1,3 @@
-! Use lightdm to provide user switching
-*newLoginCommand: dm-tool switch-to-greeter
-
 !!!!!!!!!!!!!!!!!!!!!!!!!
 ! rxvt-unicode settings !
 !!!!!!!!!!!!!!!!!!!!!!!!!
