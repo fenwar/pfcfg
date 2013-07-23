@@ -4,7 +4,7 @@
   <property name="panels" type="array">
     <value type="int" value="0"/>
     <property name="panel-0" type="empty">
-      <property name="position" type="string" value="p=8;x=960;y=1175"/>
+      <property name="position" type="string" value="p=8;x=2880;y=1175"/>
       <property name="length" type="uint" value="100"/>
       <property name="position-locked" type="bool" value="true"/>
       <property name="plugin-ids" type="array">
@@ -27,7 +27,7 @@
       </property>
       <property name="mode" type="uint" value="0"/>
       <property name="span-monitors" type="bool" value="false"/>
-      <property name="output-name" type="string" value="DVI-I-0"/>
+      <property name="output-name" type="string" value=""/>
       <property name="background-style" type="uint" value="1"/>
       <property name="background-alpha" type="uint" value="47"/>
       <property name="background-color" type="array">
