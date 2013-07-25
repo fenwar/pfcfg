@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Volume control script for Pulse Audio
+
+SINK_INDEX=1
+VOLUME_STEP=0x400
+
+SINK_NAME=$(pactl list short sinks | grep ^$SINK_INDEX | cut -f2)
+SINK_VOLUME=$(pacmd dump | grep "^set-sink-volume $SINK_NAME" | cut -d' ' -f3)
+
+if [ "$1" = "up" ] ; then
+    NEW_VOLUME=$(($SINK_VOLUME + $VOLUME_STEP))
+elif [ "$1" = "down" ] ; then
+    NEW_VOLUME=$(($SINK_VOLUME - $VOLUME_STEP))
+else
+    echo $SINK_NAME
+    echo $SINK_VOLUME
+    NEW_VOLUME=$SINK_VOLUME
+fi
+
+pactl set-sink-volume $SINK_INDEX $NEW_VOLUME
