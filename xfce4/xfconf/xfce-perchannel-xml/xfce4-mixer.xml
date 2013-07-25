@@ -3,7 +3,7 @@
 <channel name="xfce4-mixer" version="1.0">
   <property name="active-card" type="string" value="HDAIntelPCHAlsamixer"/>
   <property name="volume-step-size" type="uint" value="5"/>
-  <property name="sound-card" type="string" value="HDAIntelPCHAlsamixer"/>
+  <property name="sound-card" type="string" value="PlaybackBuiltinAudioAnalogStereoPulseAudioMixer"/>
   <property name="sound-cards" type="empty">
     <property name="HDAIntelPCHAlsamixer" type="array">
       <value type="string" value="Master"/>
@@ -29,6 +29,15 @@
       <value type="string" value="Rear Mic"/>
     </property>
     <property name="HDANVidiaAlsamixer" type="array">
+    </property>
+    <property name="PlaybackBuiltinAudioAnalogStereoPulseAudioMixer" type="array">
+      <value type="string" value="Master"/>
+    </property>
+    <property name="CaptureMonitorofBuiltinAudioAnalogStereoPulseAudioMixer" type="array">
+      <value type="string" value="Master"/>
+    </property>
+    <property name="CaptureBuiltinAudioAnalogStereoPulseAudioMixer" type="array">
+      <value type="string" value="Master"/>
     </property>
   </property>
   <property name="window-height" type="int" value="547"/>
