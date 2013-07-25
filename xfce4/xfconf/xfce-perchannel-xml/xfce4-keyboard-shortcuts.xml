@@ -25,8 +25,6 @@
       <property name="override" type="bool" value="true"/>
       <property name="&lt;Primary&gt;&lt;Super&gt;space" type="string" value="quodlibet --play-pause"/>
       <property name="&lt;Primary&gt;&lt;Super&gt;Right" type="string" value="quodlibet --next"/>
-      <property name="&lt;Primary&gt;&lt;Super&gt;Down" type="string" value="amixer -q sset Master 2%-"/>
-      <property name="&lt;Primary&gt;&lt;Super&gt;Up" type="string" value="amixer -q sset Master 2%+"/>
       <property name="&lt;Primary&gt;&lt;Super&gt;Left" type="string" value="quodlibet --force-previous"/>
       <property name="&lt;Super&gt;t" type="string" value="xfce4-terminal">
         <property name="startup-notify" type="bool" value="true"/>
@@ -61,6 +59,10 @@
       <property name="&lt;Super&gt;m" type="string" value="icedove">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;&lt;Super&gt;Down" type="string" value="amixer -q sset Master 2%-"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;&lt;Super&gt;Up" type="string" value="amixer -q sset Master 2%+"/>
+      <property name="&lt;Primary&gt;&lt;Super&gt;Down" type="string" value="/home/paulf/bin/pavol down"/>
+      <property name="&lt;Primary&gt;&lt;Super&gt;Up" type="string" value="/home/paulf/bin/pavol up"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
