@@ -12,3 +12,4 @@ MimeType=message/rfc822;x-scheme-handler/mailto;
 StartupWMClass=Icedove-bin
 StartupNotify=true
 X-XFCE-Source=file:///usr/share/applications/icedove.desktop
+Path=
