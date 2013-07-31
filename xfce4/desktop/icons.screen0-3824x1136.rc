@@ -1,12 +1,12 @@
-[Home]
-row=0
-col=18
+[Wastebasket]
+row=2
+col=0
 
 [File System]
-row=0
-col=17
+row=1
+col=0
 
-[Wastebasket]
+[Home]
 row=0
-col=19
+col=0
 
