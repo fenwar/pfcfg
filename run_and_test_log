@@ -1,0 +1,48 @@
+#!/bin/bash
+
+# Fix for the commits containing a pdb set trace:
+git cherry-pick 4fdc --no-commit
+
+truncate -s0 /tmp/rti3b.log
+ant clean.forcedb
+ant clean pc
+python src/main.py -d -u calculators/smp/ &
+
+echo "Waiting for the window."
+
+THEWINDOW=$(xdotool search --sync --onlyvisible --name "Basic PAYE Tools - RTI")
+
+echo "There's the window, let's give it time to draw."
+
+xdotool sleep 1
+
+xdotool key --window $THEWINDOW --clearmodifiers --delay 0 "Control_L+Alt_L+s"
+
+xdotool sleep 1
+
+#just in case the js alert comes up at this point:
+THEALERT=$(xdotool search --onlyvisible --name "JavaScript Alert")
+if [[ "${THEALERT}" != "" ]] ; then
+    xdotool windowactivate --sync ${THEALERT}
+    xdotool key --window ${THEALERT} "Return"
+fi
+
+xdotool sleep 1
+
+# Now close the window
+# xdotool key --window $THEWINDOW --clearmodifiers --delay 0 "Alt_L+F4"
+wmctrl -i -c $THEWINDOW
+
+xdotool sleep 10
+
+# Revert the fix for pdb set trace
+git checkout -f
+
+if grep -q "KeyError: 'stage12'" /tmp/rti3b.log ; then
+    echo "The error occurred!"
+    false
+else
+    echo "The error did not occur."
+    true
+fi
+
