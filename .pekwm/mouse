@@ -13,3 +13,7 @@ INCLUDE = "$_PEKWM_ETC_PATH/mouse_click"
 
 # Add configuration overrides here, it possible to add sections,
 # sub-section and values overriding/adding specific values.
+
+Client {
+    ButtonPress = "1" { Actions = "Focus; Raise; $CLIENT_CLICK" }
+}
