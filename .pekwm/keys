@@ -15,8 +15,8 @@ Global {
 	KeyPress = "Mod4 Shift Tab" { Actions = "ActivateClientRel -1" }
 	KeyPress = "Mod4 Ctrl Right" { Actions = "MoveClientRel 1" }
 	KeyPress = "Mod4 Ctrl Left" { Actions = "MoveClientRel -1" }
-	KeyPress = "Mod4 Left" { Actions = "FocusDirectional Left" }
-	KeyPress = "Mod4 Right" { Actions = "FocusDirectional Right" }
+	KeyPress = "Mod4 Comma" { Actions = "FocusDirectional Left" }
+	KeyPress = "Mod4 Period" { Actions = "FocusDirectional Right" }
 	KeyPress = "Mod4 Up" { Actions = "FocusDirectional Up" }
 	KeyPress = "Mod4 Down" { Actions = "FocusDirectional Down" }
 	# Moving in workspaces
