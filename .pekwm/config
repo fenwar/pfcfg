@@ -1,0 +1,15 @@
+INCLUDE = "$_PEKWM_ETC_PATH/config_system"
+
+Files {
+    Theme = "/usr/share/pekwm/themes/dust"
+}
+
+Screen {
+    Workspaces = "6"
+    WorkspacesPerRow = "3"
+    WorkspaceNames = "Ein;Zwei;Drei;Vier;Funf;Sechs"
+
+    Placement {
+        Model = "CenteredOnParent Smart MouseNotUnder"
+    }
+}
