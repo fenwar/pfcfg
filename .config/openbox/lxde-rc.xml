@@ -333,6 +333,33 @@ Copy the file to $HOME/.config/openbox/ instead. -->
         <desktop>yes</desktop>
       </action>
     </keybind>
+
+    <keybind key="W-Up">
+        <action name="DirectionalCycleWindows">
+            <direction>north</direction>
+            <raise>yes</raise>
+        </action>
+    </keybind>
+    <keybind key="W-Down">
+        <action name="DirectionalCycleWindows">
+            <direction>south</direction>
+            <raise>yes</raise>
+        </action>
+    </keybind>
+
+    <keybind key="W-Left">
+        <action name="DirectionalCycleWindows">
+            <direction>west</direction>
+            <raise>yes</raise>
+        </action>
+    </keybind>
+    <keybind key="W-Right">
+        <action name="DirectionalCycleWindows">
+            <direction>east</direction>
+            <raise>yes</raise>
+        </action>
+    </keybind>
+
     <!-- Keybindings for running applications --><!-- Fast access to filemanager -->
     <keybind key="W-e">
       <action name="Execute">
@@ -411,7 +438,7 @@ Copy the file to $HOME/.config/openbox/ instead. -->
       </action>
     </keybind>
     <!-- Move windows about (aero snap) -->
-    <keybind key="W-Down">
+    <keybind key="W-A-Down">
       <action name="If">
         <maximized>yes</maximized>
         <then>
@@ -422,7 +449,7 @@ Copy the file to $HOME/.config/openbox/ instead. -->
         </else>
       </action>
     </keybind>
-    <keybind key="W-Up">
+    <keybind key="W-A-Up">
       <action name="If">
         <maximized>yes</maximized>
         <then>
@@ -441,7 +468,7 @@ Copy the file to $HOME/.config/openbox/ instead. -->
         </else>
       </action>
     </keybind>
-    <keybind key="W-Left">
+    <keybind key="W-A-Left">
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
       <action name="MoveResizeTo">
@@ -449,7 +476,7 @@ Copy the file to $HOME/.config/openbox/ instead. -->
       </action>
       <action name="MoveToEdgeWest"/>
     </keybind>
-    <keybind key="W-Right">
+    <keybind key="W-A-Right">
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
       <action name="MoveResizeTo">
