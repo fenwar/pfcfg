@@ -17,6 +17,8 @@ URxvt*.scrollBar: false
 URxvt*.font: xft:DejaVu Sans Mono:size=10,antialias=false,\
              xft:Code2000:antialias=false
 
+URxvt*.letterSpace: -1
+
 ! Include perl font-size extension
 ! See https://github.com/majutsushi/urxvt-font-size
 URxvt*.perl-ext-common: font-size
@@ -31,7 +33,6 @@ URxvt.keysym.Control-Right:    \033[1;5C
 ! Disable iso14755 which is bound to C-S-Up/Down
 URxvt*.iso14755: false
 
-URxvt*.letterSpace: -1
 
 URxvt*.cursorBlink: true
 URxvt*.cursorUnderline: true

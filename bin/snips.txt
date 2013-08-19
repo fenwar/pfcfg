@@ -1,0 +1,5 @@
+dpkg -l | grep ^rc | cut -d\  -f 3
+dpkg -l | sed -ne 6,\$p | cut -d\  -f 3 | xargs -i%% aptitude why %%
+aptitude search '!?reverse-depends(~i) !?essential' | grep ^i
+aptitude search '!?reverse-depends(~i) !?essential' | grep -E "\blib" | grep ^i | cut -c5- | cut -f1 -d' '
+
