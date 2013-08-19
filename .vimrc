@@ -54,8 +54,8 @@ hi Search ctermfg=None ctermbg=20
 " Fix diff colours "
 hi DiffAdd ctermbg=22 cterm=bold ctermfg=None
 hi DiffDelete ctermbg=52 cterm=italic ctermfg=None
-hi DiffChange ctermbg=94 cterm=bold ctermfg=None
-hi DiffText ctermbg=0 cterm=bold ctermfg=15
+hi DiffChange cterm=None ctermbg=None
+hi DiffText ctermbg=94 cterm=bold ctermfg=None
 
 " Create new split windows *after* the current one "
 set splitbelow
