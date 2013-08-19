@@ -2,7 +2,7 @@
 BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
 BackgroundDarkness=0.900000
 CommandLoginShell=TRUE
-FontName=DejaVu Sans Mono 12
+FontName=DejaVu Sans Mono 10
 MiscAlwaysShowTabs=FALSE
 MiscBell=FALSE
 MiscBordersDefault=TRUE
@@ -24,11 +24,9 @@ ScrollingLines=32768
 TitleMode=TERMINAL_TITLE_REPLACE
 ColorPalette=#000000000000;#aaaa00000000;#0000aaaa0000;#aaaa55550000;#3ee43ee49ed0;#aaaa0000aaaa;#0000aaaaaaaa;#aaaaaaaaaaaa;#555555555555;#ffff55555555;#5555ffff5555;#ffffffff5555;#55555555ffff;#ffff5555ffff;#5555ffffffff;#ffffffffffff
 DropdownWidth=100
-DropdownAnimationTime=50
 DropdownMoveToActive=FALSE
-DropdownAlwaysShowTabs=FALSE
 DropdownHeight=70
-DropdownPosition=0
 DropdownKeepOpenDefault=TRUE
 DropdownKeepAbove=FALSE
+DropdownAlwaysShowTabs=FALSE
 

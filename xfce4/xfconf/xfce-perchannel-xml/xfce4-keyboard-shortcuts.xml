@@ -63,6 +63,12 @@
       <property name="&lt;Primary&gt;&lt;Alt&gt;&lt;Super&gt;Up" type="string" value="amixer -q sset Master 2%+"/>
       <property name="&lt;Primary&gt;&lt;Super&gt;Down" type="string" value="/home/paulf/bin/pavol down"/>
       <property name="&lt;Primary&gt;&lt;Super&gt;Up" type="string" value="/home/paulf/bin/pavol up"/>
+      <property name="&lt;Alt&gt;&lt;Super&gt;Left" type="empty">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="&lt;Alt&gt;&lt;Super&gt;Right" type="empty">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
     </property>
   </property>
   <property name="xfwm4" type="empty">

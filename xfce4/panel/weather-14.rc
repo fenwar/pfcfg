@@ -1,0 +1,25 @@
+loc_name=Northenden, Manchester
+lat=53.406191
+lon=-2.258881
+msl=36
+timezone=Europe/London
+cache_file_max_age=172800
+power_saving=false
+units_temperature=0
+units_pressure=2
+units_windspeed=1
+units_precipitations=1
+units_altitude=1
+model_apparent_temperature=0
+round=false
+tooltip_style=0
+forecast_layout=1
+forecast_days=5
+scrollbox_animate=false
+theme_dir=/usr/share/xfce4/weather/icons/simplistic
+show_scrollbox=true
+scrollbox_lines=1
+scrollbox_color=#000000000000
+scrollbox_use_color=false
+label0=3
+
