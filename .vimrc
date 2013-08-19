@@ -25,8 +25,14 @@ autocmd InsertLeave,CursorMoved,CmdwinEnter * hi CursorLine cterm=None ctermbg=1
 
 set nowrap
 set linebreak
+set numberwidth=5
+
+" When auto-formatting, use 78 columns. "
+" set textwidth=78 "
 
 hi VertSplit ctermfg=233 ctermbg=233 cterm=None
+hi LineNr ctermfg=235 ctermbg=233 cterm=None
+hi CursorLineNr ctermfg=236 ctermbg=17 cterm=None
 hi StatusLine ctermfg=234 ctermbg=11 cterm=reverse,bold,italic
 hi StatusLineNC ctermfg=233 ctermbg=106 cterm=reverse,italic
 hi Pmenu ctermfg=242 ctermbg=0 cterm=italic
