@@ -2,7 +2,7 @@
 BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
 BackgroundDarkness=0.900000
 CommandLoginShell=TRUE
-FontName=DejaVu Sans Mono 10
+FontName=Source Code Pro Medium 10
 MiscAlwaysShowTabs=FALSE
 MiscBell=FALSE
 MiscBordersDefault=TRUE
