@@ -58,6 +58,7 @@
       <property name="show-labels" type="bool" value="true"/>
       <property name="sort-order" type="uint" value="4"/>
       <property name="show-wireframes" type="bool" value="false"/>
+      <property name="include-all-workspaces" type="bool" value="true"/>
     </property>
     <property name="plugin-4" type="string" value="pager">
       <property name="rows" type="uint" value="1"/>
@@ -74,9 +75,11 @@
         <value type="string" value="thunar"/>
         <value type="string" value="vlc"/>
         <value type="string" value="quod libet"/>
+        <value type="string" value="main.py"/>
         <value type="string" value="networkmanager applet"/>
-        <value type="string" value="drop-down terminal"/>
         <value type="string" value="volumeicon"/>
+        <value type="string" value="rti.linux"/>
+        <value type="string" value="drop-down terminal"/>
         <value type="string" value="xfce terminal"/>
         <value type="string" value="iceweasel"/>
         <value type="string" value="icedove"/>
@@ -85,7 +88,7 @@
         <value type="string" value="remmina remote desktop client"/>
       </property>
       <property name="show-frame" type="bool" value="false"/>
-      <property name="size-max" type="uint" value="40"/>
+      <property name="size-max" type="uint" value="44"/>
       <property name="names-hidden" type="array">
       </property>
     </property>
