@@ -19,7 +19,7 @@ scrollbox_animate=false
 theme_dir=/usr/share/xfce4/weather/icons/simplistic
 show_scrollbox=true
 scrollbox_lines=1
-scrollbox_color=#000000000000
-scrollbox_use_color=false
+scrollbox_color=#ceced8d8ebeb
+scrollbox_use_color=true
 label0=3
 
