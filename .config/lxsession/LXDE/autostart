@@ -1,4 +1,8 @@
 @xcompmgr
-@setlayout 0 3 2 3
+@setlayout 0 3 2 0
 @capsesc
 @volumeicon
+@gnome-screensaver
+@mate-power-manager
+@lxpanel --profile LXDE
+@nautilus -n
