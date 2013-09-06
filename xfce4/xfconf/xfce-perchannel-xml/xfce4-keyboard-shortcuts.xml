@@ -26,9 +26,6 @@
       <property name="&lt;Primary&gt;&lt;Super&gt;space" type="string" value="quodlibet --play-pause"/>
       <property name="&lt;Primary&gt;&lt;Super&gt;Right" type="string" value="quodlibet --next"/>
       <property name="&lt;Primary&gt;&lt;Super&gt;Left" type="string" value="quodlibet --force-previous"/>
-      <property name="&lt;Super&gt;t" type="string" value="xfce4-terminal">
-        <property name="startup-notify" type="bool" value="true"/>
-      </property>
       <property name="&lt;Super&gt;r" type="string" value="xfrun4">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
@@ -67,6 +64,9 @@
         <property name="startup-notify" type="bool" value="true"/>
       </property>
       <property name="&lt;Alt&gt;&lt;Super&gt;Right" type="empty">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="&lt;Super&gt;t" type="string" value="rxvt">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
     </property>
