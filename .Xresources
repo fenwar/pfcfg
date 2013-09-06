@@ -7,8 +7,8 @@
 
 ! Green text on translucent black background
 URxvt*.depth: 32
-URxvt*.background: [80]#000000
-URxvt*.foreground: #00ff00
+URxvt*.background: [90]#000000
+URxvt*.foreground: #dddddd
 
 ! Fix blue for dark backgrounds
 URxvt*.color4: #3333ff
@@ -18,7 +18,7 @@ URxvt*.geometry: 120x40
 URxvt*.scrollBar: false
 
 ! Set my default preferred font
-URxvt*.font: xft:Source Code Pro:style=regular,size=9,antialias=false,\
+URxvt*.font: xft:Source Code Pro:pixelsize=15,style=Regular,antialias=false,\
              xft:Code2000:antialias=false
 
 ! Include perl font-size extension
@@ -46,4 +46,4 @@ URxvt*.iconFile: /usr/share/icons/oxygen/48x48/apps/utilities-terminal.png
 
 ! Other settings to experiment with
 URxvt*.saveLines: 8192
-! internalBorder - externalBorder
+URxvt*.internalBorder: 4
