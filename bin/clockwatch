@@ -1,0 +1,7 @@
+#!/bin/bash
+DATEFORMAT='+%a %e %b %k:%M:%S'
+echo "Local      : $(date "${DATEFORMAT}")"
+echo "lionbuilder: $(ssh testadmin@lionbuilder -C date \"${DATEFORMAT}\")"
+echo "tcba-osx   : $(ssh teamcity@tcba-osx -C date \"${DATEFORMAT}\")"
+echo "tcba-osx02 : $(ssh teamcity@tcba-osx02 -C date \"${DATEFORMAT}\")"
+
