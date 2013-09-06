@@ -1,6 +1,3 @@
-! Use lightdm to provide user switching
-*newLoginCommand: dm-tool switch-to-greeter
-
 ! Green text on translucent black background
 URxvt*.depth: 32
 URxvt*.background: [80]#000000
