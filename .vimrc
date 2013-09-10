@@ -164,8 +164,8 @@ set titlestring=%{$TERM_TITLE}\ %t\ %m\ (%f)\ -\ VIM!
 
 " Pylint "
 
-au FileType python set makeprg=pylint\ --reports=n\ --output-format=parseable\ %:p
-au FileType python set efm=%A%f:%l:\ [%t%.%#]\ %m,%Z%p^^,%-C%.%#
+au FileType python set makeprg=pylint\ --reports=n\ --include-ids=y\ --output-format=parseable\ %:p
+au FileType python set efm=%A%f:%l:\ [%t%n%.%#]\ %m,%Z%p^^,%-C%.%#
 
 " gvim defaults "
 if has("gui_running")
