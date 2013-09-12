@@ -50,6 +50,7 @@ hi Directory ctermfg=69 cterm=None
 hi Todo term=bold ctermfg=11 ctermbg=none
 
 hi ModeMsg cterm=bold ctermbg=52 ctermfg=11
+hi Visual cterm=reverse ctermfg=7 ctermbg=None
 
 set hlsearch
 hi Search ctermfg=None ctermbg=20
