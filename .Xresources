@@ -13,6 +13,8 @@ URxvt*.foreground: #dddddd
 ! Fix blue for dark backgrounds
 URxvt*.color4: #3333ff
 URxvt*.color12: #6666ff
+URxvt*.colorUL: #eeee55
+URxvt*.underlineColor: #555555
 
 URxvt*.geometry: 120x40
 URxvt*.scrollBar: false
@@ -38,8 +40,9 @@ URxvt.keysym.Control-Right:    \033[1;5C
 ! Disable iso14755 which is bound to C-S-Up/Down
 URxvt*.iso14755: false
 
+URxvt*.cursorColor: #dddd88
 URxvt*.cursorBlink: true
-URxvt*.cursorUnderline: true
+URxvt*.cursorUnderline: false
 URxvt*.pointerBlank: true
 URxvt*.pointerBlankDelay: 10
 
