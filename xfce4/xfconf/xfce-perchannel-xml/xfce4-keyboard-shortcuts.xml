@@ -66,7 +66,7 @@
       <property name="&lt;Alt&gt;&lt;Super&gt;Right" type="empty">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
-      <property name="&lt;Super&gt;t" type="string" value="rxvt">
+      <property name="&lt;Super&gt;t" type="string" value="rxvt -e tmux new-session -t main \; new-window \;">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
     </property>

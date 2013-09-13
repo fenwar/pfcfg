@@ -392,7 +392,7 @@
     </keybind>
     <keybind key="W-t">
       <action name="Execute">
-        <command>rxvt</command>
+        <command>rxvt -e tmux new-session -t main \; new-window \;</command>
         <startupnotify>
           <enabled>true</enabled>
         </startupnotify>
