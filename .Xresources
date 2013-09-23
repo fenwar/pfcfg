@@ -48,7 +48,7 @@ URxvt*.pointerBlankDelay: 10
 
 URxvt*.loginShell: true
 
-URxvt*.iconFile: /usr/share/icons/oxygen/48x48/apps/utilities-terminal.png
+URxvt*.iconFile: /usr/share/icons/hicolor/48x48/apps/xfce-terminal.png
 
 ! Other settings to experiment with
 URxvt*.saveLines: 8192
