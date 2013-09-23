@@ -1,4 +1,5 @@
 #!/bin/bash
+# Run me at terminal launch. See also .tmux.conf
 NEW_SESSION_NAME=paul-$$
 tmux new-session -s ${NEW_SESSION_NAME} -t paul \; new-window \; select-window
 tmux kill-session -t ${NEW_SESSION_NAME}

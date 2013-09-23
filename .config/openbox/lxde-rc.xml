@@ -379,7 +379,7 @@ Copy the file to $HOME/.config/openbox/ instead. -->
     </keybind>
     <keybind key="W-t">
       <action name="Execute">
-        <command>rxvt</command>
+        <command>rxvt -e /home/paul/bin/tmux_start</command>
         <startupnotify>
           <enabled>true</enabled>
         </startupnotify>
