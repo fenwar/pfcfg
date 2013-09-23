@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ "${1}" == "" ] ; then
+  echo "Usage: purge_removed -s|-y"
+fi 
+
+dpkg-query -W --showformat '${db:Status-Abbrev}\t${Package}\n' | grep ^rc | cut -f2 | xargs sudo aptitude purge ${1}
+
+
+
+
