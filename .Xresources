@@ -11,7 +11,7 @@ URxvt*.geometry: 120x40
 URxvt*.scrollBar: false
 
 ! Set my default preferred font
-URxvt*.font: xft:Source Code Pro:size=9,style=Regular,antialias=false,\
+URxvt*.font: xft:Source Code Pro:pixelsize=13,style=Regular,antialias=false,\
              xft:Code2000:antialias=false
 
 ! URxvt*.font: xft:DejaVu Sans Mono:size=9,antialias=false,\
