@@ -1,0 +1,6 @@
+C-j: alias-expand-line
+TAB: menu-complete
+"[Z": menu-complete-backward
+
+set menu-complete-display-prefix on
+
