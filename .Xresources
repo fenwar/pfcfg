@@ -20,7 +20,7 @@ URxvt*.geometry: 120x40
 URxvt*.scrollBar: false
 
 ! Set my default preferred font
-URxvt*.font: xft:Source Code Pro:pixelsize=15,style=Regular,antialias=false,\
+URxvt*.font: xft:Source Code Pro:pixelsize=15,style=Regular,antialias=true,\
              xft:Code2000:antialias=false
 
 ! Include perl font-size extension
