@@ -33,6 +33,7 @@ set numberwidth=5
 " When auto-formatting, use 78 columns. "
 " set textwidth=78 "
 
+" UI Highlighting "
 hi VertSplit ctermfg=233 ctermbg=233 cterm=None
 hi LineNr ctermfg=235 ctermbg=233 cterm=None
 hi CursorLineNr ctermfg=236 ctermbg=17 cterm=None
@@ -44,16 +45,26 @@ hi TabLine cterm=Bold,Italic ctermbg=233 ctermfg=106
 hi TabLineSel cterm=Bold,Italic ctermbg=none ctermfg=11
 hi TabLineFill cterm=Italic ctermbg=233 ctermfg=106
 
-hi Constant ctermfg=131
-hi Comment ctermfg=69 cterm=None
-hi Directory ctermfg=69 cterm=None
-hi Todo term=bold ctermfg=11 ctermbg=none
-
 hi ModeMsg cterm=bold ctermbg=52 ctermfg=11
 hi Visual cterm=reverse ctermfg=7 ctermbg=None
 
 set hlsearch
 hi Search ctermfg=None ctermbg=20
+
+" Syntax Highlighting "
+hi Constant ctermfg=155
+hi Comment ctermfg=81 cterm=None
+hi Directory ctermfg=69 cterm=None
+hi Todo term=bold ctermfg=11 ctermbg=none
+hi Statement ctermfg=166
+hi Type ctermfg=225
+
+" Highlight trailing whitespace "      
+hi TrailingWhiteSpace ctermbg=52 ctermfg=None
+match TrailingWhiteSpace /\s\+$/
+set listchars=eol:¶,tab:»\ ,trail:·,nbsp:·
+hi nontext ctermfg=238
+hi specialkey ctermfg=238
 
 " Fix diff colours "
 hi DiffAdd ctermbg=22 cterm=bold ctermfg=None
