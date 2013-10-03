@@ -116,7 +116,7 @@ map <leader>Q :NERDTreeToggle<cr>
 map <leader>r :setlocal nocursorline<cr>:setlocal cc=0<cr>:NERDTreeFind<cr>:setlocal cursorline<cr>
 
 " LustyExplorer triggers "
-map <leader>b :LustyBufferExplorer<cr>
+""map <leader>b :LustyBufferExplorer<cr>
 map <leader>h :LustyFilesystemExplorer<cr>
 map <leader>f :LustyFilesystemExplorerFromHere<cr>
 map <leader>g :LustyBufferGrep<cr>
@@ -124,8 +124,8 @@ map <leader>g :LustyBufferGrep<cr>
 hi LustySelected ctermfg=3 ctermbg=17
 
 " Taglist triggers "
-map <leader>t :TlistOpen<cr>
-map <leader>T :TlistClose<cr>
+""map <leader>t :TlistOpen<cr>
+""map <leader>T :TlistClose<cr>
 
 set updatetime=250
 
@@ -186,3 +186,13 @@ if has("gui_running")
     set guifont=DejaVu\ Sans\ Mono\ 10
     colorscheme desert
 endif
+
+
+" Command-T "
+let g:CommandTMaxCachedDirectories=8
+let g:CommandTMaxHeight=25
+let g:CommandTMinHeight=1
+let g:CommandTMatchWindowReverse=1
+let g:CommandTClearMap=['<C-w>', '<C-u>']
+hi PFCommandTHighlightColor cterm=bold,underline ctermbg=0
+let g:CommandTHighlightColor='PFCommandTHighlightColor'
