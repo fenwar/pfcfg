@@ -20,7 +20,7 @@ URxvt*.geometry: 120x40
 URxvt*.scrollBar: false
 
 ! Set my default preferred font
-URxvt*.font: xft:Source Code Pro:pixelsize=15,style=Regular,antialias=true,\
+URxvt*.font: xft:Source Code Pro:pixelsize=16,style=Regular,antialias=true,\
              xft:Code2000:antialias=false
 
 ! Include perl font-size extension
@@ -52,4 +52,4 @@ URxvt*.iconFile: /usr/share/icons/hicolor/48x48/apps/xfce-terminal.png
 
 ! Other settings to experiment with
 URxvt*.saveLines: 8192
-URxvt*.internalBorder: 4
+URxvt*.internalBorder: 0
