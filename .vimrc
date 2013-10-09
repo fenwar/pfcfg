@@ -189,10 +189,13 @@ endif
 
 
 " Command-T "
-let g:CommandTMaxCachedDirectories=8
+let g:CommandTMaxCachedDirectories=4
 let g:CommandTMaxHeight=25
 let g:CommandTMinHeight=1
-let g:CommandTMatchWindowReverse=1
+"" let g:CommandTMatchWindowReverse=1
 let g:CommandTClearMap=['<C-w>', '<C-u>']
-hi PFCommandTHighlightColor cterm=bold,underline ctermbg=0
+hi PFCommandTHighlightColor cterm=bold ctermbg=17 ctermfg=11
 let g:CommandTHighlightColor='PFCommandTHighlightColor'
+let g:CommandTScanDotDirectories=1
+let g:CommandTWildIgnore=&wildignore . ",*.git,dist/*"
+
