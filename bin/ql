@@ -1,17 +1,16 @@
 #!/bin/bash
 # Quick play script for Quod Libet.
 
-
-quodlibet --unfilter
+CONTROL_PIPE="$HOME/.quodlibet/control"
+#quodlibet --unfilter
 quodlibet --unqueue=/.*/
-# Print-queue ensures queue is flushed before we enqueue anything else.
-quodlibet --print-queue &>/dev/null
-
+sleep 0.5
 
 if [[ "$1" == "" || "$1" == "?" ]] ; then
-    quodlibet --random=album
+    echo random album >> $CONTROL_PIPE
 else
     quodlibet --enqueue="$*"
 fi
 
-quodlibet --next
+sleep 0.5
+echo next >> $CONTROL_PIPE
