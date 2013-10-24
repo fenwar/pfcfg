@@ -12,7 +12,7 @@ set incsearch
 
 hi ColorColumn ctermbg=236
 ""set cc=80
-hi MatchParen ctermfg=yellow cterm=bold ctermbg=0
+hi MatchParen ctermfg=yellow cterm=bold ctermbg=233
 
 hi CursorLine cterm=None ctermbg=17
 " Only set cursorline on the current window "
