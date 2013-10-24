@@ -131,7 +131,8 @@ set updatetime=250
 
 map <leader>m :make<Up><cr><cr>
 
-" Tab and window switching, the easy way. "
+" Tab and window switching, the easy way... "
+" CTRL + PGUP/PGDN : next/prev window "
 map [5^ :wincmd W<cr>
 map! [5^ :wincmd W<cr>
 map [6^ :wincmd w<cr>
@@ -198,4 +199,6 @@ hi PFCommandTHighlightColor cterm=bold ctermbg=17 ctermfg=11
 let g:CommandTHighlightColor='PFCommandTHighlightColor'
 let g:CommandTScanDotDirectories=1
 let g:CommandTWildIgnore=&wildignore . ",*.git,dist/*"
-
+map <C-e> :CommandT<cr>
+map <C-j> :CommandTBuffer<cr>
+map <C-k> :CommandT<cr>
