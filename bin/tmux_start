@@ -1,6 +1,17 @@
 #!/bin/bash
 # Run me at terminal launch. See also .tmux.conf
-NEW_SESSION_NAME=paul-$$
-tmux new-session -s ${NEW_SESSION_NAME} -t paul \; new-window \; select-window
-tmux kill-session -t ${NEW_SESSION_NAME}
+
+BASE_SESSION_NAME=paul
+
+if $(tmux has-session -t ${BASE_SESSION_NAME}) ; then
+    # create a new grouped session, join it, and kill it when we exit.
+    NEW_SESSION_NAME=${BASE_SESSION_NAME}-$$
+    tmux new-session -s ${NEW_SESSION_NAME} -t ${BASE_SESSION_NAME} \; new-window \; select-window
+    tmux kill-session -t ${NEW_SESSION_NAME}
+
+    # TODO if there's a session, behave differently if there's an attached client
+else
+    # create the base session, join it, and leave it alone
+    tmux new-session -s ${BASE_SESSION_NAME}
+fi
 
