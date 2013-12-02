@@ -442,6 +442,21 @@ Copy the file to $HOME/.config/openbox/ instead. -->
         </else>
       </action>
     </keybind>
+
+    <keybind key="W-F10">
+        <action name="ToggleDecorations"/>
+    </keybind>
+    <keybind key="W-plus">
+        <action name="ToggleMaximize">
+            <direction>vertical</direction>
+        </action>
+    </keybind>
+    <keybind key="W-minus">
+        <action name="ToggleMaximize">
+            <direction>horizontal</direction>
+        </action>
+    </keybind>
+
     <!-- Move windows about (aero snap) -->
     <keybind key="W-A-Down">
       <action name="If">
