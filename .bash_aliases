@@ -23,3 +23,7 @@ alias stt=". set_term_title"
 alias gffs="git flow feature start "
 alias gfff="git flow feature finish "
 alias gff="git flow feature "
+
+alias vims="vim --servername VIM"
+alias vimr="vim --servername VIM --remote"
+
