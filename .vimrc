@@ -1,4 +1,8 @@
+" Some defaults taken from the Debian configuration:
+set nocompatible	" Use Vim defaults instead of 100% vi compatibility
+set backspace=indent,eol,start	" more powerful backspacing
 
+" My config:
 set t_Co=256
 syntax on
 set tabstop=4
@@ -41,9 +45,9 @@ hi StatusLine ctermfg=234 ctermbg=11 cterm=reverse,bold,italic
 hi StatusLineNC ctermfg=233 ctermbg=106 cterm=reverse,italic
 hi Pmenu ctermfg=242 ctermbg=0 cterm=italic
 hi PmenuSel ctermfg=253 ctermbg=22 cterm=italic
-hi TabLine cterm=Bold,Italic ctermbg=233 ctermfg=106
-hi TabLineSel cterm=Bold,Italic ctermbg=none ctermfg=11
-hi TabLineFill cterm=Italic ctermbg=233 ctermfg=106
+hi TabLine cterm=None ctermbg=57 ctermfg=15
+hi TabLineSel cterm=Bold ctermbg=19 ctermfg=11
+hi TabLineFill cterm=None ctermbg=57 ctermfg=15
 
 hi ModeMsg cterm=bold ctermbg=52 ctermfg=11
 hi Visual cterm=reverse ctermfg=7 ctermbg=None
@@ -119,6 +123,7 @@ map <leader>r :setlocal nocursorline<cr>:setlocal cc=0<cr>:NERDTreeFind<cr>:setl
 ""map <leader>b :LustyBufferExplorer<cr>
 map <leader>h :LustyFilesystemExplorer<cr>
 map <leader>f :LustyFilesystemExplorerFromHere<cr>
+map <C-f> :LustyFilesystemExplorerFromHere<cr>
 map <leader>g :LustyBufferGrep<cr>
 
 hi LustySelected ctermfg=3 ctermbg=17
@@ -198,7 +203,15 @@ let g:CommandTClearMap=['<C-w>', '<C-u>']
 hi PFCommandTHighlightColor cterm=bold ctermbg=17 ctermfg=11
 let g:CommandTHighlightColor='PFCommandTHighlightColor'
 let g:CommandTScanDotDirectories=1
-let g:CommandTWildIgnore=&wildignore . ",*.git,dist/*"
+let g:CommandTWildIgnore=&wildignore . ",*.git,dist/*,*.png"
 map <C-e> :CommandT<cr>
 map <C-j> :CommandTBuffer<cr>
 map <C-k> :CommandT<cr>
+
+"" function s:CommandTForCurrentDir()
+""  let pfcurdir = getcwd()
+""  cd %:h
+""  CommandT
+"" endfunction
+"" command! CommandTForCurrentDir call <SID>CommandTForCurrentDir()
+"" map <C-d> :CommandTForCurrentDir<cr>
