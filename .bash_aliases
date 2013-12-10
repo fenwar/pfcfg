@@ -27,3 +27,4 @@ alias gff="git flow feature "
 alias vims="vim --servername VIM"
 alias vimr="vim --servername VIM --remote"
 
+alias GB="git rev-parse --symbolic-full-name --abbrev-ref HEAD"
