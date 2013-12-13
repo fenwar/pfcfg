@@ -1,6 +1,7 @@
 " Some defaults taken from the Debian configuration:
 set nocompatible	" Use Vim defaults instead of 100% vi compatibility
 set backspace=indent,eol,start	" more powerful backspacing
+set ruler
 
 " My config:
 set t_Co=256
@@ -152,6 +153,12 @@ map [7^ :bprev<cr>
 map! [7^ :bprev<cr>
 map [8^ :bnext<cr>
 map! [8^ :bnext<cr>
+
+" Buffer switching, the slightly more Vimmish way... "
+
+map gb :bn<cr>
+map gB :bp<cr>
+
 
 " Close a file without losing the window layout "
 
