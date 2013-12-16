@@ -1,5 +1,5 @@
 #!/bin/bash
-NEW_SESSION_NAME=paul-$$
-tmux new-session -s ${NEW_SESSION_NAME} -t paul \; new-window \; select-window
+NEW_SESSION_NAME=PAUL-$$
+tmux new-session -s ${NEW_SESSION_NAME} -t PAUL \; new-window \; select-window
 tmux kill-session -t ${NEW_SESSION_NAME}
 
