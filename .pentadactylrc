@@ -1,0 +1,11 @@
+"1.1pre
+
+loadplugins '\.(js|penta)$'
+group user
+set guioptions=bBCrsmT
+
+" vim: set ft=pentadactyl:
+
+autocmd LocationChange jira :normal! <C-z>
+autocmd LocationChange fisheye :normal! <C-z>
+
