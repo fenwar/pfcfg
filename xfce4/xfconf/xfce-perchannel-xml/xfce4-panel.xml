@@ -86,8 +86,8 @@
         <value type="string" value="main.py"/>
         <value type="string" value="networkmanager applet"/>
         <value type="string" value="lan-messenger"/>
-        <value type="string" value="rti.linux"/>
         <value type="string" value="volumeicon"/>
+        <value type="string" value="rti.linux"/>
         <value type="string" value="shutter"/>
         <value type="string" value="drop-down terminal"/>
         <value type="string" value="xfce terminal"/>
