@@ -1,10 +1,10 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=Nautilus
-Comment=Nautilus
-Exec=nautilus
-Icon=nautilus
+Name=Thunar
+Comment=thunar
+Exec=thunar
+Icon=system-file-manager
 Path=
 Terminal=false
 StartupNotify=true

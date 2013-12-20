@@ -2,7 +2,7 @@
 Version=1.0
 Type=Application
 Exec=exo-open --launch TerminalEmulator
-Icon=xfce4-terminal
+Icon=xterm-color
 StartupNotify=false
 Terminal=false
 Categories=Utility;X-XFCE;X-Xfce-Toplevel;
