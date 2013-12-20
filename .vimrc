@@ -203,8 +203,8 @@ endif
 
 " Command-T "
 let g:CommandTMaxCachedDirectories=4
-let g:CommandTMaxHeight=25
-let g:CommandTMinHeight=1
+let g:CommandTMaxHeight=10
+let g:CommandTMinHeight=10
 "" let g:CommandTMatchWindowReverse=1
 let g:CommandTClearMap=['<C-w>', '<C-u>']
 hi PFCommandTHighlightColor cterm=bold ctermbg=17 ctermfg=11
