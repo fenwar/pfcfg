@@ -15,5 +15,14 @@ set guioptions=bBCrsmT
 map -m=i,n \\ <C-z>
 map -m=i,n <S-Esc> <C-z>
 
-map -m=n J 8j
-map -m=n K 8k
+nnoremap J j
+nnoremap K k
+
+nnoremap j 8j
+nnoremap k 8k
+
+nnoremap <Down> 8j
+nnoremap <Up> 8k
+nnoremap <S-Down> j
+nnoremap <S-Up> k
+
