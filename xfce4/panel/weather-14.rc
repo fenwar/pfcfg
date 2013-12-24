@@ -1,7 +1,7 @@
-loc_name=Northenden, Manchester
-lat=53.406191
-lon=-2.258881
-msl=36
+loc_name=Moor End, Northenden
+lat=53.406465
+lon=-2.261508
+msl=37
 timezone=Europe/London
 cache_file_max_age=172800
 power_saving=false
