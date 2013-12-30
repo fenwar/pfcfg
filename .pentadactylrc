@@ -1,0 +1,28 @@
+"1.1pre
+
+loadplugins '\.(js|penta)$'
+group user
+set guioptions=bBCrsmT
+
+" vim: set ft=pentadactyl:
+
+" autocmd LocationChange jira :normal! <C-z>
+" autocmd LocationChange fisheye :normal! <C-z>
+
+" nmap -builtin <C-v> <C-v><C-v>
+" imap -builtin <C-v> <C-v><C-v>
+
+map -m=i,n \\ <C-z>
+map -m=i,n <S-Esc> <C-z>
+
+nnoremap J j
+nnoremap K k
+
+nnoremap j 8j
+nnoremap k 8k
+
+nnoremap <Down> 8j
+nnoremap <Up> 8k
+nnoremap <S-Down> j
+nnoremap <S-Up> k
+
