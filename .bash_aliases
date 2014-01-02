@@ -28,3 +28,9 @@ alias vims="vim --servername VIM"
 alias vimr="vim --servername VIM --remote"
 
 alias GB="git rev-parse --symbolic-full-name --abbrev-ref HEAD"
+
+# alias gbi="git branch --no-merged | xargs -i__ git log -1 --format=format:\"%w($(tput cols),0,81)__ %>|(80,mtrunc)%d %N\" __"
+# alias gbi="git branch --no-merged | xargs -i__ git log -1 --format=format:\"%w($(tput cols),0,48)__%>>|(47,trunc)%h%d%n%N\" __"
+alias gbi="git branch --no-merged | xargs -i__ git log -1 --format=format:\"__%>>|(47,trunc)%h%d%n%w($(tput cols),48,48)%N\" __"
+
+
