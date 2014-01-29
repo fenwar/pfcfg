@@ -1,5 +1,5 @@
 WebBrowser=iceweasel
 MailReader=icedove
-FileManager=nautilus
+FileManager=Thunar
 TerminalEmulator=xfce4-terminal
 
