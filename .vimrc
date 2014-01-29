@@ -15,11 +15,11 @@ set ignorecase
 set smartcase
 set incsearch
 
-hi ColorColumn ctermbg=236
+hi ColorColumn ctermbg=236 guibg=Grey10
 ""set cc=80
 hi MatchParen ctermfg=yellow cterm=bold ctermbg=233
 
-hi CursorLine cterm=None ctermbg=17
+hi CursorLine cterm=None ctermbg=17 guibg=DarkBlue
 " Only set cursorline on the current window "
 augroup CursorLine
     au!
@@ -28,8 +28,8 @@ augroup CursorLine
 augroup END
 ""set cursorline
 " Change cursorline colour when in insert mode "
-autocmd InsertEnter * hi CursorLine cterm=None ctermbg=52
-autocmd InsertLeave,CursorMoved,CmdwinEnter * hi CursorLine cterm=None ctermbg=17
+autocmd InsertEnter * hi CursorLine cterm=None ctermbg=52 guibg=DarkRed
+autocmd InsertLeave,CursorMoved,CmdwinEnter * hi CursorLine cterm=None ctermbg=17 guibg=DarkBlue
 
 set nowrap
 set linebreak
@@ -195,9 +195,15 @@ au FileType python set efm=%A%f:%l:\ [%t%n%.%#]\ %m,%Z%p^^,%-C%.%#
 " gvim defaults "
 if has("gui_running")
     set co=120
-    set lines=40
-    set guifont=DejaVu\ Sans\ Mono\ 10
-    colorscheme desert
+    set lines=30
+    set guifont=Source\ Code\ Pro\ 9
+    colorscheme murphy
+    set guioptions-=m
+    set guioptions-=T
+    " This is mainly going to be used from Pentadactyl, so: "
+    set wrap
+    set colorcolumn=0
+    hi ColorColumn ctermbg=236 guibg=Grey10
 endif
 
 
