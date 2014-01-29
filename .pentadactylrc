@@ -26,3 +26,17 @@ nnoremap <Up> 8k
 nnoremap <S-Down> j
 nnoremap <S-Up> k
 
+" Inconsistently working attempt to clear the JIRA action dialog after pressing '.' "
+" nnoremap . <C-v>.:javascript var box = content.document.getElementById("shifter-dialog-queryable-container");if(box){box.children[1].click();box.children[0].click();}<cr>gi
+
+" Always pass through the '.' key "
+nnoremap . <C-v>.
+
+set passkeys+=mail.google.com:jkyosx,gi
+set passkeys+=jira:ejknop.123,ga,gi
+set passkeys+=fisheye:jkynp[]
+set passkeys+=feedly.com:jkov
+
+map -m=i,n <C-n> :winopen<cr>
+map -m=i,n <C-t> :tabopen<cr>
+
