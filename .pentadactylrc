@@ -32,9 +32,11 @@ nnoremap <S-Up> k
 " Always pass through the '.' key "
 nnoremap . <C-v>.
 
-set passkeys+=mail.google.com:jkyosx,gi
 set passkeys+=jira:ejknop.123,ga,gi
 set passkeys+=fisheye:jkynp[]<Down><Up>
+set passkeys+=confluence:<C-i>
+
+set passkeys+=mail.google.com:jkyosx,gi
 set passkeys+=feedly.com:jkov
 
 map -m=i,n <C-n> :winopen<cr>
