@@ -1,0 +1,11 @@
+#!/bin/sh
+echo Comparing ${1} to ${2}...
+compare $2 $1 -metric RMSE -subimage-search -highlight-color magenta :- |\
+    montage -geometry +0+0 $1 - $2 :- |\
+    display -title "$1" -size +0+0 -geometry +0+0 -
+
+# TODO
+# cope with either side being empty
+# better image viewer than display? (pan sideways would be nice)
+# resize the window to span displays where necessary
+# Make this only run on git difftool, not git diff. (Use exif for that)
