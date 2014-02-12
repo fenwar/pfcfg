@@ -1,0 +1,29 @@
+[user]
+	name = Paul Fenney
+	email = paul.fenney@pennantplc.co.uk
+[color]
+	ui = auto
+	status = always
+[core]
+	excludesfile = /home/paulf/pfcfg/.pf-gitignore
+    filemode = true
+	attributesfile = /home/paulf/.gitattributes
+[push]
+	default = current
+[diff]
+	tool = meld
+[merge]
+	tool = meld
+	defaultToUpstream = true
+[difftool]
+	prompt = false
+[mergetool]
+	prompt = false
+	keepBackup = false
+[rerere]
+	enabled = true
+[diff "image"]
+    tool = imgdiff
+[difftool "imgdiff"]
+	cmd = /home/paulf/bin/imgdiff
+    trustExitCode = false
