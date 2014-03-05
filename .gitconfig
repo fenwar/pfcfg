@@ -25,5 +25,5 @@
 [diff "image"]
     tool = imgdiff
 [difftool "imgdiff"]
-	cmd = /home/paulf/bin/imgdiff
+	cmd = /home/paulf/bin/imgdiff $REMOTE $LOCAL
     trustExitCode = false

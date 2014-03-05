@@ -1,11 +1,23 @@
 #!/bin/sh
+
+TMPPATH=/tmp/tmp_montage.png
+
+
 echo Comparing ${1} to ${2}...
 compare $2 $1 -metric RMSE -subimage-search -highlight-color magenta :- |\
-    montage -geometry +0+0 $1 - $2 :- |\
-    display -title "$1" -size +0+0 -geometry +0+0 -
+    montage -geometry +0+0 $1 - $2 $TMPPATH
+
+sxiv -Z -F -g3600x1000+0+0 -N"hello" $TMPPATH
+#pqiv -P "0,0" -i -c --disable-scaling $TMPPATH
+#qiv -e -f $TMPPATH
+#ristretto $TMPPATH
+#xloadimage -fullscreen stdin
+#display -title "Image Diff: $1" -geometry +0+0 -resize 1920x $TMPPATH
+
+rm $TMPPATH
 
 # TODO
 # cope with either side being empty
-# better image viewer than display? (pan sideways would be nice)
+# better image viewer than display?
 # resize the window to span displays where necessary
 # Make this only run on git difftool, not git diff. (Use exif for that)
