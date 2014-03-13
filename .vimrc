@@ -221,6 +221,10 @@ map <C-e> :CommandT<cr>
 map <C-j> :CommandTBuffer<cr>
 map <C-k> :CommandT<cr>
 
+map! <C-e> <Esc>:CommandT<cr>
+map! <C-j> <Esc>:CommandTBuffer<cr>
+map! <C-k> <Esc>:CommandT<cr>
+
 "" function s:CommandTForCurrentDir()
 ""  let pfcurdir = getcwd()
 ""  cd %:h
@@ -228,3 +232,5 @@ map <C-k> :CommandT<cr>
 "" endfunction
 "" command! CommandTForCurrentDir call <SID>CommandTForCurrentDir()
 "" map <C-d> :CommandTForCurrentDir<cr>
+
+map <F5> :bufdo checktime<cr>
