@@ -27,3 +27,16 @@
 [difftool "imgdiff"]
 	cmd = /home/paulf/bin/imgdiff $REMOTE $LOCAL
     trustExitCode = false
+[gitflow "feature.start"]
+	fetch = true
+[gitflow "feature.finish"]
+	fetch = true
+[gitflow "hotfix.start"]
+	fetch = true
+[gitflow "hotfix.finish"]
+	fetch = true
+[gitflow "hotfix.release.start"]
+[gitflow "release.start"]
+	fetch = true
+[gitflow "release.finish"]
+	fetch = true
