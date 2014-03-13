@@ -1,9 +1,9 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=Thunar
-Comment=thunar
-Exec=thunar
+Name=Caja
+Comment=Caja File Manager
+Exec=caja --sm-client-disable --no-desktop
 Icon=system-file-manager
 Path=
 Terminal=false
