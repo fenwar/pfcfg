@@ -14,6 +14,8 @@
     <value type="int" value="2"/>
     <value type="int" value="1"/>
     <value type="int" value="5"/>
+    <value type="int" value="6"/>
+    <value type="int" value="7"/>
     <property name="action-4" type="empty">
       <property name="type" type="int" value="0"/>
       <property name="pattern" type="string" value="#"/>
@@ -41,6 +43,16 @@
     <property name="action-5" type="empty">
       <property name="pattern" type="string" value="ql"/>
       <property name="command" type="string" value="/home/paulf/bin/ql %s"/>
+      <property name="save" type="bool" value="true"/>
+    </property>
+    <property name="action-6" type="empty">
+      <property name="pattern" type="string" value="rem"/>
+      <property name="command" type="string" value="/home/paulf/bin/rem %s"/>
+      <property name="save" type="bool" value="true"/>
+    </property>
+    <property name="action-7" type="empty">
+      <property name="pattern" type="string" value="$"/>
+      <property name="command" type="string" value="rxvt -e %s"/>
       <property name="save" type="bool" value="true"/>
     </property>
   </property>
