@@ -1,25 +1,24 @@
 #!/bin/sh
 
+echo Comparison of ${3}
+
 TMPPATH=/tmp/tmp_montage.png
 
 
-echo Comparing ${1} to ${2}...
-# Note: ${1} = current version of image
-# ${2} = previous version
+# Note:
+# ${1} = $LOCAL (original version of image)
+# ${2} = $REMOTE (new version of image)
 
 # resize image from previous version to match current.
-CURRENT_SIZE=$(identify -format "%wx%h" ${1})
-PREV_SIZE=$(identify -format "%wx%h" ${2})
+OLD_SIZE=$(identify -format "%wx%h" ${1})
+NEW_SIZE=$(identify -format "%wx%h" ${2})
 
-echo ${CURRENT_SIZE}, ${PREV_SIZE}
+echo ${OLD_SIZE}, ${NEW_SIZE}
 
 
-convert -resize "${CURRENT_SIZE}!" ${2} :- |\
-    compare - $1 -metric AE -subimage-search $TMPPATH | sxiv $TMPPATH
+convert -resize "${NEW_SIZE}!" ${1} /tmp/old-resized.png
 
-exit 0
-
-compare $2 $1 -metric RMSE -subimage-search -highlight-color magenta :- |\
+compare /tmp/old-resized.png $2 -metric RMSE -subimage-search -highlight-color magenta :- |\
     montage -geometry +0+0 $1 - $2 $TMPPATH
 
 sxiv -Z -F -g3600x1100+0+0 -N"hello" $TMPPATH
