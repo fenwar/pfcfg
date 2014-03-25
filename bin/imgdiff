@@ -4,10 +4,25 @@ TMPPATH=/tmp/tmp_montage.png
 
 
 echo Comparing ${1} to ${2}...
+# Note: ${1} = current version of image
+# ${2} = previous version
+
+# resize image from previous version to match current.
+CURRENT_SIZE=$(identify -format "%wx%h" ${1})
+PREV_SIZE=$(identify -format "%wx%h" ${2})
+
+echo ${CURRENT_SIZE}, ${PREV_SIZE}
+
+
+convert -resize "${CURRENT_SIZE}!" ${2} :- |\
+    compare - $1 -metric AE -subimage-search $TMPPATH | sxiv $TMPPATH
+
+exit 0
+
 compare $2 $1 -metric RMSE -subimage-search -highlight-color magenta :- |\
     montage -geometry +0+0 $1 - $2 $TMPPATH
 
-sxiv -Z -F -g3600x1000+0+0 -N"hello" $TMPPATH
+sxiv -Z -F -g3600x1100+0+0 -N"hello" $TMPPATH
 #pqiv -P "0,0" -i -c --disable-scaling $TMPPATH
 #qiv -e -f $TMPPATH
 #ristretto $TMPPATH
