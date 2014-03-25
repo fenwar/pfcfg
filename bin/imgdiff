@@ -4,7 +4,7 @@ TMPPATH=/tmp/tmp_montage.png
 
 
 echo Comparing ${1} to ${2}...
-compare $2 $1 -metric RMSE -subimage-search -highlight-color magenta :- |\
+compare $1 $2 -metric RMSE -subimage-search -highlight-color magenta :- |\
     montage -geometry +0+0 $1 - $2 $TMPPATH
 
 sxiv -Z -F -g3600x1000+0+0 -N"hello" $TMPPATH
