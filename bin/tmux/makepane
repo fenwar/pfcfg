@@ -1,0 +1,16 @@
+#!/bin/bash
+# Make tmux re-run the last command that was run in $MAKEPANE
+
+tmux send-keys -t ${MAKEPANE} C-p Enter
+
+# Maybe in future, if ${MAKECMD} is set, run that command instead.
+
+# The reason I don't just do run-shell -t ${MAKEPANE} is that I don't get the
+# history and any scrollback through previous results.
+# Problems : if you split any panes before $MAKEPANE, you end up changing the
+# index of the pane and thus you have to update MAKEPANE. It would be nice if
+# the pane could have some kind of reference besides the SESSION:WINDOW.PANE
+# notation?
+
+# Or perhaps if only MAKEPANE has a certain environment variable set, we could
+# search for that pane and choose it as the target for our command execution.
