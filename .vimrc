@@ -65,6 +65,7 @@ hi Statement ctermfg=166
 hi Type ctermfg=225
 
 " Highlight trailing whitespace "      
+    
 hi TrailingWhiteSpace ctermbg=52 ctermfg=None
 match TrailingWhiteSpace /\s\+$/
 set listchars=eol:¶,tab:»\ ,trail:·,nbsp:·
