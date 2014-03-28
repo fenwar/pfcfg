@@ -70,6 +70,7 @@
         <value type="string" value="main.py"/>
         <value type="string" value="networkmanager applet"/>
         <value type="string" value="lan-messenger"/>
+        <value type="string" value="caja"/>
         <value type="string" value="volumeicon"/>
         <value type="string" value="rti.linux"/>
         <value type="string" value="shutter"/>
@@ -81,6 +82,7 @@
         <value type="string" value="volti"/>
         <value type="string" value="scp-dbus-service.py"/>
         <value type="string" value="remmina remote desktop client"/>
+        <value type="string" value="remmina"/>
       </property>
       <property name="show-frame" type="bool" value="false"/>
       <property name="size-max" type="uint" value="44"/>
