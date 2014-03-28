@@ -1,5 +1,7 @@
 --ignore-file=match:/min\.js$/
 --ignore-file=match:/min\.css$/
 --ignore-file=match:/^tags$/
+--ignore-dir=docs/
 --ignore-dir=dist/
 --ignore-dir=dist-patch/
+--ignore-dir=dist-debugtools/
