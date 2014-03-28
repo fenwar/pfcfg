@@ -27,9 +27,9 @@ else
     MAX_HEIGHT=${NEW_SIZE[1]}
 fi
 
-echo OLD: ${OLD_SIZE[0]}x${OLD_SIZE[1]}, \
-     NEW: ${NEW_SIZE[0]}x${NEW_SIZE[1]}, \
-     Resizing to ${MAX_WIDTH}x${MAX_HEIGHT}
+#echo OLD: ${OLD_SIZE[0]}x${OLD_SIZE[1]}, \
+#     NEW: ${NEW_SIZE[0]}x${NEW_SIZE[1]}, \
+#     Resizing to ${MAX_WIDTH}x${MAX_HEIGHT}
 
 convert -extent "${MAX_WIDTH}x${MAX_HEIGHT}" -background black ${1} ${TMP_OLD}
 convert -extent "${MAX_WIDTH}x${MAX_HEIGHT}" -background black ${2} ${TMP_NEW}
