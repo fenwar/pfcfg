@@ -12,6 +12,9 @@ if [ "$1" = "up" ] ; then
     NEW_VOLUME=$(($SINK_VOLUME + $VOLUME_STEP))
 elif [ "$1" = "down" ] ; then
     NEW_VOLUME=$(($SINK_VOLUME - $VOLUME_STEP))
+elif [ "$1" = "mute" ] ; then
+    # Toggle mute
+    pactl set-sink-mute $SINK_INDEX toggle
 else
     echo $SINK_NAME
     echo $SINK_VOLUME
