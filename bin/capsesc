@@ -1,9 +1,13 @@
 #!/bin/bash
 # OLD: map CAPS LOCK key to ESCAPE
 #xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape' &>/dev/null
-
-
 # can I just pass a script to #!/usr/bin/xmodmap ?
-
 # NEW: trying to map Caps Lock to Ctrl , then I will use xcape for Ctrl -> Esc
-xmodmap -e 'clear Lock' -e 'keycode 0x42 = Control_L' &>/dev/null
+# Disable auto-repeat for the Caps lock key
+# xset -r 66
+xmodmap -e 'remove Lock = Caps_Lock' -e 'keycode 66 = Control_L' -e 'add Control = Control_L' &>/dev/null
+
+# Run xcape to map a press-and-release of Ctrl to Esc:
+killall xcape
+${HOME}/src/xcape/xcape
+
