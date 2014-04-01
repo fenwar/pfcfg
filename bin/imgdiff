@@ -2,7 +2,10 @@
 
 echo Comparison of ${3}
 
-TMPROOT=/tmp
+#TMPROOT=/tmp
+TMPROOT=${XDG_RUNTIME_DIR}/tmp/imgdiff
+
+mkdir -p ${TMPROOT}
 
 TMPPATH=${TMPROOT}/tmp_montage.png
 TMP_OLD=${TMPROOT}/old-resized.png
