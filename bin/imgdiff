@@ -2,9 +2,11 @@
 
 echo Comparison of ${3}
 
-TMPPATH=/tmp/tmp_montage.png
-TMP_OLD=/tmp/old-resized.png
-TMP_NEW=/tmp/new-resized.png
+TMPROOT=/tmp
+
+TMPPATH=${TMPROOT}/tmp_montage.png
+TMP_OLD=${TMPROOT}/old-resized.png
+TMP_NEW=${TMPROOT}/new-resized.png
 
 
 # Note:
