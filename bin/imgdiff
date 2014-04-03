@@ -7,9 +7,9 @@ TMPROOT=${XDG_RUNTIME_DIR}/tmp/imgdiff
 
 mkdir -p ${TMPROOT}
 
-TMPPATH=${TMPROOT}/tmp_montage.png
-TMP_OLD=${TMPROOT}/old-resized.png
-TMP_NEW=${TMPROOT}/new-resized.png
+TMPPATH=${TMPROOT}/tmp_00_montage.png
+TMP_OLD=${TMPROOT}/tmp_01_old-resized.png
+TMP_NEW=${TMPROOT}/tmp_02_new-resized.png
 
 if [ "${1}" == "/dev/null" ] ; then
     echo "New image added."
@@ -51,7 +51,7 @@ else
     compare ${TMP_OLD} ${TMP_NEW} -metric RMSE -highlight-color magenta :- |\
         montage -geometry +0+0 ${TMP_OLD} - ${TMP_NEW} ${TMPPATH}
 
-    sxiv -Z -F -d -g$((MAX_WIDTH * 3))x1100+0+0 -N"hello" ${TMPPATH}
+    sxiv -Z -F -d -g$((MAX_WIDTH * 3))x1100+0+0 -N"hello" ${TMPROOT}/*.png
     #pqiv -P "0,0" -i -c --disable-scaling $TMPPATH
     #qiv -e -f $TMPPATH
     #ristretto $TMPPATH
