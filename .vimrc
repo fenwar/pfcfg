@@ -235,3 +235,5 @@ map! <C-k> <Esc>:CommandT<cr>
 "" map <C-d> :CommandTForCurrentDir<cr>
 
 map <F5> :bufdo checktime<cr>
+
+map <C-h> :bro ol<cr>
