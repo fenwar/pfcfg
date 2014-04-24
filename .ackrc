@@ -1,3 +1,4 @@
+--type-set=styl:ext:styl
 --ignore-file=match:/min\.js$/
 --ignore-file=match:/min\.css$/
 --ignore-file=match:/^tags$/
