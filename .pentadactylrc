@@ -2,7 +2,8 @@
 
 loadplugins '\.(js|penta)$'
 group user
-set guioptions=bBCrsmT
+" set guioptions=brBCsmT
+set guioptions=brBCs
 
 " vim: set ft=pentadactyl:
 
@@ -39,8 +40,12 @@ set passkeys+=confluence:ke<C-i><C-v>
 set passkeys+=mail.google.com:jkyosx,gi
 set passkeys+=feedly.com:jkov
 
+set passkeys+=pennantplc.slack.com:/
+
 map -m=i,n <C-n> :winopen<cr>
 map -m=i,n <C-t> :tabopen<cr>
 
-map -m=i,n <C-l> <Esc>o
+map -m=i,n <C-l> <Esc>O
+map -m=i,n <A-d> <Esc>O
+
 map -m=i,n <C-p> <Esc><A-b>
