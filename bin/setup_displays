@@ -5,7 +5,7 @@ MON_PRIMARY=HDMI3
 MON_RIGHT=VGA1
 
 xrandr --output $MON_PRIMARY --auto --primary
-xrandr --output $MON_LEFT --left-of $MON_PRIMARY
-xrandr --output $MON_RIGHT --pos 3840x144
+xrandr --output $MON_LEFT --auto --left-of $MON_PRIMARY
+xrandr --output $MON_RIGHT --auto --right-of $MON_PRIMARY
 
 compiz --replace &
