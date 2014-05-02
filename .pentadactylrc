@@ -49,3 +49,10 @@ map -m=i,n <C-l> <Esc>O
 map -m=i,n <A-d> <Esc>O
 
 map -m=i,n <C-p> <Esc><A-b>
+
+" Enable hints on all <a> elements, because people use them without hrefs sometimes. "
+" This might be overkill and I'll need to add specific rules, but let's see. "
+set hinttags+=a
+
+" If the above is indeed overkill, then I want at least the following to make slack usable with Pentadactyl: "
+" #flex_menu,a#flex_toggle "
