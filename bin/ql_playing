@@ -1,0 +1,8 @@
+#!/bin/bash
+NOW_PLAYING=$(quodlibet --print-playing | \
+                  sed -e "s/ - /\r\(/" -e"s/ - /: Track /" -e"s/ - /)\r/")
+if [ -n "${NOW_PLAYING}" ] ; then
+    echo "Now playing:"
+    echo ${NOW_PLAYING}
+fi
+
