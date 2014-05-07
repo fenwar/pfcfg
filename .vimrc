@@ -197,7 +197,8 @@ au FileType python set efm=%A%f:%l:\ [%t%n%.%#]\ %m,%Z%p^^,%-C%.%#
 if has("gui_running")
     set co=120
     set lines=30
-    set guifont=Source\ Code\ Pro\ 9
+    " set guifont=Source\ Code\ Pro\ 9
+    set guifont=Ubuntu\ Mono\ 12
     colorscheme murphy
     set guioptions-=m
     set guioptions-=T
