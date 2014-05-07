@@ -20,7 +20,9 @@ URxvt*.geometry: 120x40
 URxvt*.scrollBar: false
 
 ! Set my default preferred font
-URxvt*.font: xft:Source Code Pro:pixelsize=15,style=Regular,antialias=true,\
+!URxvt*.font: xft:Source Code Pro:pixelsize=15,style=Regular,antialias=true,\
+!             xft:Code2000:antialias=false
+URxvt*.font: xft:Ubuntu Mono:pixelsize=16,style=Regular,antialias=true,\
              xft:Code2000:antialias=false
 
 ! Include perl font-size extension
