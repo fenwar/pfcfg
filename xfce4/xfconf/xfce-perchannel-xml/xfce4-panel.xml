@@ -26,7 +26,6 @@
         <value type="int" value="24"/>
         <value type="int" value="7"/>
         <value type="int" value="3"/>
-        <value type="int" value="25"/>
         <value type="int" value="23"/>
         <value type="int" value="22"/>
         <value type="int" value="16"/>
@@ -171,7 +170,6 @@
       <property name="style" type="uint" value="0"/>
     </property>
     <property name="plugin-23" type="string" value="genmon"/>
-    <property name="plugin-25" type="string" value="embed"/>
     <property name="clipman" type="empty">
       <property name="tweaks" type="empty">
         <property name="never-confirm-history-clear" type="bool" value="false"/>
