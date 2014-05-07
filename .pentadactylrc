@@ -34,7 +34,7 @@ nnoremap <S-Up> k
 nnoremap . <C-v>.
 
 set passkeys+=jira:ejknop.123/,ga,gi
-set passkeys+=fisheye:jkynpF[]<Down><Up>
+set passkeys+=fisheye:jkynpF[]<Down><Up><Left><Right>
 set passkeys+=confluence:ke<C-i><C-v>
 
 set passkeys+=mail.google.com:jkyosx,gi
