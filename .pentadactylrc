@@ -43,7 +43,7 @@ set passkeys+=feedly.com:jkov
 set passkeys+=pennantplc.slack.com:/
 
 map -m=i,n <C-n> :winopen<cr>
-map -m=i,n <C-t> :tabopen<cr>
+" map -m=i,n <C-t> :tabopen<cr>
 
 map -m=i,n <C-l> <Esc>O
 map -m=i,n <A-d> <Esc>O
