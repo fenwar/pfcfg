@@ -1,0 +1,8 @@
+# Vertically tile two separate tmux windows into a single two-paned window.
+
+# No assumptions are made about the behaviour when either original window
+# already contains splits. This is just a convenience method to suit my
+# workflow in Vim where I sometimes want full screen Vim, sometimes a full
+# screen shell, and sometimes both paned, with a single keypress.
+
+
