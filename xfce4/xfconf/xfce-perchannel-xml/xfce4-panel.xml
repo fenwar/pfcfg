@@ -59,7 +59,7 @@
       <property name="position" type="string" value="p=12;x=981;y=1175"/>
       <property name="output-name" type="string" value="HDMI2"/>
       <property name="position-locked" type="bool" value="true"/>
-      <property name="size" type="uint" value="26"/>
+      <property name="size" type="uint" value="22"/>
       <property name="length" type="uint" value="100"/>
       <property name="background-style" type="uint" value="1"/>
       <property name="background-alpha" type="uint" value="90"/>
@@ -79,7 +79,7 @@
     <property name="panel-3" type="empty">
       <property name="position" type="string" value="p=10;x=2872;y=1175"/>
       <property name="output-name" type="string" value="HDMI3"/>
-      <property name="size" type="uint" value="26"/>
+      <property name="size" type="uint" value="22"/>
       <property name="length" type="uint" value="100"/>
       <property name="length-adjust" type="bool" value="false"/>
       <property name="background-style" type="uint" value="1"/>
@@ -101,7 +101,7 @@
       <property name="position" type="string" value="p=12;x=4813;y=1175"/>
       <property name="output-name" type="string" value="VGA1"/>
       <property name="position-locked" type="bool" value="true"/>
-      <property name="size" type="uint" value="26"/>
+      <property name="size" type="uint" value="22"/>
       <property name="length" type="uint" value="100"/>
       <property name="length-adjust" type="bool" value="false"/>
       <property name="background-style" type="uint" value="1"/>
@@ -217,11 +217,13 @@
       <property name="flat-buttons" type="bool" value="true"/>
       <property name="show-handle" type="bool" value="false"/>
       <property name="show-labels" type="bool" value="true"/>
-      <property name="sort-order" type="uint" value="4"/>
+      <property name="sort-order" type="uint" value="3"/>
       <property name="window-scrolling" type="bool" value="false"/>
       <property name="show-wireframes" type="bool" value="true"/>
       <property name="switch-workspace-on-unminimize" type="bool" value="true"/>
       <property name="include-all-monitors" type="bool" value="true"/>
+      <property name="include-all-workspaces" type="bool" value="true"/>
+      <property name="grouping" type="uint" value="0"/>
     </property>
     <property name="plugin-24" type="string" value="separator">
       <property name="expand" type="bool" value="true"/>
