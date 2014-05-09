@@ -51,7 +51,16 @@ else
     compare ${TMP_OLD} ${TMP_NEW} -metric RMSE -highlight-color magenta :- |\
         montage -geometry +0+0 ${TMP_OLD} - ${TMP_NEW} ${TMPPATH}
 
-    sxiv -Z -F -d -g$((MAX_WIDTH * 3))x1100+0+0 -N"hello" ${TMPROOT}/*.png
+    # set up window geometry so the window is centred on the screen
+    # TODO scrape desktop width out of xrandr or something:
+    #DESKTOP_WIDTH=5760
+    #VIEWER_WIDTH=$((MAX_WIDTH * 3))
+    #VIEWER_X=$(((DESKTOP_WIDTH - VIEWER_WIDTH) / 2))
+    VIEWER_WIDTH=$((5760 - 288))    # centred except for my panel
+    VIEWER_X=0
+    # TODO at present I'm just managing this through CCSM as I need it to span displays.
+    echo attempting to set geometry as -g${VIEWER_WIDTH}x1100+${VIEWER_X}+0
+    sxiv -Z -F -d -g${VIEWER_WIDTH}x1100+${VIEWER_X}+0 -N"imgdiff" ${TMPROOT}/*.png
     #pqiv -P "0,0" -i -c --disable-scaling $TMPPATH
     #qiv -e -f $TMPPATH
     #ristretto $TMPPATH
