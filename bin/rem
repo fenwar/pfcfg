@@ -5,14 +5,16 @@
 REMDIR=${HOME}/.remmina
 
 # first, see if we have a remmina file containing that hostname
-REMFILE=$(grep -ilm1 "server=${1}" ${REMDIR}/*)
+REMFILE=$(grep -ilm1 "server=${1}" ${REMDIR}/*.remmina)
 
 # if this hasn't given us anything, see if we have a remmina file with that
 # "connection name"
 if [ $? -eq 1 ]; then
-    REMFILE=$(grep -ilm1 "name=${1}" ${REMDIR}/*)
+    REMFILE=$(grep -ilm1 "name=${1}" ${REMDIR}/*.remmina)
 fi
 
 # Now open whatever we've found in remmina. If we still haven't got anything,
 # this will just open the main window.
+echo $REMFILE
+
 remmina -c ${REMFILE}
