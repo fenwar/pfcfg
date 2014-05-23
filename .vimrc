@@ -215,6 +215,7 @@ let g:CommandTMaxHeight=10
 let g:CommandTMinHeight=10
 "" let g:CommandTMatchWindowReverse=1
 let g:CommandTClearMap=['<C-w>', '<C-u>']
+let g:CommandTCancelMap=['<C-c>', '<Esc>']
 hi PFCommandTHighlightColor cterm=bold ctermbg=17 ctermfg=11
 let g:CommandTHighlightColor='PFCommandTHighlightColor'
 let g:CommandTScanDotDirectories=1
