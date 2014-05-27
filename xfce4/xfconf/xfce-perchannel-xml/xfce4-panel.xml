@@ -113,9 +113,9 @@
         <value type="uint" value="65535"/>
       </property>
       <property name="plugin-ids" type="array">
-        <value type="int" value="33"/>
-        <value type="int" value="35"/>
         <value type="int" value="34"/>
+        <value type="int" value="35"/>
+        <value type="int" value="19"/>
       </property>
     </property>
   </property>
@@ -289,10 +289,6 @@
       <property name="show-wireframes" type="bool" value="true"/>
       <property name="sort-order" type="uint" value="4"/>
     </property>
-    <property name="plugin-33" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-      <property name="expand" type="bool" value="true"/>
-    </property>
     <property name="plugin-34" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
       <property name="expand" type="bool" value="true"/>
@@ -305,6 +301,7 @@
       <property name="window-scrolling" type="bool" value="false"/>
       <property name="sort-order" type="uint" value="4"/>
     </property>
+    <property name="plugin-19" type="string" value="separator"/>
   </property>
   <property name="configver" type="int" value="2"/>
 </channel>
