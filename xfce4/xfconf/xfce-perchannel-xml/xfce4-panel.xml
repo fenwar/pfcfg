@@ -78,7 +78,7 @@
     </property>
     <property name="panel-3" type="empty">
       <property name="position" type="string" value="p=10;x=2872;y=1175"/>
-      <property name="output-name" type="string" value="HDMI3"/>
+      <property name="output-name" type="string" value="HDMI1"/>
       <property name="size" type="uint" value="22"/>
       <property name="length" type="uint" value="100"/>
       <property name="length-adjust" type="bool" value="false"/>
@@ -301,7 +301,10 @@
       <property name="window-scrolling" type="bool" value="false"/>
       <property name="sort-order" type="uint" value="4"/>
     </property>
-    <property name="plugin-19" type="string" value="separator"/>
+    <property name="plugin-19" type="string" value="separator">
+      <property name="expand" type="bool" value="true"/>
+      <property name="style" type="uint" value="0"/>
+    </property>
   </property>
   <property name="configver" type="int" value="2"/>
 </channel>

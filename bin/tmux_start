@@ -17,3 +17,8 @@ tmux new-session
 #    tmux new-session -s ${BASE_SESSION_NAME}
 #fi
 
+
+# new desired behaviour (this might need to go in .tmux.conf)
+# destroy-unattached should be true unless I name the session(?)
+# - what if I try to detach but I want to leave the process running?
+
