@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Exec=exo-open --launch TerminalEmulator
+Exec=rxvt
 Icon=xterm-color
 StartupNotify=false
 Terminal=false

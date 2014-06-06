@@ -7,3 +7,6 @@ Exec=/usr/bin/chromium --profile-directory=Default --app-id=jeogkiiogjbmhklcnbgk
 Icon=chrome-jeogkiiogjbmhklcnbgkdcjoioegiknm-Default
 StartupWMClass=crx_jeogkiiogjbmhklcnbgkdcjoioegiknm
 X-XFCE-Source=file:///home/paulf/.local/share/applications/chrome-jeogkiiogjbmhklcnbgkdcjoioegiknm-Default.desktop
+Comment=
+Path=
+StartupNotify=true
