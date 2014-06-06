@@ -5,10 +5,15 @@ MON_PRIMARY=HDMI2
 MON_RIGHT=VGA1
 
 killall compiz
+killall xfwm4
+
+sleep 2
 
 xrandr --output $MON_PRIMARY --auto --primary
 xrandr --output $MON_LEFT --auto --left-of $MON_PRIMARY
-xrandr --output $MON_RIGHT --auto --right-of $MON_PRIMARY
+xrandr --output $MON_RIGHT --auto --rotate left --right-of $MON_PRIMARY
+
+sleep 5
 
 compiz --replace &
 
