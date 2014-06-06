@@ -113,3 +113,8 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# Enable tmux completion
+
+. /usr/share/doc/tmux/examples/bash_completion_tmux.sh
+
