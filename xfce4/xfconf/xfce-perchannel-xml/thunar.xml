@@ -4,7 +4,7 @@
   <property name="default-view" type="string" value="void"/>
   <property name="last-compact-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_SMALLEST"/>
   <property name="last-details-view-column-order" type="string" value="THUNAR_COLUMN_NAME,THUNAR_COLUMN_SIZE,THUNAR_COLUMN_TYPE,THUNAR_COLUMN_DATE_MODIFIED,THUNAR_COLUMN_DATE_ACCESSED,THUNAR_COLUMN_PERMISSIONS,THUNAR_COLUMN_OWNER,THUNAR_COLUMN_MIME_TYPE,THUNAR_COLUMN_GROUP"/>
-  <property name="last-details-view-column-widths" type="string" value="50,126,74,50,377,151,111,81,242"/>
+  <property name="last-details-view-column-widths" type="string" value="50,118,65,50,264,130,103,64,130"/>
   <property name="last-details-view-fixed-columns" type="bool" value="false"/>
   <property name="last-details-view-visible-columns" type="string" value="THUNAR_COLUMN_DATE_MODIFIED,THUNAR_COLUMN_GROUP,THUNAR_COLUMN_NAME,THUNAR_COLUMN_OWNER,THUNAR_COLUMN_PERMISSIONS,THUNAR_COLUMN_SIZE,THUNAR_COLUMN_TYPE"/>
   <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_SMALLER"/>
