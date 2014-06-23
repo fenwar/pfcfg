@@ -1,0 +1,31 @@
+[Desktop Entry]
+Actions=Newconnection;Logoutexitall;Pennantonshelby50256;Pennantonshelby50256;
+Categories=Development;Office;
+Exec=/home/paulf/.Hansoft/Versions/00075017.161118bf676fb9a6eb8183c698723c0b.Linux2.6.x64/Hansoft -Url %u
+Icon=/home/paulf/.local/share/icons/se.hansoft.Exe-PMClient_FE7A38823E1C5EC2B3298F8D6364FFB2.png
+MimeType=x-scheme-handler/hansoft;
+Name=Hansoft Client
+Terminal=false
+Type=Application
+Version=1.0
+X-XFCE-Source=file:///home/paulf/.local/share/applications/se.hansoft.Exe-PMClient_FE7A38823E1C5EC2B3298F8D6364FFB2.desktop
+
+[Desktop Action Newconnection]
+Exec=/home/paulf/.Hansoft/Versions/00075017.161118bf676fb9a6eb8183c698723c0b.Linux2.6.x64/Hansoft -NoAuto
+Name=New connection
+X-Hansoft-TaskType=Command
+
+[Desktop Action Logoutexitall]
+Exec=/home/paulf/.Hansoft/Versions/00075017.161118bf676fb9a6eb8183c698723c0b.Linux2.6.x64/Hansoft -ExitAll
+Name=Log out & exit all
+X-Hansoft-TaskType=Command
+
+[Desktop Action Pennantonshelby50256]
+Exec=/home/paulf/.Hansoft/Versions/00075017.161118bf676fb9a6eb8183c698723c0b.Linux2.6.x64/Hansoft -URL hansoft://shelby:50256;Pennant
+Name=Pennant on shelby:50256
+X-Hansoft-ActionDescription=Click to connect
+X-Hansoft-RecentType=Command
+Exec=/opt/Hansoft/Hansoft -URL hansoft://shelby:50256;Pennant
+Name=Pennant on shelby:50256
+X-Hansoft-ActionDescription=Click to connect
+X-Hansoft-RecentType=Command
