@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Quickly mount my Pennant CIFS shares below ~/mnt/sharename
+
+# Usage: sudo mn //server/sharename
+
+LOCALBASE=${HOME}/mnt
+
+SHAREUSER=paulf
+LOCALUSER=${USER}
+
+SHARENAME=${1}
+LOCALPATH=${LOCALBASE}/$(basename ${SHARENAME})
+
+mkdir -p ${LOCALPATH}
+sudo mount -t cifs -ousername=${SHAREUSER},uid=${LOCALUSER} ${SHARENAME} ${LOCALPATH}
+
