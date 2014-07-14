@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Postman - REST Client
+Exec=/usr/bin/chromium --profile-directory=Default --app-id=fdmmgilgnpjigdojojpjoooidkmcomcm
+Icon=chrome-fdmmgilgnpjigdojojpjoooidkmcomcm-Default
+StartupWMClass=crx_fdmmgilgnpjigdojojpjoooidkmcomcm
+X-XFCE-Source=file:///home/paulf/.local/share/applications/chrome-fdmmgilgnpjigdojojpjoooidkmcomcm-Default.desktop

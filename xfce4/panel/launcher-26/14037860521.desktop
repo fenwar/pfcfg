@@ -2,8 +2,8 @@
 Encoding=UTF-8
 Version=1.0
 Type=Application
-Exec=/usr/bin/xulrunner-24.0 /home/paulf/src/sqlite-manager/sqlite-manager/application.ini -f %u %f
+Exec=/usr/bin/xulrunner-26.0 /home/paulf/src/sqlite-manager/sqlite-manager/application.ini -f %u %f
 Name=SQLite Manager
 Comment=View and Edit SQLite databases.
 Icon=/home/paulf/src/sqlite-manager/sqlite-manager/chrome/icons/default/default48.png
-X-XFCE-Source=file:///home/paulf/.local/share/applications/userapp-xulrunner-24.0-0L98EX.desktop
+X-XFCE-Source=file:///home/paulf/.local/share/applications/Sqlite-manager.desktop

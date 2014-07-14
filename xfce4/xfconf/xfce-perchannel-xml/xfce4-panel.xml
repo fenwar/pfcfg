@@ -25,9 +25,10 @@
         <value type="int" value="17"/>
         <value type="int" value="2"/>
         <value type="int" value="12"/>
+        <value type="int" value="39"/>
         <value type="int" value="26"/>
         <value type="int" value="25"/>
-        <value type="int" value="39"/>
+        <value type="int" value="40"/>
         <value type="int" value="24"/>
         <value type="int" value="7"/>
         <value type="int" value="3"/>
@@ -257,7 +258,7 @@
     </property>
     <property name="plugin-26" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="13989427442.desktop"/>
+        <value type="string" value="14037860521.desktop"/>
       </property>
     </property>
     <property name="plugin-25" type="string" value="launcher">
@@ -270,7 +271,7 @@
       <property name="flat-buttons" type="bool" value="true"/>
       <property name="include-all-monitors" type="bool" value="false"/>
       <property name="window-scrolling" type="bool" value="false"/>
-      <property name="show-wireframes" type="bool" value="true"/>
+      <property name="show-wireframes" type="bool" value="false"/>
       <property name="include-all-workspaces" type="bool" value="false"/>
       <property name="sort-order" type="uint" value="4"/>
     </property>
@@ -295,7 +296,7 @@
       <property name="show-handle" type="bool" value="false"/>
       <property name="window-scrolling" type="bool" value="false"/>
       <property name="include-all-monitors" type="bool" value="false"/>
-      <property name="show-wireframes" type="bool" value="true"/>
+      <property name="show-wireframes" type="bool" value="false"/>
       <property name="sort-order" type="uint" value="4"/>
     </property>
     <property name="plugin-34" type="string" value="separator">
@@ -306,7 +307,7 @@
       <property name="flat-buttons" type="bool" value="true"/>
       <property name="show-handle" type="bool" value="false"/>
       <property name="include-all-monitors" type="bool" value="false"/>
-      <property name="show-wireframes" type="bool" value="true"/>
+      <property name="show-wireframes" type="bool" value="false"/>
       <property name="window-scrolling" type="bool" value="false"/>
       <property name="sort-order" type="uint" value="4"/>
     </property>
@@ -330,6 +331,11 @@
     <property name="plugin-39" type="string" value="launcher">
       <property name="items" type="array">
         <value type="string" value="14025006841.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-40" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="14043789302.desktop"/>
       </property>
     </property>
   </property>
