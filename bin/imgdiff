@@ -56,11 +56,12 @@ else
     #DESKTOP_WIDTH=5760
     #VIEWER_WIDTH=$((MAX_WIDTH * 3))
     #VIEWER_X=$(((DESKTOP_WIDTH - VIEWER_WIDTH) / 2))
-    VIEWER_WIDTH=$((5760 - 288))    # centred except for my panel
-    VIEWER_X=0
-    # TODO at present I'm just managing this through CCSM as I need it to span displays.
+    VIEWER_WIDTH=1920
+    #$((3840-288))   #span both big monitors
+    #$((5760 - 288))    # centred except for my panel
+    VIEWER_X=1920
     echo attempting to set geometry as -g${VIEWER_WIDTH}x1100+${VIEWER_X}+0
-    sxiv -Z -F -d -g${VIEWER_WIDTH}x1100+${VIEWER_X}+0 -N"imgdiff" ${TMPROOT}/*.png
+    sxiv -Z -sd -g${VIEWER_WIDTH}x1100+${VIEWER_X}+0 -N"imgdiff" ${TMPROOT}/*.png
     #pqiv -P "0,0" -i -c --disable-scaling $TMPPATH
     #qiv -e -f $TMPPATH
     #ristretto $TMPPATH
