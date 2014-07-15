@@ -13,10 +13,10 @@ TMP_NEW=${TMPROOT}/tmp_02_new-resized.png
 
 if [ "${1}" == "/dev/null" ] ; then
     echo "New image added."
-    sxiv -Z -F -g1920x1100+0+0 ${2}
+    sxiv -Z -g1920x1100+0+0 ${2}
 elif [ "${2}" == "/dev/null" ] ; then
     echo "Image deleted."
-    sxiv -Z -F -g1920x1100+0+0 ${1}
+    sxiv -Z -g1920x1100+0+0 ${1}
 else
     # Compare the images:
 
@@ -48,7 +48,7 @@ else
     convert -extent "${MAX_WIDTH}x${MAX_HEIGHT}" -background black ${1} ${TMP_OLD}
     convert -extent "${MAX_WIDTH}x${MAX_HEIGHT}" -background black ${2} ${TMP_NEW}
 
-    compare ${TMP_OLD} ${TMP_NEW} -metric RMSE -highlight-color magenta :- |\
+    compare ${TMP_OLD} ${TMP_NEW} -metric AE -highlight-color magenta :- |\
         montage -geometry +0+0 ${TMP_OLD} - ${TMP_NEW} ${TMPPATH}
 
     # set up window geometry so the window is centred on the screen
