@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# tm: quickly start a tmux session
+#
+# Usage: tm SESSION
+# SESSION is the name of a file in ~/.tmux/sessions containing the commands
+# specific to that session.
+#
+# Based on the tmux commands produced by tmuxinator:
+# https://github.com/tmuxinator/tmuxinator/
+
+# Start the tmux server if it's not already running:
+tmux start-server
+
+# Determine whether the session we wish to run has already been created:
+tmux has-session -t $1 2>/dev/null
+
+if [ "$?" -eq 1 ]; then
+    # The session does not exist, so load it:
+    . ~/.tmux/sessions/$1
+fi
+
+# Switch to (or attach to) the chosen session:
+if [ -z "$TMUX" ]; then
+    tmux -u attach-session -t $1
+else
+    tmux -u switch-client -t $1
+fi
+

@@ -1,0 +1,10 @@
+# Execute this file via tm.
+
+# Test session for testing
+
+SESSION=$(basename $1)
+
+# Create the session & specify first window/pane
+# (Note the bypassing of tmux nesting check, because we're not nesting:)
+TMUX= tmux new-session -d -s $1 
+
