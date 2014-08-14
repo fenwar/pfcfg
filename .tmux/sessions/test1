@@ -1,10 +1,12 @@
 # Execute this file via tm.
 
-# Test session for testing
+# Test session for testing:
+SESSION=$1
 
-SESSION=$(basename $1)
+# Configurable variables:
+BASEDIR=$HOME/.tmux
 
-# Create the session & specify first window/pane
-# (Note the bypassing of tmux nesting check, because we're not nesting:)
-TMUX= tmux new-session -d -s $1 
+# Window 1 - vim and entr-based compile
+tmux new-window -d -n VIM -t $SESSION:1 vim
+
 

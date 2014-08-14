@@ -16,8 +16,19 @@ tmux start-server
 tmux has-session -t $1 2>/dev/null
 
 if [ "$?" -eq 1 ]; then
-    # The session does not exist, so load it:
+    # Create the session, specifying a dummy init window:
+    # (Note the bypassing of tmux nesting check, because we're not nesting.)
+    TMUX= tmux new-session -d -s $1 -n tminit
+
+    # Move the init window out of the way:
+    # (Note the assumption that base index is 1.)
+    tmux move-window -s $1:1 -t $1:999
+
+    # Run the commands to create the desired windows in the chosen session:
     . ~/.tmux/sessions/$1
+
+    # Get rid of the dummy init window:
+    tmux kill-window -t $1:999
 fi
 
 # Switch to (or attach to) the chosen session:
