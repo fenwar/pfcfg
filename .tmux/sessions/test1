@@ -7,6 +7,9 @@ SESSION=$1
 BASEDIR=$HOME/.tmux
 
 # Window 1 - vim and entr-based compile
-tmux new-window -d -n VIM -t $SESSION:1 vim
+tmux new-window -d -c $BASEDIR -n VIM -t $SESSION:1
+tmux send-keys -t $SESSION:1 vim C-m
+
+tmux split-window -d -c $BASEDIR -t $SESSION:1 -h -l 80
 
 
