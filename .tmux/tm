@@ -12,13 +12,24 @@
 # Start the tmux server if it's not already running:
 tmux start-server
 
+# First, we need to know the initial window dimensions (i.e. the full
+# window, not just the current pane) so that splits go how we want.
+
+if [ -n "$TMUX" ]; then
+    WIN_WIDTH=$(tmux display-message -p "#{client_width}")
+    WIN_HEIGHT=$(tmux display-message -p "#{client_height}")
+else
+    WIN_WIDTH=$(tput cols)
+    WIN_HEIGHT=$(tput lines)
+fi
+
 # Determine whether the session we wish to run has already been created:
 tmux has-session -t $1 2>/dev/null
-
 if [ "$?" -eq 1 ]; then
+    # The session doesn't exist already, so start it up.
     # Create the session, specifying a dummy init window:
     # (Note the bypassing of tmux nesting check, because we're not nesting.)
-    TMUX= tmux new-session -d -s $1 -n tminit
+    TMUX= tmux new-session -d -s $1 -n tminit -x $WIN_WIDTH -y $WIN_HEIGHT
 
     # Move the init window out of the way:
     # (Note the assumption that base index is 1.)
