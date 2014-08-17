@@ -8,7 +8,7 @@ BASEDIR=$HOME/.tmux
 
 # Window 1 - vim and entr-based compile, plus a tiny Vagrant ssh
 # Left pane - vim
-tmux new-window -d -c $BASEDIR -n VIM -t $SESSION:1
+tmux new-window -c $BASEDIR -n VIM -t $SESSION:1
 tmux send-keys -t $SESSION:1.1 vim C-m
 
 # Right pane - entr
