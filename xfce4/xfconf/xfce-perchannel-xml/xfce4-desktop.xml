@@ -26,6 +26,11 @@
         <property name="color-style" type="int" value="3"/>
       </property>
       <property name="xinerama-stretch" type="bool" value="true"/>
+      <property name="monitor2" type="empty">
+        <property name="image-path" type="string" value="/usr/share/backgrounds/xfce/xfce-blue.jpg"/>
+        <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/xfce-blue.jpg"/>
+        <property name="last-single-image" type="string" value="/usr/share/backgrounds/xfce/xfce-blue.jpg"/>
+      </property>
     </property>
   </property>
   <property name="desktop-icons" type="empty">
