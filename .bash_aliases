@@ -19,6 +19,7 @@ alias deletertidb="ant init.cleanup.db -Ddev.cleanup.db=True"
 alias R=". rti"
 alias apu="aptitude search ~U -F \"%c%S%M %a %p %v %V %t %r %d\""
 alias gbn="git branch --no-merged"
+alias gbm="git branch --merged"
 alias stt=". set_term_title"
 alias gffs="git flow feature start "
 alias gfff="#git flow feature finish "
@@ -37,3 +38,5 @@ alias gbi="git branch --no-merged | grep -v \"^  archive/\" | xargs -i__ git log
 
 alias wd="dwdiff -cblack:red --diff-input"
 alias dw="dwdiff -cblack:red"
+
+alias less="less -RFX"
