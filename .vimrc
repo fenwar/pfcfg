@@ -39,11 +39,11 @@ set numberwidth=5
 " set textwidth=78 "
 
 " UI Highlighting "
-hi VertSplit ctermfg=233 ctermbg=233 cterm=None
+hi VertSplit ctermfg=22 ctermbg=22 cterm=None
 hi LineNr ctermfg=235 ctermbg=233 cterm=None
 hi CursorLineNr ctermfg=236 ctermbg=17 cterm=None
-hi StatusLine ctermfg=234 ctermbg=11 cterm=reverse,bold,italic
-hi StatusLineNC ctermfg=233 ctermbg=106 cterm=reverse,italic
+hi StatusLine ctermfg=22 ctermbg=11 cterm=reverse,bold,italic
+hi StatusLineNC ctermfg=22 ctermbg=106 cterm=reverse,italic
 hi Pmenu ctermfg=242 ctermbg=0 cterm=italic
 hi PmenuSel ctermfg=253 ctermbg=22 cterm=italic
 hi TabLine cterm=None ctermbg=57 ctermfg=15
@@ -73,7 +73,7 @@ hi nontext ctermfg=238
 hi specialkey ctermfg=238
 
 " Fix diff colours "
-hi DiffAdd ctermbg=22 cterm=bold ctermfg=None
+hi DiffAdd ctermbg=28 cterm=bold ctermfg=None
 hi DiffDelete ctermbg=52 cterm=italic ctermfg=None
 hi DiffChange cterm=None ctermbg=None
 hi DiffText ctermbg=94 cterm=bold ctermfg=None
@@ -216,7 +216,7 @@ let g:CommandTMinHeight=10
 "" let g:CommandTMatchWindowReverse=1
 let g:CommandTClearMap=['<C-w>', '<C-u>']
 let g:CommandTCancelMap=['<C-c>', '<Esc>']
-hi PFCommandTHighlightColor cterm=bold ctermbg=17 ctermfg=11
+hi PFCommandTHighlightColor cterm=bold ctermbg=28 ctermfg=11
 let g:CommandTHighlightColor='PFCommandTHighlightColor'
 let g:CommandTScanDotDirectories=1
 let g:CommandTWildIgnore=&wildignore . ",*.git,dist/*,*.png"
