@@ -232,7 +232,7 @@
       <property name="switch-workspace-on-unminimize" type="bool" value="true"/>
       <property name="include-all-monitors" type="bool" value="true"/>
       <property name="include-all-workspaces" type="bool" value="true"/>
-      <property name="grouping" type="uint" value="1"/>
+      <property name="grouping" type="uint" value="0"/>
     </property>
     <property name="plugin-24" type="string" value="separator">
       <property name="expand" type="bool" value="true"/>
