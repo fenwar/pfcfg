@@ -79,6 +79,9 @@
       <property name="XF86AudioLowerVolume" type="string" value="/home/paulf/bin/pavol down"/>
       <property name="XF86AudioRaiseVolume" type="string" value="/home/paulf/bin/pavol up"/>
       <property name="XF86AudioMute" type="string" value="/home/paulf/bin/pavol mute"/>
+      <property name="&lt;Super&gt;o" type="string" value="chromium">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
     </property>
   </property>
   <property name="xfwm4" type="empty">
