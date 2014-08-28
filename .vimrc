@@ -219,7 +219,8 @@ let g:CommandTCancelMap=['<C-c>', '<Esc>']
 hi PFCommandTHighlightColor cterm=bold ctermbg=28 ctermfg=11
 let g:CommandTHighlightColor='PFCommandTHighlightColor'
 let g:CommandTScanDotDirectories=1
-let g:CommandTWildIgnore=&wildignore . ",*.git,dist/*,*.png"
+let g:CommandTWildIgnore=&wildignore . ",*.git,*/dist/*,*/target/*,*.png"
+
 map <C-e> :CommandT<cr>
 map <C-j> :CommandTBuffer<cr>
 map <C-k> :CommandT<cr>
