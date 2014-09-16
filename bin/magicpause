@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Magically pause or unpause whichever source of audio I might be listening to
+# right this moment.
+
+# Mixcloud (in a browser window)
+MIXCLOUD_WINDOW=$(xdotool search --name "Mixcloud - Iceweasel")
+
+if [ -n ${MIXCLOUD_WINDOW} ] ; then
+    xdotool key --window ${MIXCLOUD_WINDOW} space
+fi
+
+# Quodlibet TODO
+# Grooveshark (browser window) TODO
+# Last.fm (browser window) TODO
+
