@@ -10,7 +10,12 @@ if [ -n ${MIXCLOUD_WINDOW} ] ; then
     xdotool key --window ${MIXCLOUD_WINDOW} space
 fi
 
-# Quodlibet TODO
+# Quodlibet
+if quodlibet --print-playing ; then
+    quodlibet --play-pause
+fi
+
+
 # Grooveshark (browser window) TODO
 # Last.fm (browser window) TODO
 
