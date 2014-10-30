@@ -10,12 +10,30 @@ if [ -n ${MIXCLOUD_WINDOW} ] ; then
     xdotool key --window ${MIXCLOUD_WINDOW} space
 fi
 
+# Grooveshark (in a browser window)
+GROOVESHARK_WINDOW=$(xdotool search --name "Grooveshark - Iceweasel")
+
+if [ -n ${GROOVESHARK_WINDOW} ] ; then
+    xdotool key --window ${GROOVESHARK_WINDOW} space
+fi
+
+# Soundcloud (in a browser window)
+SOUNDCLOUD_WINDOW=$(xdotool search --name '▶')
+
+# Note that SoundCloud changes the window title depending on playback state!
+if [ -z ${SOUNDCLOUD_WINDOW} ] ; then
+    SOUNDCLOUD_WINDOW=$(xdotool search --name 'SoundCloud')
+fi
+
+if [ -n ${SOUNDCLOUD_WINDOW} ] ; then
+    xdotool key --window ${SOUNDCLOUD_WINDOW} Return
+fi
+
 # Quodlibet
 if quodlibet --print-playing ; then
     quodlibet --play-pause
 fi
 
 
-# Grooveshark (browser window) TODO
 # Last.fm (browser window) TODO
 
