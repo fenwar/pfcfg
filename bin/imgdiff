@@ -15,14 +15,17 @@ TMP_NEW=${TMPROOT}/tmp_02_new-resized.png
 VIEWER_WIDTH=1920
 VIEWER_HEIGHT=1050
 
+# Options for sxiv:
+# zoom image to 100%, full screen, no status bar, scale down if needed.
+SXIV_OPTS="-Z -f -b -sd"
 
 # Check whether the image is new/deleted (one of the files will be /dev/null)
 if [ "${1}" == "/dev/null" ] ; then
     echo "New image added."
-    sxiv -Z -f -b -sd -g${VIEWER_WIDTH}x${VIEWER_HEIGHT}+1920+0 ${2}
+    sxiv ${SXIV_OPTS} -g${VIEWER_WIDTH}x${VIEWER_HEIGHT}+1920+0 ${2}
 elif [ "${2}" == "/dev/null" ] ; then
     echo "Image deleted."
-    sxiv -Z -f -b -sd -g${VIEWER_WIDTH}x${VIEWER_HEIGHT}+1920+0 ${1}
+    sxiv ${SXIV_OPTS} -g${VIEWER_WIDTH}x${VIEWER_HEIGHT}+1920+0 ${1}
 else
     # Compare the images:
 
@@ -66,7 +69,7 @@ else
     #$((5760 - 288))    # centred except for my panel
     VIEWER_X=1920
     echo attempting to set geometry as -g${VIEWER_WIDTH}x${VIEWER_HEIGHT}+${VIEWER_X}+0
-    sxiv -Z -f -b -sd -g${VIEWER_WIDTH}x${VIEWER_HEIGHT}+${VIEWER_X}+0 -N"imgdiff" ${TMPROOT}/*.png
+    sxiv ${SXIV_OPTS} -g${VIEWER_WIDTH}x${VIEWER_HEIGHT}+${VIEWER_X}+0 -N"imgdiff" ${TMPROOT}/*.png
     #pqiv -P "0,0" -i -c --disable-scaling $TMPPATH
     #qiv -e -f $TMPPATH
     #ristretto $TMPPATH
