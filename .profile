@@ -39,3 +39,5 @@ export GTK2_RC_FILES=${HOME}/.gtkrc-2.0
 
 #export ANT_HOME=/usr/share/ant
 #export PYTHONSTARTUP=${HOME}/.pythonrc
+
+export PYTHONSTARTUP=${HOME}/pfcfg/.pythonrc
