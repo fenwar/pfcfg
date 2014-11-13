@@ -15,6 +15,18 @@ if [ $? -ne 0 ] ; then
     mn //shelby/temp
 fi
 
+findmnt -t cifs --target ~/mnt/jobs_live > /dev/null
+if [ $? -ne 0 ] ; then
+    echo '*** Mount Jobs Live share on shelby ***'
+    mn //shelby/jobs_live
+fi
+
+findmnt -t cifs --target ~/mnt/it > /dev/null
+if [ $? -ne 0 ] ; then
+    echo '*** Mount private IT share on shelby ***'
+    mn //shelby/it
+fi
+
 findmnt -t cifs --target ~/mnt/casefiles > /dev/null
 if [ $? -ne 0 ] ; then
     echo '*** Mount casefiles share on shelby (HMRC BPT helpdesk) ***'
