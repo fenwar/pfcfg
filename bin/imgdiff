@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo Comparison of ${3}
+echo -n "Comparison of ${3}:"
 
 #TMPROOT=/tmp
 TMPROOT=${XDG_RUNTIME_DIR}/tmp/imgdiff
@@ -38,27 +38,44 @@ else
     OLD_SIZE=($(identify -format "%w %h" ${1}))
     NEW_SIZE=($(identify -format "%w %h" ${2}))
 
-    if [ ${OLD_SIZE[0]} -gt ${NEW_SIZE[0]} ] ; then
-        MAX_WIDTH=${OLD_SIZE[0]}
+    echo -n "(${OLD_SIZE[@]} ${NEW_SIZE[@]})"
+
+    if [[ "${OLD_SIZE[@]}" == "${NEW_SIZE[@]}" ]] ; then
+        # The images are the same size, so we can compare them directly:
+        cp "${1}" "${TMP_OLD}"
+        cp "${2}" "${TMP_NEW}"
     else
-        MAX_WIDTH=${NEW_SIZE[0]}
+        # The images are different sizes, so convert them first
+
+        if [ ${OLD_SIZE[0]} -gt ${NEW_SIZE[0]} ] ; then
+            MAX_WIDTH=${OLD_SIZE[0]}
+        else
+            MAX_WIDTH=${NEW_SIZE[0]}
+        fi
+
+        if [ ${OLD_SIZE[1]} -gt ${NEW_SIZE[1]} ] ; then
+            MAX_HEIGHT=${OLD_SIZE[1]}
+        else
+            MAX_HEIGHT=${NEW_SIZE[1]}
+        fi
+
+        #echo OLD: ${OLD_SIZE[0]}x${OLD_SIZE[1]}, \
+        #     NEW: ${NEW_SIZE[0]}x${NEW_SIZE[1]}, \
+        #     Resizing to ${MAX_WIDTH}x${MAX_HEIGHT}
+
+        convert -extent "${MAX_WIDTH}x${MAX_HEIGHT}" -background black ${1} ${TMP_OLD}
+        convert -extent "${MAX_WIDTH}x${MAX_HEIGHT}" -background black ${2} ${TMP_NEW}
     fi
 
-    if [ ${OLD_SIZE[1]} -gt ${NEW_SIZE[1]} ] ; then
-        MAX_HEIGHT=${OLD_SIZE[1]}
-    else
-        MAX_HEIGHT=${NEW_SIZE[1]}
-    fi
-
-    #echo OLD: ${OLD_SIZE[0]}x${OLD_SIZE[1]}, \
-    #     NEW: ${NEW_SIZE[0]}x${NEW_SIZE[1]}, \
-    #     Resizing to ${MAX_WIDTH}x${MAX_HEIGHT}
-
-    convert -extent "${MAX_WIDTH}x${MAX_HEIGHT}" -background black ${1} ${TMP_OLD}
-    convert -extent "${MAX_WIDTH}x${MAX_HEIGHT}" -background black ${2} ${TMP_NEW}
-
-    compare ${TMP_OLD} ${TMP_NEW} -metric AE -highlight-color magenta :- |\
+    compare ${TMP_OLD} ${TMP_NEW} \
+            -metric AE \
+            -highlight-color magenta \
+            :- |\
         montage -geometry +0+0 ${TMP_OLD} - ${TMP_NEW} ${TMPPATH}
+
+    # Echo a newline because compare doesn't
+    # TODO fix the format output of compare
+    echo
 
     # set up window geometry so the window is centred on the screen
     # TODO scrape desktop width out of xrandr or something:
@@ -68,7 +85,7 @@ else
     #$((3840-288))   #span both big monitors
     #$((5760 - 288))    # centred except for my panel
     VIEWER_X=1920
-    echo attempting to set geometry as -g${VIEWER_WIDTH}x${VIEWER_HEIGHT}+${VIEWER_X}+0
+    #echo attempting to set geometry as -g${VIEWER_WIDTH}x${VIEWER_HEIGHT}+${VIEWER_X}+0
     sxiv ${SXIV_OPTS} -g${VIEWER_WIDTH}x${VIEWER_HEIGHT}+${VIEWER_X}+0 -N"imgdiff" ${TMPROOT}/*.png
     #pqiv -P "0,0" -i -c --disable-scaling $TMPPATH
     #qiv -e -f $TMPPATH
