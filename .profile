@@ -21,6 +21,14 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
+# include my HMRC tools and helpdesk scripts in my path
+if [ -d "$HOME/hmrc-tools" ] ; then
+    PATH="$HOME/hmrc-tools:$PATH"
+fi
+if [ -d "$HOME/helpdesk" ] ; then
+    PATH="$HOME/helpdesk:$PATH"
+fi
+
 PS1='${debian_chroot:+($debian_chroot)}\[\033[00;32m\]\u@\h:\[\033[01;34m\]\w\[\033[00m\]$(__git_ps1 "(%s)")\[\033[00;32m\]\$\[\033[00m\] '
 
 export EDITOR=vim
