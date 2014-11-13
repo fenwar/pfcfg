@@ -240,3 +240,9 @@ map! <C-k> <Esc>:CommandT<cr>
 map <F5> :bufdo checktime<cr>
 
 map <C-h> :bro ol<cr>
+
+" Change cursor shape when in insert mode "
+" solid underscore
+let &t_SI .= "\<Esc>[4 q"
+" solid block
+let &t_EI .= "\<Esc>[1 q"
