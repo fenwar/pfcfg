@@ -40,3 +40,5 @@
 	fetch = true
 [gitflow "release.finish"]
 	fetch = true
+[log]
+	date = local
