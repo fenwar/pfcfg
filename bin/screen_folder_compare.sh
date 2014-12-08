@@ -2,6 +2,8 @@
 
 # Compare the two screenshot folders and make sure nothing is missing from the osx folder that's present in the windows folder.
 
+# Run this from src/phantom/screenshots
+
 FOLDER=$1
 
 diff \
