@@ -23,7 +23,6 @@
       <property name="&lt;Primary&gt;&lt;Alt&gt;Delete" type="string" value="xflock4"/>
       <property name="&lt;Primary&gt;Escape" type="string" value="xfdesktop --menu"/>
       <property name="override" type="bool" value="true"/>
-      <property name="&lt;Primary&gt;&lt;Super&gt;space" type="string" value="quodlibet --play-pause"/>
       <property name="&lt;Primary&gt;&lt;Super&gt;Right" type="string" value="quodlibet --next"/>
       <property name="&lt;Super&gt;r" type="string" value="xfrun4">
         <property name="startup-notify" type="bool" value="true"/>
@@ -49,10 +48,6 @@
       <property name="&lt;Super&gt;m" type="string" value="icedove">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;&lt;Super&gt;Down" type="string" value="amixer -q sset Master 2%-"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;&lt;Super&gt;Up" type="string" value="amixer -q sset Master 2%+"/>
-      <property name="&lt;Primary&gt;&lt;Super&gt;Down" type="string" value="/home/paulf/bin/pavol down"/>
-      <property name="&lt;Primary&gt;&lt;Super&gt;Up" type="string" value="/home/paulf/bin/pavol up"/>
       <property name="&lt;Alt&gt;&lt;Super&gt;Left" type="empty">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
@@ -76,12 +71,13 @@
       <property name="&lt;Super&gt;e" type="string" value="caja --sm-client-disable --no-desktop">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
-      <property name="XF86AudioLowerVolume" type="string" value="/home/paulf/bin/pavol down"/>
       <property name="XF86AudioRaiseVolume" type="string" value="/home/paulf/bin/pavol up"/>
       <property name="XF86AudioMute" type="string" value="/home/paulf/bin/pavol mute"/>
       <property name="&lt;Super&gt;o" type="string" value="chromium">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
+      <property name="XF86HomePage" type="string" value="/home/paulf/bin/magicpause"/>
+      <property name="XF86AudioLowerVolume" type="string" value="/home/paulf/bin/pavol down"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

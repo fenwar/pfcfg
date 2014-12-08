@@ -1,5 +1,5 @@
 WebBrowser=iceweasel
 MailReader=icedove
 FileManager=caja
-TerminalEmulator=urxvt
+TerminalEmulator=debian-x-terminal-emulator
 
