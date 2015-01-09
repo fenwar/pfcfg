@@ -1,0 +1,25 @@
+#!/bin/bash
+
+if $(tmux has-session -t LEFT) ; then
+    TMUX_LEFT_CMD="tmux attach -t LEFT"
+else
+    TMUX_LEFT_CMD="tmux new-session -s LEFT"
+fi
+
+echo ${TMUX_LEFT_CMD}
+
+if $(tmux has-session -t RIGHT) ; then
+    TMUX_RIGHT_CMD="tmux attach -t RIGHT"
+else
+    TMUX_RIGHT_CMD="tmux new-session -s RIGHT"
+fi
+
+# Start tmux sessions specific to each monitor
+rxvt --title LEFT -e bash -login -c "${TMUX_LEFT_CMD}" &
+rxvt --title RIGHT -e bash -login -c "${TMUX_RIGHT_CMD}" &
+
+# TODO allow this to be triggered from within another tmux session
+# TODO populate the sessions with some windows if they weren't running.
+# TODO move the terminals to the actual positions on the desktop,
+#      maximise and remove decorations (might a job for wmctrl?)
+

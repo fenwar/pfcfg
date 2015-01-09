@@ -1,0 +1,44 @@
+[user]
+	name = Paul Fenney
+	email = paul.fenney@pennantplc.co.uk
+[color]
+	ui = auto
+	status = always
+[core]
+	excludesfile = /home/paulf/pfcfg/.pf-gitignore
+    filemode = true
+	attributesfile = /home/paulf/.gitattributes
+[push]
+	default = current
+[diff]
+	tool = meld
+[merge]
+	tool = meld
+	defaultToUpstream = true
+[difftool]
+	prompt = false
+[mergetool]
+	prompt = false
+	keepBackup = false
+[rerere]
+	enabled = true
+[diff "image"]
+    tool = imgdiff
+[difftool "imgdiff"]
+	cmd = /home/paulf/bin/imgdiff $LOCAL $REMOTE $MERGED
+    trustExitCode = false
+[gitflow "feature.start"]
+	fetch = true
+[gitflow "feature.finish"]
+	fetch = true
+[gitflow "hotfix.start"]
+	fetch = true
+[gitflow "hotfix.finish"]
+	fetch = true
+[gitflow "hotfix.release.start"]
+[gitflow "release.start"]
+	fetch = true
+[gitflow "release.finish"]
+	fetch = true
+[log]
+	date = local

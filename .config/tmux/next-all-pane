@@ -1,0 +1,24 @@
+#!/bin/bash
+# next-all-pane: cycle through panes across windows
+
+# Instead of looping back to the first pane in the window, when you move 'next'
+# from the last pane in a window, you move to the first pane in the next
+# window.
+
+# I haven't decided whether this should also extend to spanning sessions, but
+# it feels like it would make some amount of sense...
+
+# Vague list of arguments:
+# - the direction to move in
+# - the current pane/window/session (or some way of connecting back to tmux to
+#   determine them and list all the other panes).
+# - whether to wrap sessions or just windows
+
+## TODO step 1: just make it go next-pane/prev-pane
+
+echo pap >> tmux.log
+echo pop
+
+tmux select-pane -t :.+
+
+echo poop >> tmux.log

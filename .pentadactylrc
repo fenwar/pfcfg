@@ -1,0 +1,59 @@
+"1.1pre
+
+loadplugins '\.(js|penta)$'
+group user
+" set guioptions=brBCsmT
+set guioptions=brBCs
+
+" vim: set ft=pentadactyl:
+
+" autocmd LocationChange jira :normal! <C-z>
+" autocmd LocationChange fisheye :normal! <C-z>
+
+" nmap -builtin <C-v> <C-v><C-v>
+" imap -builtin <C-v> <C-v><C-v>
+
+map -m=i,n \\ <C-z>
+map -m=i,n <S-Esc> <C-z>
+
+nnoremap J j
+nnoremap K k
+
+nnoremap j 8j
+nnoremap k 8k
+
+nnoremap <Down> 8j
+nnoremap <Up> 8k
+nnoremap <S-Down> j
+nnoremap <S-Up> k
+
+" Inconsistently working attempt to clear the JIRA action dialog after pressing '.' "
+" nnoremap . <C-v>.:javascript var box = content.document.getElementById("shifter-dialog-queryable-container");if(box){box.children[1].click();box.children[0].click();}<cr>gi
+
+" Always pass through the '.' key "
+nnoremap . <C-v>.
+
+set passkeys+=jira:ejknop.123/,ga,gi
+set passkeys+=fisheye:jkynpF[]<Down><Up><Left><Right>
+set passkeys+=confluence:ke<C-i><C-v>[
+
+set passkeys+=mail.google.com:jkyosx,gi
+set passkeys+=feedly.com:jkov
+
+set passkeys+=pennantplc.slack.com:/
+
+map -m=i,n <C-n> :winopen<cr>
+
+map -m=n <C-t> :tab 
+
+map -m=i,n <C-l> <Esc>O
+map -m=i,n <A-d> <Esc>O
+
+map -m=i,n <C-p> <Esc><A-b>
+
+" Enable hints on all <a> elements, because people use them without hrefs sometimes. "
+" This might be overkill and I'll need to add specific rules, but let's see. "
+set hinttags+=a
+
+" If the above is indeed overkill, then I want at least the following to make slack usable with Pentadactyl: "
+" #flex_menu,a#flex_toggle "

@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Use 7-zip to extract a zip file to a sub folder of the current directory,
+# named after the original zip file.
+
+ZIP_FILE=$1
+TARGET_DIR=${ZIP_FILE%.zip}
+
+7z x -o"./${TARGET_DIR}" "${ZIP_FILE}"

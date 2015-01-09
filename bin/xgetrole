@@ -1,0 +1,2 @@
+#!/bin/bash
+xprop -id `xdotool getactivewindow` WM_WINDOW_ROLE | cut -d\" -f2

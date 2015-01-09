@@ -1,0 +1,51 @@
+#!/bin/bash
+
+# tm: quickly start a tmux session
+#
+# Usage: tm SESSION
+# SESSION is the name of a file in ~/.tmux/sessions containing the commands
+# specific to that session.
+#
+# Based on the tmux commands produced by tmuxinator:
+# https://github.com/tmuxinator/tmuxinator/
+
+# Start the tmux server if it's not already running:
+tmux start-server
+
+# First, we need to know the initial window dimensions (i.e. the full
+# window, not just the current pane) so that splits go how we want.
+
+if [ -n "$TMUX" ]; then
+    WIN_WIDTH=$(tmux display-message -p "#{client_width}")
+    WIN_HEIGHT=$(tmux display-message -p "#{client_height}")
+else
+    WIN_WIDTH=$(tput cols)
+    WIN_HEIGHT=$(tput lines)
+fi
+
+# Determine whether the session we wish to run has already been created:
+tmux has-session -t $1 2>/dev/null
+if [ "$?" -eq 1 ]; then
+    # The session doesn't exist already, so start it up.
+    # Create the session, specifying a dummy init window:
+    # (Note the bypassing of tmux nesting check, because we're not nesting.)
+    TMUX= tmux new-session -d -s $1 -n tminit -x $WIN_WIDTH -y $WIN_HEIGHT
+
+    # Move the init window out of the way:
+    # (Note the assumption that base index is 1.)
+    tmux move-window -s $1:1 -t $1:999
+
+    # Run the commands to create the desired windows in the chosen session:
+    . ~/.tmux/sessions/$1
+
+    # Get rid of the dummy init window:
+    tmux kill-window -t $1:999
+fi
+
+# Switch to (or attach to) the chosen session:
+if [ -z "$TMUX" ]; then
+    tmux -u attach-session -t $1
+else
+    tmux -u switch-client -t $1
+fi
+

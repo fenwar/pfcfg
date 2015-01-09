@@ -1,0 +1,6 @@
+Command=/home/paulf/bin/ql_playing
+UseLabel=0
+Text=Now Playing:
+UpdatePeriod=5000
+Font=Sans 9
+

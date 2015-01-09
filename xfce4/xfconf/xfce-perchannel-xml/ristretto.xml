@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="ristretto" version="1.0">
+  <property name="window" type="empty">
+    <property name="navigationbar" type="empty">
+      <property name="position" type="string" value="left"/>
+    </property>
+    <property name="height" type="uint" value="1020"/>
+    <property name="width" type="uint" value="1624"/>
+  </property>
+  <property name="desktop" type="empty">
+    <property name="type" type="string" value="none"/>
+  </property>
+  <property name="file" type="empty">
+    <property name="current-uri" type="string" value="file:///home/paulf/bpt/src/phantom/screenshots/dev3xs05/main/bptrti/PhantomTestShPPCalculator/test_shpp_2_adoption"/>
+  </property>
+</channel>

@@ -1,1 +1,4 @@
-from pprint import pprint as p
+print "PAUL"
+import readline
+import rlcompleter
+readline.parse_and_bind("TAB: menu-complete-backward")
