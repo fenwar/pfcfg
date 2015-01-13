@@ -29,7 +29,7 @@ if [ -d "$HOME/helpdesk" ] ; then
     PATH="$HOME/helpdesk:$PATH"
 fi
 
-PS1='${debian_chroot:+($debian_chroot)}\[\033[00;32m\]\u@\h:\[\033[01;34m\]\w\[\033[00m\]$(__git_ps1 "(%s)")\[\033[00;32m\]\$\[\033[00m\] '
+PS1='${debian_chroot:+($debian_chroot)}\[\033[00;32m\]\u@\h:\[\033[01;34m\]\w\[\033[00m\]$(__git_ps1 "(%s)")\[\033[00;32m\]\n\$\[\033[00m\] '
 
 export EDITOR=vim
 #export TERM=xterm-256color
