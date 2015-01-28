@@ -20,10 +20,10 @@ URxvt*.geometry: 120x40
 URxvt*.scrollBar: false
 
 ! Set my default preferred font
-!URxvt*.font: xft:Source Code Pro:pixelsize=15,style=Regular,antialias=true,\
-!             xft:Code2000:antialias=false
-URxvt*.font: xft:Ubuntu Mono:pixelsize=16,style=Regular,antialias=true,\
+URxvt*.font: xft:Source Code Pro:pixelsize=13,style=Regular,antialias=true,\
              xft:Code2000:antialias=false
+!URxvt*.font: xft:Ubuntu Mono:pixelsize=16,style=Regular,antialias=true,\
+!             xft:Code2000:antialias=false
 
 ! Include perl font-size extension
 ! See https://github.com/majutsushi/urxvt-font-size
@@ -51,7 +51,7 @@ URxvt*.pointerBlankDelay: 10
 
 URxvt*.loginShell: true
 
-URxvt*.iconFile: /usr/share/icons/hicolor/48x48/apps/xfce-terminal.png
+URxvt*.iconFile: /usr/share/icons/mate/48x48/apps/xfce-terminal.png
 
 ! Other settings to experiment with
 URxvt*.saveLines: 8192
