@@ -1,6 +1,0 @@
-#!/bin/bash
-
-# Compare images from the supplied revision range using imgdiff.
-
-git difftool $1 -t imgdiff -- *.png
-
