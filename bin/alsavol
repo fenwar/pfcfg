@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# Volume control script for ALSA
+
+VOLUME_STEP=1
+SOUND_CARD=0
+CONTROL=Master
+
+if [ "$1" = "up" ] ; then
+    PARAMETER="Playback ${VOLUME_STEP}+"
+elif [ "$1" = "down" ] ; then
+    PARAMETER="Playback ${VOLUME_STEP}-"
+elif [ "$1" = "mute" ] ; then
+    PARAMETER="toggle"
+fi
+
+amixer -c ${SOUND_CARD} -- sset ${CONTROL} ${PARAMETER}
