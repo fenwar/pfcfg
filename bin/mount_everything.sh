@@ -33,3 +33,9 @@ if [ $? -ne 0 ] ; then
     mn //shelby/casefiles
 fi
 
+findmnt -t cifs --target ~/mnt/jobs_archive_02 > /dev/null
+if [ $? -ne 0 ] ; then
+    echo '*** Mount backup archive share on PENMANBK02 ***'
+    mn //penmanbk02/jobs_archive_02
+fi
+
