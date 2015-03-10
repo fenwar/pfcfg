@@ -32,7 +32,11 @@ fi
 PS1='${debian_chroot:+($debian_chroot)}\[\033[00;32m\]\u@\h:\[\033[01;34m\]\w\[\033[00m\]$(__git_ps1 "(%s)")\[\033[00;32m\]\$\[\033[00m\] '
 
 export EDITOR=vim
-export TERM=gnome-256color
+
+# only set TERM if it's not already arrived from the environment
+if [[ "${TERM}" == "xterm" ]] ; then
+    export TERM=gnome-256color
+fi
 
 export GTK2_RC_FILES=${HOME}/.gtkrc-2.0
 #export PATH
