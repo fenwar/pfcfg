@@ -91,7 +91,8 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 # focus the child container
-#bindsym $mod+d focus child
+# Changed by PF
+bindsym $mod+i focus child
 
 # switch to workspace
 bindsym $mod+1 workspace 1
