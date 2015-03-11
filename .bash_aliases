@@ -44,3 +44,6 @@ alias wd="dwdiff -cblack:red,green: --diff-input -P"
 alias dw="dwdiff -cblack:red,green:"
 
 alias less="less -RFXm"
+
+alias ha="history -a"
+alias hn="history -n"
