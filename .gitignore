@@ -8,3 +8,6 @@ xfce4/desktop/*
 .vim/doc/command-t.txt
 .vim/command-t-1.5.1.vba
 .vim/ruby/command-t
+
+bin/skippy-xd
+bin/rofi
