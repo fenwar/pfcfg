@@ -214,3 +214,4 @@ bindsym $music_mod+Left exec quodlibet --previous
 bindsym $music_mod+Return exec quodlibet --toggle-window
 bindsym $music_mod+m exec ql ?
 
+exec_always ${HOME}/.i3/autostart
