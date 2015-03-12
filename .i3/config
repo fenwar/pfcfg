@@ -129,12 +129,17 @@ bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
+# nice workspace switching
 bindsym $mod+bracketright workspace next
 bindsym $mod+bracketleft workspace prev
 
 bindsym $mod+Shift+bracketright move workspace to output right
 bindsym $mod+Shift+bracketleft move workspace to output left
 
+# output switching
+bindsym $mod+comma focus output left
+bindsym $mod+period focus output right
+bindsym $mod+numbersign focus output HDMI1
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
