@@ -202,3 +202,15 @@ bindsym $mod+y mode "resize"
 bar {
         status_command i3status
 }
+
+# Music controls
+set $music_mod Ctrl+Mod4
+
+bindsym $music_mod+space exec magicpause
+bindsym $music_mod+Up exec alsavol up
+bindsym $music_mod+Down exec alsavol down
+bindsym $music_mod+Right exec quodlibet --next
+bindsym $music_mod+Left exec quodlibet --previous
+bindsym $music_mod+Return exec quodlibet --toggle-window
+bindsym $music_mod+m exec ql ?
+
