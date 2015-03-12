@@ -1,0 +1,16 @@
+#!/bin/sh
+# This file is _always_ run when i3 is reloaded, so make sure you kill any background services.
+
+killall redshift && redshift -r -l 53.41:-2.26 &
+
+killall rofi && rofi \
+    -key-window Mod1+Tab \
+    -bg "argb:c0222222" -fg "#eeee33" -hlbg "argb:c0000088" -hlfg "#ffff00" \
+    -font "source code pro 12"\
+    -sidebar-mode -fixed-num-lines -modi "window,run"
+
+killall skippy-xd && skippy-xd --start-daemon &
+
+killall xscreensaver && xscreensaver &
+
+killall xcompmgr && xcompmgr &
