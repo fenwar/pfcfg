@@ -47,6 +47,11 @@ bindsym Mod1+F4 kill
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
+
+
+# Use skippy-xd to switch windows
+bindsym $mod+x exec skippy-xd --activate-window-picker
+
 # Use xfrun4 and make it floaty
 bindsym $mod+d exec xfrun4
 bindsym $mod+r exec xfrun4

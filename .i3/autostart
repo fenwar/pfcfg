@@ -9,4 +9,5 @@ killall rofi && rofi \
     -font "source code pro 12"\
     -sidebar-mode -fixed-num-lines -modi "window,run"
 
+killall skippy-xd && skippy-xd --start-daemon &
 
