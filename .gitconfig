@@ -25,7 +25,7 @@
 [diff "image"]
     tool = imgdiff
 [difftool "imgdiff"]
-	cmd = /home/paulf/bin/imgdiff $LOCAL $REMOTE $MERGED
+	cmd = /home/paulf/hmrc-tools/imgdiff/imgdiff $LOCAL $REMOTE $MERGED
     trustExitCode = false
 [gitflow "feature.start"]
 	fetch = true
