@@ -44,3 +44,8 @@ export GTK2_RC_FILES=${HOME}/.gtkrc-2.0
 #export PYTHONSTARTUP=${HOME}/.pythonrc
 
 export PYTHONSTARTUP=${HOME}/pfcfg/.pythonrc
+
+# if ~/.ssh_env exists, source it to access the ssh-agent
+if [ -f "${HOME}/.ssh_env" ] ; then
+    . "${HOME}/.ssh_env"
+fi
