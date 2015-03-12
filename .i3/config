@@ -50,6 +50,16 @@ bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
 
+# change focus with num pad (Compiz/vigo muscle memory)
+bindsym $mod+KP_4 focus left
+bindsym $mod+KP_2 focus down
+bindsym $mod+KP_8 focus up
+bindsym $mod+KP_6 focus right
+bindsym Mod1+KP_4 focus left
+bindsym Mod1+KP_2 focus down
+bindsym Mod1+KP_8 focus up
+bindsym Mod1+KP_6 focus right
+
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
