@@ -25,6 +25,9 @@ fi
 if [ -d "$HOME/hmrc-tools" ] ; then
     PATH="$HOME/hmrc-tools:$PATH"
 fi
+if [ -d "$HOME/hmrc-tools/imgdiff" ] ; then
+    PATH="$HOME/hmrc-tools/imgdiff:$PATH"
+fi
 if [ -d "$HOME/helpdesk" ] ; then
     PATH="$HOME/helpdesk:$PATH"
 fi
