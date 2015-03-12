@@ -56,4 +56,4 @@ URxvt*.iconFile: /usr/share/icons/hicolor/48x48/apps/xfce-terminal.png
 
 ! Other settings to experiment with
 URxvt*.saveLines: 8192
-URxvt*.internalBorder: 2
+URxvt*.internalBorder: 1
