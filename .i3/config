@@ -33,6 +33,9 @@ bindsym $mod+t exec i3-sensible-terminal
 # start Chrome
 bindsym $mod+i exec google-chrome-stable
 
+# lock the screen (Win+Alt+L)
+bindsym $mod+Mod1+l exec xscreensaver-command -lock
+
 # kill focused window
 bindsym $mod+Shift+q kill
 bindsym Mod1+F4 kill
