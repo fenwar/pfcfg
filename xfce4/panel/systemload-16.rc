@@ -1,6 +1,6 @@
 [Main]
-Timeout=500
-Timeout_Seconds=1
+Timeout=2000
+Timeout_Seconds=5
 Use_Timeout_Seconds=true
 
 [SL_Cpu]
@@ -22,5 +22,5 @@ Color=#F0F000
 Text=swap
 
 [SL_Uptime]
-Enabled=false
+Enabled=true
 
