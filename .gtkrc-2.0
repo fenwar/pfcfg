@@ -1,8 +1,11 @@
 style "panel"
 {
     fg[NORMAL] = "#CED8EB"
+    bg[PRELIGHT] = "#C70036"
+    bg[ACTIVE] = "#C70036"
 }
 
 widget_class "*Panel*"      style "panel"
 widget "*Panel*"            style "panel"
 class "*Panel*"             style "panel"
+include ".gtkrc-2.0-gnome-color-chooser"
