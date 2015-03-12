@@ -1,2 +1,2 @@
 #!/bin/bash
-env | grep -i ssh | sed -e "s/.*/export \0/g" > ./ssh_env
+env | grep -i ssh | sed -e "s/.*/export \0/g" > ~/.ssh_env
