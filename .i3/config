@@ -57,6 +57,10 @@ bindsym $mod+d exec xfrun4
 bindsym $mod+r exec xfrun4
 for_window [class="Xfrun4"] floating enable
 
+# Make hedgewars fullscreen
+for_window [class="hwengine"] fullscreen global
+
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -99,6 +103,7 @@ bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen
+bindsym $mod+Mod1+f fullscreen global
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
