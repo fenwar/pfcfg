@@ -11,3 +11,6 @@ killall rofi && rofi \
 
 killall skippy-xd && skippy-xd --start-daemon &
 
+killall xscreensaver && xscreensaver &
+
+killall xcompmgr && xcompmgr &
