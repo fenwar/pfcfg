@@ -227,6 +227,12 @@ bindsym $music_mod+Left exec quodlibet --previous
 bindsym $music_mod+Return exec quodlibet --toggle-window
 bindsym $music_mod+m exec ql ?
 
+# Media keys on my new Ducky Zero
+bindsym XF86AudioMute exec "magicpause" ; exec "alsavol mute"
+bindsym XF86AudioRaiseVolume exec alsavol up
+bindsym XF86AudioLowerVolume exec alsavol down
+bindsym XF86Calculator exec magicpause
+
 # Startup script (kill & reload background processes)
 exec_always ${HOME}/.i3/autostart
 
