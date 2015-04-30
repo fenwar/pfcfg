@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# Find the first available vim server
+VIMSERVER=$(vim --serverlist | head -1)
+
+if [ -n "$VIMSERVER" ] ; then
+    vim --servername $VIMSERVER --remote $@
+else
+    pluma $@
+fi
+
