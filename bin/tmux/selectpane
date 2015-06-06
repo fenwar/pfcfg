@@ -1,0 +1,22 @@
+#!/bin/sh
+# Move between panes in tmux, crossing window boundaries
+
+PANE_COUNT=$(tmux list-panes | wc -l)
+CURRENT_PANE=$(tmux list-panes | grep "active" | cut -d':' -f1)
+
+if [ "$1" = "next" ] ; then
+    if [ "$CURRENT_PANE" = "$PANE_COUNT" ] ; then
+        tmux next-window
+        tmux select-pane -t 1
+    else
+        tmux select-pane -t :.+
+    fi
+elif [ "$1" = "prev" ] ; then
+    if [ "$CURRENT_PANE" = "1" ] ; then
+        tmux previous-window
+        tmux select-pane -t bottom-right
+    else
+        tmux select-pane -t :.-
+    fi
+fi
+
