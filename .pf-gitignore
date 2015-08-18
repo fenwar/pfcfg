@@ -1,5 +1,4 @@
-*.swp
-.sw?
+.*.sw?
 tags
 .vim/.netrwbook
 .vim/.netrwhist
