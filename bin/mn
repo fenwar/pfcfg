@@ -13,5 +13,7 @@ SHARENAME=${1}
 LOCALPATH=${LOCALBASE}/$(basename ${SHARENAME})
 
 mkdir -p ${LOCALPATH}
-sudo mount -t cifs -ousername=${SHAREUSER},uid=${LOCALUSER} ${SHARENAME} ${LOCALPATH}
+sudo mount -t cifs \
+    -ousername=${SHAREUSER},uid=${LOCALUSER},password=${PENCOM_PSWD} \
+    ${SHARENAME} ${LOCALPATH}
 

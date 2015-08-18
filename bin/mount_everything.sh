@@ -1,7 +1,10 @@
-#!/bin/sh
+#!/bin/bash
 
 # Mount all the shares!
 # (Comment anything that isn't used regularly enough that I care if it fails.)
+
+read -s -p "Password for PENCOM\\paulf: " PENCOM_PSWD
+echo
 
 findmnt -t fuse.sshfs --target ~/mnt/rti.dev > /dev/null
 if [ $? -ne 0 ] ; then
@@ -12,7 +15,7 @@ fi
 findmnt -t cifs --target ~/mnt/temp > /dev/null
 if [ $? -ne 0 ] ; then
     echo '*** Mount temp share on shelby ***'
-    mn //shelby/temp
+    . mn //shelby/temp
 fi
 
 findmnt -t cifs --target ~/mnt/jobs_live > /dev/null
@@ -21,10 +24,22 @@ if [ $? -ne 0 ] ; then
     mn //shelby/jobs_live
 fi
 
+findmnt -t cifs --target ~/mnt/software > /dev/null
+if [ $? -ne 0 ] ; then
+    echo '*** Mount software share on shelby ***'
+    mn //shelby/software
+fi
+
 findmnt -t cifs --target ~/mnt/it > /dev/null
 if [ $? -ne 0 ] ; then
     echo '*** Mount private IT share on shelby ***'
     mn //shelby/it
+fi
+
+findmnt -t cifs --target ~/mnt/users > /dev/null
+if [ $? -ne 0 ] ; then
+    echo '*** Mount users share on shelby ***'
+    mn //shelby/users
 fi
 
 findmnt -t cifs --target ~/mnt/casefiles > /dev/null
@@ -38,4 +53,3 @@ if [ $? -ne 0 ] ; then
     echo '*** Mount backup archive share on PENMANBK02 ***'
     mn //penmanbk02/jobs_archive_02
 fi
-
