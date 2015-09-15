@@ -4,6 +4,11 @@
 
 # Usage: sudo mn //server/sharename
 
+if [[ -z ${PENCOM_PSWD} ]] ; then
+    read -s -p "Password for PENCOM\\paulf: " PENCOM_PSWD
+    echo
+fi
+
 LOCALBASE=${HOME}/mnt
 
 SHAREUSER=paulf
