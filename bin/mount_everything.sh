@@ -21,35 +21,35 @@ fi
 findmnt -t cifs --target ~/mnt/jobs_live > /dev/null
 if [ $? -ne 0 ] ; then
     echo '*** Mount Jobs Live share on shelby ***'
-    mn //shelby/jobs_live
+    . mn //shelby/jobs_live
 fi
 
 findmnt -t cifs --target ~/mnt/software > /dev/null
 if [ $? -ne 0 ] ; then
     echo '*** Mount software share on shelby ***'
-    mn //shelby/software
+    . mn //shelby/software
 fi
 
 findmnt -t cifs --target ~/mnt/it > /dev/null
 if [ $? -ne 0 ] ; then
     echo '*** Mount private IT share on shelby ***'
-    mn //shelby/it
+    . mn //shelby/it
 fi
 
 findmnt -t cifs --target ~/mnt/users > /dev/null
 if [ $? -ne 0 ] ; then
     echo '*** Mount users share on shelby ***'
-    mn //shelby/users
+    . mn //shelby/users
 fi
 
 findmnt -t cifs --target ~/mnt/casefiles > /dev/null
 if [ $? -ne 0 ] ; then
     echo '*** Mount casefiles share on shelby (HMRC BPT helpdesk) ***'
-    mn //shelby/casefiles
+    . mn //shelby/casefiles
 fi
 
 findmnt -t cifs --target ~/mnt/jobs_archive_02 > /dev/null
 if [ $? -ne 0 ] ; then
     echo '*** Mount backup archive share on PENMANBK02 ***'
-    mn //penmanbk02/jobs_archive_02
+    . mn //penmanbk02/jobs_archive_02
 fi
