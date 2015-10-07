@@ -5,6 +5,7 @@
 --ignore-file=match:/^tags$/
 --ignore-dir=apidocs/
 --ignore-dir=docs/
+--ignore-dir=src-copy/
 --ignore-dir=target/
 --ignore-dir=dist/
 --ignore-dir=dist-patch/
