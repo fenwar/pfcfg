@@ -50,39 +50,39 @@
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
-    <property name="VGA1" type="string" value="Dell Inc. 17&quot;">
+    <property name="VGA1" type="string" value="Samsung Electric Company 24&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="Resolution" type="string" value="1920x1200"/>
+      <property name="RefreshRate" type="double" value="59.950171"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="true"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="1024"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
+    <property name="HDMI2" type="string" value="HDMI2">
       <property name="Active" type="bool" value="true"/>
       <property name="Resolution" type="string" value="1280x1024"/>
       <property name="RefreshRate" type="double" value="60.019740"/>
-      <property name="Rotation" type="int" value="0"/>
+      <property name="Rotation" type="int" value="90"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="false"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="2944"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
+    <property name="HDMI1" type="string" value="Dell Inc. 19&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="Resolution" type="string" value="1280x1024"/>
+      <property name="RefreshRate" type="double" value="60.019740"/>
+      <property name="Rotation" type="int" value="90"/>
       <property name="Reflection" type="string" value="0"/>
       <property name="Primary" type="bool" value="false"/>
       <property name="Position" type="empty">
         <property name="X" type="int" value="0"/>
-        <property name="Y" type="int" value="0"/>
-      </property>
-    </property>
-    <property name="HDMI2" type="string" value="Samsung Electric Company 24&quot;">
-      <property name="Active" type="bool" value="true"/>
-      <property name="Resolution" type="string" value="1920x1200"/>
-      <property name="RefreshRate" type="double" value="59.950171"/>
-      <property name="Rotation" type="int" value="0"/>
-      <property name="Reflection" type="string" value="0"/>
-      <property name="Primary" type="bool" value="false"/>
-      <property name="Position" type="empty">
-        <property name="X" type="int" value="0"/>
-        <property name="Y" type="int" value="0"/>
-      </property>
-    </property>
-    <property name="HDMI1" type="string" value="Samsung Electric Company 24&quot;">
-      <property name="Active" type="bool" value="true"/>
-      <property name="Resolution" type="string" value="1920x1200"/>
-      <property name="RefreshRate" type="double" value="59.950171"/>
-      <property name="Rotation" type="int" value="0"/>
-      <property name="Reflection" type="string" value="0"/>
-      <property name="Primary" type="bool" value="false"/>
-      <property name="Position" type="empty">
-        <property name="X" type="int" value="1920"/>
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
@@ -123,6 +123,21 @@
         <property name="X" type="int" value="0"/>
         <property name="Y" type="int" value="0"/>
       </property>
+    </property>
+    <property name="VGA1" type="string" value="Samsung Electric Company 24&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="Resolution" type="string" value="1920x1200"/>
+      <property name="RefreshRate" type="double" value="59.950171"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="true"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="1024"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
+    <property name="HDMI1" type="string" value="Dell Inc. 19&quot;">
+      <property name="Active" type="bool" value="false"/>
     </property>
   </property>
 </channel>

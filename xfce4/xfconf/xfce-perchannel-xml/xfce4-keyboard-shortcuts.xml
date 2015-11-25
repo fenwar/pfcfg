@@ -30,9 +30,6 @@
       <property name="&lt;Alt&gt;F2" type="string" value="xfce4-appfinder">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
-      <property name="&lt;Super&gt;i" type="string" value="google-chrome-stable">
-        <property name="startup-notify" type="bool" value="true"/>
-      </property>
       <property name="&lt;Super&gt;l" type="string" value="xflock4">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
@@ -57,9 +54,6 @@
       <property name="&lt;Alt&gt;&lt;Super&gt;t" type="string" value="rxvt">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
-      <property name="&lt;Super&gt;t" type="string" value="rxvt -e /home/paulf/bin/tmux_start">
-        <property name="startup-notify" type="bool" value="true"/>
-      </property>
       <property name="&lt;Primary&gt;&lt;Super&gt;Left" type="string" value="quodlibet --previous"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;Page_Down" type="string" value="xfce4-terminal --drop-down --title=&quot;Console&quot;">
         <property name="startup-notify" type="bool" value="true"/>
@@ -81,9 +75,16 @@
       <property name="&lt;Primary&gt;&lt;Super&gt;space" type="string" value="/home/paulf/bin/magicpause"/>
       <property name="&lt;Primary&gt;&lt;Super&gt;Up" type="string" value="/home/paulf/bin/alsavol up"/>
       <property name="&lt;Primary&gt;&lt;Super&gt;Down" type="string" value="/home/paulf/bin/alsavol down"/>
-      <property name="XF86AudioLowerVolume" type="string" value="/home/paulf/bin/alsavol down"/>
       <property name="XF86AudioRaiseVolume" type="string" value="/home/paulf/bin/alsavol up"/>
       <property name="XF86AudioMute" type="string" value="/home/paulf/bin/alsavol mute"/>
+      <property name="XF86Calculator" type="string" value="/home/paulf/bin/magicpause"/>
+      <property name="&lt;Super&gt;t" type="string" value="rxvt -e /home/paulf/bin/tmux_start">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="XF86AudioLowerVolume" type="string" value="/home/paulf/bin/alsavol down"/>
+      <property name="&lt;Super&gt;i" type="string" value="iceweasel">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
     </property>
   </property>
   <property name="xfwm4" type="empty">
