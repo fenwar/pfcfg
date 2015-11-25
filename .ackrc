@@ -10,3 +10,5 @@
 --ignore-dir=dist/
 --ignore-dir=dist-patch/
 --ignore-dir=dist-debugtools/
+--ignore-dir=resources/manifests/
+--ignore-dir=src/static/
