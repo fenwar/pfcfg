@@ -1,4 +1,6 @@
 --type-set=styl:ext:styl
+--type-set=pofile:ext:po
+--type-set=xliff:ext:xlf
 --ignore-file=match:/min\.js$/
 --ignore-file=match:/min\.css$/
 --ignore-file=match:/rti_.*\.sql$/
@@ -12,3 +14,4 @@
 --ignore-dir=dist-debugtools/
 --ignore-dir=resources/manifests/
 --ignore-dir=src/static/
+--ignore-dir=resources/xlf/
