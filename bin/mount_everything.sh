@@ -6,6 +6,12 @@
 read -s -p "Password for PENCOM\\paulf: " PENCOM_PSWD
 echo
 
+#findmnt -t fuse.sshfs --target ~/mnt/clivesrc > /dev/null
+#if [ $? -ne 0 ] ; then
+#    echo '*** Mount clive source on clive ***'
+#    sshfs paulf@clive:/home/clive/clive ~/mnt/clivesrc
+#fi
+
 findmnt -t fuse.sshfs --target ~/mnt/rti.dev > /dev/null
 if [ $? -ne 0 ] ; then
     echo '*** Mount rti.dev on riviera (QA server for BPT updates) ***'
