@@ -1,7 +1,11 @@
 #!/bin/bash
-NOW_PLAYING=$(quodlibet --print-playing | sed -e "s/ - /\r/g")
-if [ -n "${NOW_PLAYING}" ] ; then
-    echo "Now playing:"
-    echo ${NOW_PLAYING}
-fi
 
+# Check if quodlibet is running
+if quodlibet --status &> /dev/null ; then
+    echo "Quod Libet:"
+    echo $(quodlibet --print-playing '<~people>')
+    echo $(quodlibet --print-playing '<title> (<~length>)')
+    echo $(quodlibet --print-playing '<album><date| (<~#year>)><tracknumber| (<tracknumber>)>')
+else
+    echo ""
+fi
