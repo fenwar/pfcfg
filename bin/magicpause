@@ -3,18 +3,24 @@
 # Magically pause or unpause whichever source of audio I might be listening to
 # right this moment.
 
+# Youtube (in a browser window)
+YOUTUBE_WINDOW=$(xdotool search --name "YouTube - Google Chrome")
+if [ -n ${YOUTUBE_WINDOW} ] ; then
+    echo Found a youtube window: $YOUTUBE_WINDOW
+    ACTIVE_WINDOW=$(xdotool getwindowfocus -f)
+    xdotool windowfocus --sync ${YOUTUBE_WINDOW} key space
+    sleep 0.5
+    xdotool windowfocus --sync ${ACTIVE_WINDOW}
+fi
+
+
+
 # Mixcloud (in a browser window)
 MIXCLOUD_WINDOW=$(xdotool search --name "Mixcloud - Iceweasel")
 
 if [ -n ${MIXCLOUD_WINDOW} ] ; then
-    xdotool key --window ${MIXCLOUD_WINDOW} space
-fi
-
-# Grooveshark (in a browser window)
-GROOVESHARK_WINDOW=$(xdotool search --name "Grooveshark - Iceweasel")
-
-if [ -n ${GROOVESHARK_WINDOW} ] ; then
-    xdotool key --window ${GROOVESHARK_WINDOW} space
+    echo 'MIXCLOUD="'${MIXCLOUD_WINDOW}'"'
+    #xdotool key --window ${MIXCLOUD_WINDOW} space
 fi
 
 # Soundcloud (in a browser window)
