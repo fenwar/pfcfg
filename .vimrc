@@ -93,7 +93,7 @@ command! Tgenerate execute ":!ctags -R"
 
 command! -range Ghjump call GitHubJump("%", "<line1>", "<line2>")
 fun! GitHubJump(file, startline, endline)
-    silent execute "!x-www-browser $(gh_url.sh " . a:file . " " . a:startline . "-" . a:endline . ") &>/dev/null"
+    silent execute "!x-www-browser $(gh_url.sh " . a:file . " " . a:startline . " " . a:endline . ") &>/dev/null"
     redraw!
 endfun
 
