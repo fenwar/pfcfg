@@ -91,6 +91,12 @@ set tags=./tags;/
 
 command! Tgenerate execute ":!ctags -R"
 
+command! -range Ghurl call GitHubUrl("%", "<line1>", "<line2>")
+fun! GitHubUrl(file, startline, endline)
+    execute "!echo $(gh_url.sh " . a:file . " " . a:startline . " " . a:endline . ")"
+    redraw!
+endfun
+
 command! -range Ghjump call GitHubJump("%", "<line1>", "<line2>")
 fun! GitHubJump(file, startline, endline)
     silent execute "!x-www-browser $(gh_url.sh " . a:file . " " . a:startline . " " . a:endline . ") &>/dev/null"
