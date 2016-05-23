@@ -14,10 +14,12 @@ URxvt*.geometry: 120x40
 URxvt*.scrollBar: false
 
 ! Set my default preferred font
-URxvt*.font: xft:DejaVu Sans Mono:size=10,antialias=false,\
+URxvt*.font: xft:Inconsolata:size=10,antialias=false,\
              xft:Code2000:antialias=false
+!URxvt*.font: xft:DejaVu Sans Mono:size=10,antialias=false,\
+!             xft:Code2000:antialias=false
 
-URxvt*.letterSpace: -1
+!URxvt*.letterSpace: -1
 
 ! Include perl font-size extension
 ! See https://github.com/majutsushi/urxvt-font-size
