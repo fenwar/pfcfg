@@ -36,10 +36,18 @@
 
 
 #Centre Window
-"galculator"
+"qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Move' ; qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'MoveMouseToCenter' ; xdotool click 1"
     m:0x50 + c:84
     Mod2+Mod4 + KP_Begin
 
+# (Meta + Numpad 0):
+"qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window to Next Screen'"
+    m:0x50 + c:90
+    Mod2+Mod4 + KP_Insert
+# Alt + Numpad 0:
+"pluma"
+    m:0x18 + c:90
+    Alt+Mod2 + KP_Insert
 # Quick tile
 "qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Quick Tile Top Left'"
     m:0x50 + c:79
@@ -86,7 +94,7 @@
     Alt+Mod2 + KP_Down
 
 # move window to next screen
-"qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window to Next Screen'"
+"qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window to Screen 3'"
     m:0x50 + c:91
     Mod2+Mod4 + KP_Delete
 
