@@ -19,6 +19,6 @@ LOCALPATH=${LOCALBASE}/$(basename ${SHARENAME})
 
 mkdir -p ${LOCALPATH}
 sudo mount -t cifs \
-    -ousername=${SHAREUSER},uid=${LOCALUSER},password=${PENCOM_PSWD} \
+    -ousername=${SHAREUSER},uid=${LOCALUSER},password=${PENCOM_PSWD},vers=2.0 \
     ${SHARENAME} ${LOCALPATH}
 
