@@ -40,31 +40,66 @@
     m:0x50 + c:84
     Mod2+Mod4 + KP_Begin
 
-# (Meta + Numpad 0):
-"qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window to Next Screen'"
+# move window to previous screen (to the left) (Meta + Numpad 0):
+"qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window to Previous Screen'"
     m:0x50 + c:90
     Mod2+Mod4 + KP_Insert
+
+# move window to centre screen (primary screen) (Meta + Numpad .):
+"qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window to Screen 0'"
+    m:0x50 + c:91
+    Mod2+Mod4 + KP_Delete
+
+# move window to next screen (to the right) (Meta + Numpad Enter):
+"qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window to Next Screen'"
+    m:0x50 + c:104
+    Mod2+Mod4 + KP_Enter
+
 # Alt + Numpad 0:
 "pluma"
     m:0x18 + c:90
     Alt+Mod2 + KP_Insert
-# Quick tile
+
+
+# Tile to top left
 "qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Quick Tile Top Left'"
+    m:0x48 + c:79
+    Alt+Mod4 + KP_Home
+# Tile to top right
+"qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Quick Tile Top Right'"
+    m:0x48 + c:81
+    Alt+Mod4 + KP_Prior
+# Tile to bottom left
+"qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Quick Tile Bottom Left'"
+    m:0x48 + c:87
+    Alt+Mod4 + KP_End
+# Tile to bottom right
+"qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Quick Tile Bottom Right'"
+    m:0x48 + c:89
+    Alt+Mod4 + KP_Next
+
+# Just press the windows key on its own
+"(Scheme function)"
+    m:0x40 + c:133
+    Mod4 + Super_L
+
+# Move to top left
+"qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Pack Left' ; qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Pack Up'"
     m:0x50 + c:79
     Mod2+Mod4 + KP_Home
 
-# Quick tile
-"qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Quick Tile Top Right'"
+# Move to top right
+"qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Pack Right' ; qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Pack Up'"
     m:0x40 + c:81
     Mod4 + KP_Prior
 
-# Quick tile
-"qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Quick Tile Bottom Left'"
+# Move to bottom left
+"qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Pack Left' ; qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Pack Down'"
     m:0x40 + c:87
     Mod4 + KP_End
 
-# Quick tile
-"qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Quick Tile Bottom Right'"
+# Move to bottom right
+"qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Pack Right' ; qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Pack Down'"
     m:0x40 + c:89
     Mod4 + KP_Next
 
@@ -92,16 +127,6 @@
 "qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Switch Window Down'"
     m:0x18 + c:88
     Alt+Mod2 + KP_Down
-
-# move window to next screen
-"qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window to Screen 3'"
-    m:0x50 + c:91
-    Mod2+Mod4 + KP_Delete
-
-# move window to prev screen
-"qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window to Previous Screen'"
-    m:0x50 + c:104
-    Mod2+Mod4 + KP_Enter
 
 # pack window left
 "qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Pack Left'"
@@ -139,5 +164,12 @@
 "qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Grow Vertical'"
     m:0x50 + c:86
     Mod2+Mod4 + KP_Add
+
+
+# Alt+printscreen
+"shutter -a"
+    m:0x18 + c:107
+    Alt+Mod2 + Print
+
 #
 # End of xbindkeys configuration
