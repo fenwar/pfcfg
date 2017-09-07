@@ -1,0 +1,6 @@
+--exclude=dist
+--exclude=src-copy
+--exclude=node_modules
+--exclude=augment.js
+--exclude=resemble.js
+--exclude=docs
