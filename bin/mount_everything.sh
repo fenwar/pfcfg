@@ -12,6 +12,12 @@ echo
 #    sshfs paulf@clive:/home/clive/clive ~/mnt/clivesrc
 #fi
 
+findmnt -t fuse.sshfs --target ~/mnt/frink > /dev/null
+if [ $? -ne 0 ] ; then
+    echo '*** Mount www on frink (dev http server) ***'
+    sshfs paulf@frink:/home/vhosts/frink ~/mnt/frink
+fi
+
 findmnt -t fuse.sshfs --target ~/mnt/rti.dev > /dev/null
 if [ $? -ne 0 ] ; then
     echo '*** Mount rti.dev on riviera (QA server for BPT updates) ***'
@@ -54,8 +60,14 @@ if [ $? -ne 0 ] ; then
     . mn //shelby/casefiles
 fi
 
-findmnt -t cifs --target ~/mnt/jobs_archive_02 > /dev/null
-if [ $? -ne 0 ] ; then
-    echo '*** Mount backup archive share on PENMANBK02 ***'
-    . mn //penmanbk02/jobs_archive_02
-fi
+#findmnt -t cifs --target ~/mnt/jobs_archive_02 > /dev/null
+#if [ $? -ne 0 ] ; then
+#    echo '*** Mount backup archive share on PENMANBK02 ***'
+#    . mn //penmanbk02/jobs_archive_02
+#fi
+
+#findmnt -t cifs --target ~/mnt/cdburn > /dev/null
+#if [ $? -ne 0 ] ; then
+#    echo '*** Mount CD burning image share on PENMANCD01 ***'
+#    . mn //penmancd01/cdburn
+#fi
