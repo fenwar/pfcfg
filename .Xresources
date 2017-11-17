@@ -1,5 +1,5 @@
 ! Use lightdm to provide user switching
-*newLoginCommand: dm-tool switch-to-greeter
+! *newLoginCommand: dm-tool switch-to-greeter
 
 !!!!!!!!!!!!!!!!!!!!!!!!!
 ! rxvt-unicode settings !
@@ -7,12 +7,12 @@
 
 ! Green text on translucent black background
 URxvt*.depth: 32
-URxvt*.background: [96]#000000
-URxvt*.foreground: #dddddd
+!URxvt*.background: [98]#000000
+!URxvt*.foreground: #dddddd
 
 ! Fix blue for dark backgrounds
-URxvt*.color4: #3333ff
-URxvt*.color12: #6666ff
+!URxvt*.color4: #3333ff
+!URxvt*.color12: #6666ff
 URxvt*.colorUL: #eeee55
 URxvt*.underlineColor: #555555
 
@@ -22,14 +22,13 @@ URxvt*.scrollBar: false
 ! Set my default preferred font
 !URxvt*.font: xft:Source Code Pro:pixelsize=15,style=Regular,antialias=false,\
 !             xft:Code2000:antialias=false
-!URxvt*.letterSpace: -1
 !URxvt*.font: xft:Ubuntu Mono:pixelsize=16,style=Regular,antialias=true,\
 !             xft:Code2000:antialias=false
-!URxvt*.letterSpace: -1
 !URxvt*.font: xft:Fira Mono:pixelsize=16,style=Regular,antialias=false,\
 !             xft:Code2000:antialias=false
-URxvt*.font: xft:Inconsolata:pixelsize=16,style=Regular,antialias=true,\
+URxvt*.font: xft:Inconsolata:pixelsize=18,style=Regular,antialias=true,\
              xft:Code2000:antialias=false
+URxvt*.letterSpace: -1
 
 ! Include perl font-size extension
 ! See https://github.com/majutsushi/urxvt-font-size
@@ -51,7 +50,7 @@ URxvt.meta8: false
 ! Disable iso14755 which is bound to C-S-Up/Down
 URxvt*.iso14755: false
 
-URxvt*.cursorColor: #dddd88
+!URxvt*.cursorColor: #dddd88
 URxvt*.cursorBlink: true
 URxvt*.cursorUnderline: false
 URxvt*.pointerBlank: true
@@ -59,8 +58,11 @@ URxvt*.pointerBlankDelay: 10
 
 URxvt*.loginShell: true
 
-URxvt*.iconFile: /usr/share/icons/hicolor/48x48/apps/xfce-terminal.png
+URxvt*.iconFile: /usr/share/icons/mate/256x256/apps/terminal.png
 
 ! Other settings to experiment with
 URxvt*.saveLines: 8192
-URxvt*.internalBorder: 1
+URxvt*.internalBorder: 2
+
+#include "/home/paulf/src/solarized/xresources/Xresources.dark"
+
