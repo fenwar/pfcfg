@@ -8,6 +8,7 @@
 	excludesfile = /home/paulf/pfcfg/.pf-gitignore
     filemode = true
 	attributesfile = /home/paulf/.gitattributes
+	pager = less -S
 [push]
 	default = current
 [diff]
@@ -42,3 +43,10 @@
 	fetch = true
 [log]
 	date = local
+[difftool "echo"]
+[difftool "echo"]
+	cmd = echo $MERGED
+[alias]
+	lg = log --color --graph --abbrev-commit\n           --pretty=format:'%Cred%h%Creset %Cgreen(%cd) %C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset'
+	up = !echo type gu
+	back = checkout @{-1}
