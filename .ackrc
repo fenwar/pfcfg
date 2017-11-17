@@ -15,3 +15,4 @@
 --ignore-dir=resources/manifests/
 --ignore-dir=src/static/
 --ignore-dir=resources/xlf/
+--pager=less -RFXm
