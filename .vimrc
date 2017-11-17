@@ -105,13 +105,15 @@ endfun
 
 " Fix mouse wheel behaviour in urxvt "
 set mouse=a
+noremap <LeftDrag> <LeftMouse>
+noremap! <LeftDrag> <LeftMouse>
 
 " Use ant for project builds by default; search upwards for build.xml "
 set makeprg=ant\ -s\ build.xml\ $*
 
 " Default to recursive grepping inside vim "
 "" set grepprg=grep\ -rnI\ --exclude=tags\ $*\ .
-set grepprg=ack-grep\ --smart-case\ $*
+set grepprg=ack\ --smart-case\ $*
 
 " Use bash login but don't run .bashrc (avoids recursive virtualenv problem) "
 set shell=/bin/bash\ --login\ --norc
@@ -186,7 +188,7 @@ map <leader>/ :nohls<cr>
 map ]] :cn<cr>
 map [[ :cp<cr>
 
-autocmd QuickFixCmdPost * nested copen 5
+autocmd QuickFixCmdPost * nested copen 10
 
 
 " Nicer ways to get out of insert mode? "
@@ -202,8 +204,8 @@ set titlestring=%{$TERM_TITLE}\ %t\ %m\ (%f)\ -\ VIM!
 
 " Pylint "
 
-au FileType python set makeprg=pylint\ --reports=n\ --include-ids=y\ --output-format=parseable\ %:p
-au FileType python set efm=%A%f:%l:\ [%t%n%.%#]\ %m,%Z%p^^,%-C%.%#
+au FileType python set makeprg=python\ -m\ flake8\ --exclude=legacy,migrations,message_catalogue.py\ %:p
+" au FileType python set efm=%A%f:%l:\ [%t%n%.%#]\ %m,%Z%p^^,%-C%.%#"
 
 " gvim defaults "
 if has("gui_running")
@@ -231,15 +233,15 @@ let g:CommandTCancelMap=['<C-c>', '<Esc>']
 hi PFCommandTHighlightColor cterm=bold ctermbg=28 ctermfg=11
 let g:CommandTHighlightColor='PFCommandTHighlightColor'
 let g:CommandTScanDotDirectories=1
-let g:CommandTWildIgnore=&wildignore . ",*.git,*/dist/*,*/target/*,*.png"
+let g:CommandTWildIgnore=&wildignore . ",*.git,*/dist/*,*/src/static/*,*/target/*,*/dist-*/*,*/node_modules/*,*/src-copy/*,*/docs/*,*.png"
 
-map <C-e> :CommandT<cr>
-map <C-j> :CommandTBuffer<cr>
-map <C-k> :CommandT<cr>
+"" map <C-e> :CommandT<cr>
+map <C-j> <C-c>:CommandT<cr>
+map <C-k> <C-c>:CommandTBuffer<cr>
 
-map! <C-e> <Esc>:CommandT<cr>
-map! <C-j> <Esc>:CommandTBuffer<cr>
-map! <C-k> <Esc>:CommandT<cr>
+"" map! <C-e> <Esc>:CommandT<cr>
+map! <C-j> <C-c>:CommandT<cr>
+map! <C-k> <C-c>:CommandTBuffer<cr>
 
 "" function s:CommandTForCurrentDir()
 ""  let pfcurdir = getcwd()
@@ -258,3 +260,6 @@ map <C-h> :bro ol<cr>
 let &t_SI .= "\<Esc>[4 q"
 " solid block
 let &t_EI .= "\<Esc>[1 q"
+
+"set background=dark
+"colorscheme solarized
