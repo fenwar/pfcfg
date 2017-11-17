@@ -29,8 +29,8 @@ alias gfp="git fetch --prune"
 # alias gffp="git flow feature publish "
 # alias gff="git flow feature "
 
-alias vims="vim --servername VIM"
-alias vimr="vim --servername VIM --remote"
+# alias vims="vim --servername VIM"
+# alias vimr="vim --servername VIM --remote"
 
 alias GB="git rev-parse --symbolic-full-name --abbrev-ref HEAD"
 alias gitup="cd \$(git rev-parse --show-toplevel)"
