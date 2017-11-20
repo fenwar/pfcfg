@@ -17,6 +17,7 @@ shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 export HISTSIZE=99999
+export HISTFILESIZE=99999
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -113,8 +114,4 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-# Enable tmux completion
-
-. /usr/share/doc/tmux/examples/bash_completion_tmux.sh
 
