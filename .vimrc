@@ -113,7 +113,7 @@ set makeprg=ant\ -s\ build.xml\ $*
 
 " Default to recursive grepping inside vim "
 "" set grepprg=grep\ -rnI\ --exclude=tags\ $*\ .
-set grepprg=ack\ --smart-case\ $*
+set grepprg=ack\ --smart-case\ -H\ $*
 
 " Use bash login but don't run .bashrc (avoids recursive virtualenv problem) "
 set shell=/bin/bash\ --login\ --norc
