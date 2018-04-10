@@ -1,0 +1,8 @@
+#!/bin/sh
+TORHOST=127.0.0.1
+TORPORT=9050
+chromium \
+    --proxy-server="socks5://${TORHOST}:${TORPORT}" \
+    --host-resolver-rules="MAP * 0.0.0.0 , EXCLUDE ${TORHOST}" \
+    ${*}
+
