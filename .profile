@@ -45,7 +45,11 @@ export GTK2_RC_FILES=${HOME}/.gtkrc-2.0
 
 export PYTHONSTARTUP=${HOME}/pfcfg/.pythonrc
 
+export LIBFAKETIME_PATH=$(locate libfaketime.so.1)
+
 # if ~/.ssh_env exists, source it to access the ssh-agent
 if [ -f "${HOME}/.ssh_env" ] ; then
     . "${HOME}/.ssh_env"
 fi
+
+export XDG_DATA_DIRS=${HOME}/.local/share/:/usr/share/mate:/usr/local/share/:/usr/share/

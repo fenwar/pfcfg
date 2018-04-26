@@ -23,3 +23,8 @@ else
     sudo umount ${NBDEV}${IMAGE_PART}
     sudo qemu-nbd --disconnect /dev/nbd0
 fi
+
+
+# To start the VM use
+# sudo qemu-system-i386 winxp.qcow2 -m 1024 -cpu pentium3 \
+#                       -usb -usbdevice tablet -alt-grab -enable-kvm

@@ -65,4 +65,4 @@ URxvt*.saveLines: 8192
 URxvt*.internalBorder: 2
 
 #include "/home/paulf/src/solarized/xresources/Xresources.dark"
-
+#include "/usr/share/rofi/themes/gruvbox-dark.theme"

@@ -1,4 +1,3 @@
-xrdb -load .Xresources
 eval `ssh-agent`
 export_ssh_env
 ssh-add .ssh/id_rsa .ssh/id_rsa_pf_github .ssh/id_rsa_epennant

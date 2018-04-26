@@ -1,11 +1,15 @@
 #!/bin/bash
 
-MON_LEFT=VGA1
+MON_LEFT=HDMI2
 MON_PRIMARY=HDMI1
-MON_RIGHT=HDMI2
+MON_RIGHT=VGA1
 
 LEFT_ROTATION=normal
+PRIMARY_ROTATION=normal
 RIGHT_ROTATION=normal
+
+#LEFT_ROTATION=left
+#RIGHT_ROTATION=left
 
 killall compiz
 killall xfwm4
@@ -13,9 +17,10 @@ killall xfwm4
 # wait for compiz or xfwm4 to exit
 sleep 2
 
-xrandr --output $MON_PRIMARY --auto --primary
-xrandr --output $MON_LEFT --auto --rotate $LEFT_ROTATION --left-of $MON_PRIMARY
+xrandr --output $MON_PRIMARY --auto --rotate $PRIMARY_ROTATION --primary
 xrandr --output $MON_RIGHT --auto --rotate $RIGHT_ROTATION --right-of $MON_PRIMARY
+#xrandr --output $MON_LEFT --off
+xrandr --output $MON_LEFT --auto --rotate $LEFT_ROTATION --left-of $MON_PRIMARY
 #xrandr --output $MON_RIGHT --auto --rotate $RIGHT_ROTATION --pos 3840x176
 
 # wait for xrandr to finish adjusting the monitors
