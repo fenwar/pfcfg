@@ -7,7 +7,7 @@
 
 ! Green text on translucent black background
 URxvt*.depth: 32
-!URxvt*.background: [98]#000000
+!URxvt*.background: [86]#000000
 !URxvt*.foreground: #dddddd
 
 ! Fix blue for dark backgrounds
