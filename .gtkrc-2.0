@@ -25,3 +25,9 @@ style "panel"
 widget_class "*Panel*"      style "panel"
 widget "*Panel*"            style "panel"
 class "*Panel*"             style "panel"
+
+style "xfce-tasklist-style"
+{
+    XfceTasklist::max-button-length=300
+}
+class "XfceTasklist" style "xfce-tasklist-style"
