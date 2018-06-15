@@ -1,4 +1,6 @@
 #!/bin/bash
+alias tma="tmux attach || tmux"
+
 alias gd="clear && git diff"
 alias gdc="clear && git diff --cached"
 alias gap="clear && git add -p"
@@ -40,6 +42,9 @@ alias cdup="cd \$(git rev-parse --show-toplevel)"
 # alias gbi="git branch --no-merged | xargs -i__ git log -1 --format=format:\"%w($(tput cols),0,81)__ %>|(80,mtrunc)%d %N\" __"
 # alias gbi="git branch --no-merged | xargs -i__ git log -1 --format=format:\"%w($(tput cols),0,48)__%>>|(47,trunc)%h%d%n%N\" __"
 alias gbi="git branch --no-merged | grep -v \"^  archive/\" | xargs -i__ git log -1 --format=format:\"__%>>|(47,trunc)%h%d%n%w($(tput cols),48,48)%N\" __"
+alias gcln="git clean -dxn -e tags -e .*.sw?"
+alias gclf="git clean -dxf -e tags -e .*.sw?"
+
 
 alias wd="dwdiff -cblack:red,gray:green --diff-input -P"
 alias dw="dwdiff -cblack:red,gray:green"
