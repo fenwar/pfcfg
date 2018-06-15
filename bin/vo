@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Open a list of multiple files in vim by assembling the command line, because
+# vim has weird behaviour when you do this with xargs.
+#
+# Usage example:
+#
+#   $(find . -name "test_*.py" | vo) -O
+
+
+VIMCMD=$@
+: ${VIMCMD:="vim"}
+
+while IFS=':' read -ra LINE ; do
+    VIMCMD="$VIMCMD ${LINE[0]}"
+    if [[ "${LINE[1]}" != "" ]] ; then
+        VIMCMD="$VIMCMD +${LINE[1]}"
+    fi
+done
+
+echo $VIMCMD
