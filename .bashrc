@@ -115,3 +115,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
+if [ -f ~/src/tmux-bash-completion/completions/tmux ]; then
+    . ~/src/tmux-bash-completion/completions/tmux
+fi
