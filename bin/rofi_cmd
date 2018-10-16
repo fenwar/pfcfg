@@ -1,0 +1,10 @@
+
+
+#!/bin/sh
+
+rofi \
+    -show combi \
+    -combi-modi window,drun,run,Recent:/home/paulf/bin/xdg_recent_files.py \
+    -modi combi,drun,run,window,Recent:/home/paulf/bin/xdg_recent_files.py \
+    -monitor primary \
+>> /tmp/rofi_out.txt
