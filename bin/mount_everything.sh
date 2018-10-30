@@ -18,10 +18,10 @@ if [ $? -ne 0 ] ; then
     sshfs paulf@frink:/home/vhosts/frink ~/mnt/frink
 fi
 
-findmnt -t fuse.sshfs --target ~/mnt/rti.dev > /dev/null
+findmnt -t fuse.sshfs --target ~/mnt/hmrcdev > /dev/null
 if [ $? -ne 0 ] ; then
-    echo '*** Mount rti.dev on riviera (QA server for BPT updates) ***'
-    sshfs paulf@riviera:/home/public/rti.e-pennant.co.uk ~/mnt/rti.dev
+    echo '*** Mount hmrcdev (QA server for BPT updates) ***'
+    sshfs paulf@hmrcdev:/home/public/hmrcdev ~/mnt/hmrcdev
 fi
 
 findmnt -t cifs --target ~/mnt/temp > /dev/null
@@ -46,6 +46,12 @@ findmnt -t cifs --target ~/mnt/it > /dev/null
 if [ $? -ne 0 ] ; then
     echo '*** Mount private IT share on shelby ***'
     . mn //shelby/it
+fi
+
+findmnt -t cifs --target ~/mnt/itsupport > /dev/null
+if [ $? -ne 0 ] ; then
+    echo '*** Mount the other private IT share on shelby ***'
+    . mn //shelby/itsupport
 fi
 
 findmnt -t cifs --target ~/mnt/users > /dev/null
