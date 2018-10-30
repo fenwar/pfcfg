@@ -204,7 +204,7 @@ set titlestring=%{$TERM_TITLE}\ %t\ %m\ (%f)\ -\ VIM!
 
 " Pylint "
 
-au FileType python set makeprg=python\ -m\ flake8\ --exclude=legacy,migrations,message_catalogue.py\ %:p
+au FileType python set makeprg=python\ -m\ flake8\ --exclude=legacy,migrations,message_catalogue.py\ --max-line-length=120\ %:p
 " au FileType python set efm=%A%f:%l:\ [%t%n%.%#]\ %m,%Z%p^^,%-C%.%#"
 
 " gvim defaults "
