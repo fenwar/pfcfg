@@ -45,7 +45,7 @@ alias gbi="git branch --no-merged | grep -v \"^  archive/\" | xargs -i__ git log
 alias gcln="git clean -dxn -e tags -e .*.sw?"
 alias gclf="git clean -dxf -e tags -e .*.sw?"
 
-alias gbmc="git branch --merged | grep -v \"^*\" | xargs -r git branch -d"
+alias gbmc="git branch --merged | grep -v \"^*\" | grep -Pv \"develop-\d\d\" | xargs -r git branch -d"
 
 
 alias wd="dwdiff -cblack:red,gray:green --diff-input -P"
