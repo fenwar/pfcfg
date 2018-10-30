@@ -1,9 +1,9 @@
 ! Use lightdm to provide user switching
 ! *newLoginCommand: dm-tool switch-to-greeter
 
-Xft.dpi: 95
+Xft.dpi: 96
 Xft.autohint: 0
-Xft.lcdfilter: lcddefault
+Xft.lcdfilter: lcdnone
 Xft.hintstyle: hintslight
 Xft.hinting: 1
 Xft.antialias: 1
@@ -16,7 +16,7 @@ Xft.rgba: rgb
 
 ! Green text on translucent black background
 URxvt*.depth: 32
-URxvt*.background: [100]#000000
+URxvt*.background: [85]#000000
 URxvt*.foreground: #dddddd
 
 ! Fix blue for dark backgrounds
@@ -29,7 +29,7 @@ URxvt*.geometry: 161x52
 URxvt*.scrollBar: false
 
 ! Set my default preferred font
-!URxvt*.font: xft:Source Code Pro-11:style=Regular,antialias=true,\
+!URxvt*.font: xft:Source Code Pro-11:style=Regular,\
 !             xft:Code2000:antialias=false
 !URxvt*.font: xft:Ubuntu Mono:pixelsize=16,style=Regular,antialias=true,\
 !             xft:Code2000:antialias=false
