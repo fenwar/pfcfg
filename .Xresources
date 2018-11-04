@@ -1,13 +1,13 @@
 ! Use lightdm to provide user switching
 ! *newLoginCommand: dm-tool switch-to-greeter
 
-Xft.dpi: 96
-Xft.autohint: 0
-Xft.lcdfilter: lcdnone
-Xft.hintstyle: hintslight
-Xft.hinting: 1
-Xft.antialias: 1
-Xft.rgba: rgb
+!Xft.dpi: 94
+!Xft.autohint: 0
+!Xft.lcdfilter: lcddefault
+!Xft.hintstyle: hintslight
+!Xft.hinting: 1
+!Xft.antialias: 1
+!Xft.rgba: rgb
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!
@@ -16,8 +16,9 @@ Xft.rgba: rgb
 
 ! Green text on translucent black background
 URxvt*.depth: 32
-URxvt*.background: [85]#000000
-URxvt*.foreground: #dddddd
+URxvt*.background: [86]#000000
+URxvt*.foreground: #d0d0d0
+!URxvt*.foreground: #ffffff
 
 ! Fix blue for dark backgrounds
 !URxvt*.color4: #3333ff
@@ -29,14 +30,19 @@ URxvt*.geometry: 161x52
 URxvt*.scrollBar: false
 
 ! Set my default preferred font
-!URxvt*.font: xft:Source Code Pro-11:style=Regular,\
+
+!URxvt*.font: xft:Roboto Mono-12:antialias=true,\
+!             xft:Code2000:antialias=false
+URxvt*.font: xft:Arndale Mono:size=12,\
+             xft:Code2000:antialias=false
+!URxvt*.font: xft:Source Code Pro-11:style=Light,antialias=true,\
 !             xft:Code2000:antialias=false
 !URxvt*.font: xft:Ubuntu Mono:pixelsize=16,style=Regular,antialias=true,\
 !             xft:Code2000:antialias=false
 !URxvt*.font: xft:Fira Mono:pixelsize=16,style=Regular,antialias=false,\
 !             xft:Code2000:antialias=false
-URxvt*.font: xft:Inconsolata-13:style=Regular,\
-             xft:Code2000:antialias=false
+!URxvt*.font: xft:Inconsolata-13:style=Regular,\
+!             xft:Code2000:antialias=false
 !URxvt*.letterSpace: -1
 
 ! Include perl font-size extension
