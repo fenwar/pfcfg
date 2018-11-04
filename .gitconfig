@@ -7,7 +7,7 @@
 [core]
 	excludesfile = /home/paulf/pfcfg/.pf-gitignore
     filemode = true
-	attributesfile = /home/paulf/.gitattributes
+	attributesfile = /home/paulf/pfcfg/.gitattributes
 	pager = less -S
 [push]
 	default = current
