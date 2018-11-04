@@ -59,3 +59,5 @@ alias hn="history -n"
 alias lsd='DISPLAY= cacademo'
 
 alias dj='python src/manage.py'
+
+alias va='. .venv/bin/activate'

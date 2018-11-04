@@ -15,4 +15,5 @@
 --ignore-dir=resources/manifests/
 --ignore-dir=src/static/
 --ignore-dir=resources/xlf/
+--ignore-dir=.venv/
 --pager=less -RFXm
