@@ -42,8 +42,8 @@ alias cdup="cd \$(git rev-parse --show-toplevel)"
 # alias gbi="git branch --no-merged | xargs -i__ git log -1 --format=format:\"%w($(tput cols),0,81)__ %>|(80,mtrunc)%d %N\" __"
 # alias gbi="git branch --no-merged | xargs -i__ git log -1 --format=format:\"%w($(tput cols),0,48)__%>>|(47,trunc)%h%d%n%N\" __"
 alias gbi="git branch --no-merged | grep -v \"^  archive/\" | xargs -i__ git log -1 --format=format:\"__%>>|(47,trunc)%h%d%n%w($(tput cols),48,48)%N\" __"
-alias gcln="git clean -dxn -e tags -e .*.sw?"
-alias gclf="git clean -dxf -e tags -e .*.sw?"
+alias gcln="git clean -dxn -e tags -e .*.sw? -e .venv"
+alias gclf="git clean -dxf -e tags -e .*.sw? -e .venv"
 
 alias gbmc="git branch --merged | grep -v \"^*\" | xargs -r git branch -d"
 

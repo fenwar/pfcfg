@@ -4,3 +4,4 @@
 --exclude=augment.js
 --exclude=resemble.js
 --exclude=docs
+--exclude=.venv
