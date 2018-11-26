@@ -21,4 +21,5 @@ else
     NEW_VOLUME=$SINK_VOLUME
 fi
 
+echo $SINK_VOLUME "->" $NEW_VOLUME
 pactl set-sink-volume $SINK_INDEX $NEW_VOLUME
