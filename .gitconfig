@@ -48,5 +48,6 @@
 	cmd = echo $MERGED
 [alias]
 	lg = log --color --graph --abbrev-commit\n           --pretty=format:'%Cred%h%Creset %Cgreen(%cd) %C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset'
-	up = !echo type gu
+	up = !echo "cd $(git rev-parse --show-toplevel) # TYPE gu TO RUN THIS"
 	back = checkout @{-1}
+    hist = !git reflog | awk '/moving from/ { print $6 }' | head -10
