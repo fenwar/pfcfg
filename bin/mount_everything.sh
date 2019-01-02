@@ -36,10 +36,10 @@ if [ $? -ne 0 ] ; then
     . mn //shelby/jobs_live
 fi
 
-findmnt -t cifs --target ~/mnt/software > /dev/null
+findmnt -t cifs --target ~/mnt/Archive > /dev/null
 if [ $? -ne 0 ] ; then
-    echo '*** Mount software share on shelby ***'
-    . mn //shelby/software
+    echo '*** Mount archive share on PENCOM-NAS-4 (includes IT/software) ***'
+    . mn //PENCOM-NAS-4/Archive
 fi
 
 findmnt -t cifs --target ~/mnt/it > /dev/null
