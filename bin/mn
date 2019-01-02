@@ -4,21 +4,22 @@
 
 # Usage: sudo mn //server/sharename
 
+DOMAIN=pencom.local
+SHAREUSER=paulf
+
 if [[ -z ${PENCOM_PSWD} ]] ; then
-    read -s -p "Password for PENCOM\\paulf: " PENCOM_PSWD
+    read -s -p "Password for ${DOMAIN}\\${SHAREUSER}: " PENCOM_PSWD
     echo
 fi
 
 LOCALBASE=${HOME}/mnt
-
-SHAREUSER=paulf
 LOCALUSER=${USER}
 
 SHARENAME=${1}
-LOCALPATH=${LOCALBASE}/$(basename ${SHARENAME})
+LOCALPATH=${LOCALBASE}/$(basename ${SHARENAME} | tr '[:upper:]' '[:lower:]')
 
 mkdir -p ${LOCALPATH}
 sudo mount -t cifs \
-    -ousername=${SHAREUSER},uid=${LOCALUSER},password=${PENCOM_PSWD},vers=2.0 \
+    -ousername=${SHAREUSER},uid=${LOCALUSER},password=${PENCOM_PSWD},vers=2.0,domain=${DOMAIN} \
     ${SHARENAME} ${LOCALPATH}
 
