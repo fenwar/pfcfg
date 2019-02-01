@@ -1,4 +1,9 @@
 ; evolution GtkAccelMap rc-file         -*- scheme -*-
+
+(gtk_accel_path "<Actions>/shell/preferences" "")
+(gtk_accel_path "<Actions>/mail/mail-save-as" "<Primary><Shift>s")
+(gtk_accel_path "<Actions>/mail/mail-move" "<Shift>s")
+
 ; this file is an automated accelerator map dump
 ;
 ; (gtk_accel_path "<Actions>/new-item/contact-new" "<Primary><Shift>c")
@@ -65,7 +70,6 @@
 ; (gtk_accel_path "<Actions>/format-as/format-as-menu" "")
 ; (gtk_accel_path "<Actions>/shell/paste-clipboard" "<Primary>v")
 ; (gtk_accel_path "<Actions>/search-folders/mail-create-search-folder" "")
-; (gtk_accel_path "<Actions>/shell/preferences" "")
 ; (gtk_accel_path "<Actions>/mail/mail-remove-attachments" "")
 ; (gtk_accel_path "<Actions>/mail/mail-message-edit" "")
 ; (gtk_accel_path "<Actions>/shell/copy-clipboard" "<Primary>c")
@@ -124,7 +128,6 @@
 ; (gtk_accel_path "<Actions>/mail/mail-ews-subscribe-foreign-folder" "")
 ; (gtk_accel_path "<Actions>/core-editor/indent" "<Primary>bracketright")
 ; (gtk_accel_path "<Actions>/core/copy" "<Primary>c")
-; (gtk_accel_path "<Actions>/mail/mail-save-as" "<Primary><Shift>s")
 ; (gtk_accel_path "<Actions>/contacts/contacts-ews-folder-permissions" "")
 ; (gtk_accel_path "<Actions>/core-editor/style-address" "<Primary>8")
 ; (gtk_accel_path "<Actions>/mail-convert-any/mail-convert-to-memo" "")
@@ -259,7 +262,6 @@
 ; (gtk_accel_path "<Actions>/html/strikethrough" "")
 ; (gtk_accel_path "<Actions>/image/image-save" "<Primary>s")
 ; (gtk_accel_path "<Actions>/composer/request-read-receipt" "")
-; (gtk_accel_path "<Actions>/mail/mail-move" "<Primary>s")
 ; (gtk_accel_path "<Actions>/core-editor/spell-check" "F7")
 ; (gtk_accel_path "<Actions>/shell/search-save" "")
 ; (gtk_accel_path "<Actions>/image/image-set-as-background" "")
