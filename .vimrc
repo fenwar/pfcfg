@@ -257,7 +257,7 @@ map <C-h> :bro ol<cr>
 
 " Change cursor shape when in insert mode "
 " solid underscore
-let &t_SI .= "\<Esc>[4 q"
+let &t_SI .= "\<Esc>[3 q"
 " solid block
 let &t_EI .= "\<Esc>[1 q"
 
