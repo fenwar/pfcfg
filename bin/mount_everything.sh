@@ -12,17 +12,17 @@ echo
 #    sshfs paulf@clive:/home/clive/clive ~/mnt/clivesrc
 #fi
 
-findmnt -t fuse.sshfs --target ~/mnt/frink > /dev/null
-if [ $? -ne 0 ] ; then
-    echo '*** Mount www on frink (dev http server) ***'
-    sshfs paulf@frink:/home/vhosts/frink ~/mnt/frink
-fi
+#findmnt -t fuse.sshfs --target ~/mnt/frink > /dev/null
+#if [ $? -ne 0 ] ; then
+#    echo '*** Mount www on frink (dev http server) ***'
+#    sshfs paulf@frink:/home/vhosts/frink ~/mnt/frink
+#fi
 
-findmnt -t fuse.sshfs --target ~/mnt/hmrcdev > /dev/null
-if [ $? -ne 0 ] ; then
-    echo '*** Mount hmrcdev (QA server for BPT updates) ***'
-    sshfs paulf@hmrcdev:/home/public/hmrcdev ~/mnt/hmrcdev
-fi
+#findmnt -t fuse.sshfs --target ~/mnt/hmrcdev > /dev/null
+#if [ $? -ne 0 ] ; then
+#    echo '*** Mount hmrcdev (QA server for BPT updates) ***'
+#    sshfs paulf@hmrcdev:/home/public/hmrcdev ~/mnt/hmrcdev
+#fi
 
 findmnt -t cifs --target ~/mnt/temp > /dev/null
 if [ $? -ne 0 ] ; then
@@ -54,11 +54,11 @@ if [ $? -ne 0 ] ; then
     . mn //shelby/itsupport
 fi
 
-findmnt -t cifs --target ~/mnt/users > /dev/null
-if [ $? -ne 0 ] ; then
-    echo '*** Mount users share on shelby ***'
-    . mn //shelby/users
-fi
+#findmnt -t cifs --target ~/mnt/users > /dev/null
+#if [ $? -ne 0 ] ; then
+#    echo '*** Mount users share on shelby ***'
+#    . mn //shelby/users
+#fi
 
 findmnt -t cifs --target ~/mnt/casefiles > /dev/null
 if [ $? -ne 0 ] ; then

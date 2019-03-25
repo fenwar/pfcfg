@@ -18,8 +18,10 @@ LOCALUSER=${USER}
 SHARENAME=${1}
 LOCALPATH=${LOCALBASE}/$(basename ${SHARENAME} | tr '[:upper:]' '[:lower:]')
 
+CIFS_OPTS="vers=2.0"
+
 mkdir -p ${LOCALPATH}
 sudo mount -t cifs \
-    -ousername=${SHAREUSER},uid=${LOCALUSER},password=${PENCOM_PSWD},vers=2.0,domain=${DOMAIN} \
+    -ousername=${SHAREUSER},uid=${LOCALUSER},password=${PENCOM_PSWD},domain=${DOMAIN},${CIFS_OPTS} \
     ${SHARENAME} ${LOCALPATH}
 
