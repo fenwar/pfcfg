@@ -25,6 +25,9 @@ alias stt=". set_term_title"
 alias gfo="git fetch origin"
 alias gfp="git fetch --prune"
 
+alias ncsa="networkctl status -a"
+alias srsn="sudo systemctl restart systemd-networkd"
+
 # alias gffs="git flow feature start "
 # alias gfff="#git flow feature finish "
 # alias gffc="git flow feature checkout "
