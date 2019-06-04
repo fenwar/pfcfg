@@ -26,7 +26,7 @@ alias gfo="git fetch origin"
 alias gfp="git fetch --prune"
 
 alias ncsa="networkctl status -a"
-alias srsn="sudo systemctl restart systemd-networkd"
+alias srsn="sudo systemctl restart systemd-networkd.service"
 
 # alias gffs="git flow feature start "
 # alias gfff="#git flow feature finish "
