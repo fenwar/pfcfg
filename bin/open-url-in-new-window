@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Open the supplied url in a new window.
+# This is a wrapper for use when arguments to the browser command aren't allowed,
+# such as in the .Xresources file for urxvt.
+
+/usr/bin/x-www-browser --new-window $@
