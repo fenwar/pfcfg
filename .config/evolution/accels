@@ -1,9 +1,7 @@
 ; evolution GtkAccelMap rc-file         -*- scheme -*-
 
-(gtk_accel_path "<Actions>/mail/mail-goto-folder" "<Primary>g")
-; (gtk_accel_path "<Actions>/mail/mail-goto-folder" "<Shift>g")
-(gtk_accel_path "<Actions>/mail/mail-move" "<Primary>s")
-; (gtk_accel_path "<Actions>/mail/mail-move" "<Shift>s")
+(gtk_accel_path "<Actions>/mail/mail-goto-folder" "<Shift>g")
+(gtk_accel_path "<Actions>/mail/mail-move" "<Shift>s")
 (gtk_accel_path "<Actions>/mail/mail-save-as" "<Primary><Shift>s")
 (gtk_accel_path "<Actions>/shell/preferences" "")
 
