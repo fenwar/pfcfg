@@ -2,7 +2,7 @@
 
 # Volume control script for Pulse Audio
 
-VOLUME_STEP=0x800
+VOLUME_STEP=0x28f
 
 SINK_INDEX=$(pactl list short sinks | grep RUNNING | cut -f1)
 SINK_NAME=$(pactl list short sinks | grep ^$SINK_INDEX | cut -f2)
