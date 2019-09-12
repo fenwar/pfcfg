@@ -129,25 +129,6 @@ map <leader>w :grep "\\b\\b"<cr>
 " Allow buffers with changes to be hidden "
 set hidden
 
-" NERDTree stuff "
-let NERDTreeIgnore=['\.pyc$']
-map <leader>q :NERDTree<cr>
-map <leader>Q :NERDTreeToggle<cr>
-map <leader>r :setlocal nocursorline<cr>:setlocal cc=0<cr>:NERDTreeFind<cr>:setlocal cursorline<cr>
-
-" LustyExplorer triggers "
-""map <leader>b :LustyBufferExplorer<cr>
-map <leader>h :LustyFilesystemExplorer<cr>
-map <leader>f :LustyFilesystemExplorerFromHere<cr>
-map <C-f> :LustyFilesystemExplorerFromHere<cr>
-map <leader>g :LustyBufferGrep<cr>
-
-hi LustySelected ctermfg=3 ctermbg=17
-
-" Taglist triggers "
-""map <leader>t :TlistOpen<cr>
-""map <leader>T :TlistClose<cr>
-
 set updatetime=250
 
 map <leader>m :make<Up><cr><cr>
