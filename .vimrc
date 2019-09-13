@@ -212,33 +212,51 @@ let g:CommandTMaxCachedDirectories=4
 let g:CommandTMaxHeight=20
 let g:CommandTMinHeight=5
 "" let g:CommandTMatchWindowReverse=1
-let g:CommandTClearMap=['<C-w>', '<C-u>']
+let g:CommandTClearMap=['<C-u>']
 let g:CommandTCancelMap=['<C-c>', '<Esc>']
 hi PFCommandTHighlightColor cterm=bold ctermbg=28 ctermfg=11
 let g:CommandTHighlightColor='PFCommandTHighlightColor'
 let g:CommandTScanDotDirectories=1
 let g:CommandTFileScanner='find'
 let g:CommandTWildIgnore=&wildignore . ",*.git,*/dist/*,*/src/static/*,*/target/*,*/dist-*/*,*/node_modules/*,*/src-copy/*,*/docs/*,*.png"
+let g:CommandTTagIncludeFilenames=1
+let g:CommandTInputDebounce=2
 
 "" map <C-e> :CommandT<cr>
 map <C-j> <C-c>:CommandT<cr>
 map <C-k> <C-c>:CommandTBuffer<cr>
-"" map <C-h> <C-c>:CommandTJump<cr>
-map <C-f> <C-c>:CommandT %:h<cr>
+map <C-g> <Plug>(CommandTTag)
+map <C-t> <C-c>:CommandT %:h<cr>
+
+" Very hacky way of starting CommandT with the buffer's parent directory
+" already entered, which gives us the closest thing to LustyExplorerHere
+
+command! CmdTCurDir call CmdTCurDir()
+fun! CmdTCurDir()
+    let bcwd=expand("%:h")
+    let execmd=":CommandT<cr>".bcwd
+    let mapcmd=":map Q :CommandT<cr>".bcwd."/"
+    execute mapcmd
+    ""execute "Q"
+endfun
+map <C-f> :CmdTCurDir<cr>Q
+
+""map <C-f> :execute ":CommandT\<lt>cr>"<cr>
+
+""map <C-f> :execute(expand("%:p:h"))<cr>
+
+"" :CommandT \<lt>cr>%:h"))<cr>
+
+map <F1> :CommandTHelp<cr>
+map <leader>j :CommandTJump<cr>
+map <leader>l :CommandTLine<cr>
+
 
 "" map! <C-e> <Esc>:CommandT<cr>
-map! <C-j> <C-c>:CommandT<cr>
-map! <C-k> <C-c>:CommandTBuffer<cr>
+"" map! <C-j> <C-c>:CommandT<cr>
+"" map! <C-k> <C-c>:CommandTBuffer<cr>
 "" map! <C-h> <C-c>:CommandTJump<cr>
-map! <C-f> <C-c>:CommandT %:h<cr>
-
-"" function s:CommandTForCurrentDir()
-""  let pfcurdir = getcwd()
-""  cd %:h
-""  CommandT
-"" endfunction
-"" command! CommandTForCurrentDir call <SID>CommandTForCurrentDir()
-"" map <C-d> :CommandTForCurrentDir<cr>
+"" map! <C-f> <C-c>:CommandT %:h<cr>
 
 map <F5> :bufdo checktime<cr>
 
