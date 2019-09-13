@@ -177,13 +177,12 @@ map [[ :cp<cr>
 
 autocmd QuickFixCmdPost * nested copen 10
 
-
 " Nicer ways to get out of insert mode? "
 "" inoremap <CR> <ESC>l
-map <ESC>; :
-map! <ESC>; <ESC>:
-map [29~ i
-imap [29~ <ESC>l
+"map <ESC>; :
+"map! <ESC>; <ESC>:
+"map [29~ i
+"imap [29~ <ESC>l
 
 set title
 set titlestring=%{$TERM_TITLE}\ %t\ %m\ (%f)\ -\ VIM!
