@@ -258,7 +258,11 @@ map <C-t> <C-c>:CommandT<cr>
 command! CmdTCurDir call CmdTCurDir()
 fun! CmdTCurDir()
     let bcwd=expand("%:h")
-    let execmd=":CommandT<cr>".bcwd
-    let mapcmd=":map Q :CommandT<cr>".bcwd."/"
+    if bcwd == "."
+        let bcwd = ""
+    else
+        let bcwd = bcwd."/"
+    endif
+    let mapcmd=":map Q :CommandT<cr>".bcwd
     execute mapcmd
 endfun
