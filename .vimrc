@@ -187,11 +187,19 @@ autocmd QuickFixCmdPost * nested copen 10
 set title
 set titlestring=%{$TERM_TITLE}\ %t\ %m\ (%f)\ -\ VIM!
 
+" Change cursor shape when in insert mode "
+" solid underscore
+let &t_SI .= "\<Esc>[3 q"
+" solid block
+let &t_EI .= "\<Esc>[1 q"
 
 " Pylint "
 
 au FileType python set makeprg=python\ -m\ flake8\ --exclude=legacy,migrations,message_catalogue.py\ --max-line-length=120\ %:p
 " au FileType python set efm=%A%f:%l:\ [%t%n%.%#]\ %m,%Z%p^^,%-C%.%#"
+
+"set background=dark
+"colorscheme solarized
 
 " gvim defaults "
 if has("gui_running")
@@ -254,17 +262,3 @@ fun! CmdTCurDir()
     let mapcmd=":map Q :CommandT<cr>".bcwd."/"
     execute mapcmd
 endfun
-
-
-
-
-
-
-" Change cursor shape when in insert mode "
-" solid underscore
-let &t_SI .= "\<Esc>[3 q"
-" solid block
-let &t_EI .= "\<Esc>[1 q"
-
-"set background=dark
-"colorscheme solarized
