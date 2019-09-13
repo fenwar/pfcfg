@@ -15,6 +15,9 @@ set ignorecase
 set smartcase
 set incsearch
 
+set history=1000
+set viminfo='1000,<200,s10,h
+
 hi ColorColumn ctermbg=236 guibg=Grey10
 ""set cc=80
 hi MatchParen ctermfg=yellow cterm=bold ctermbg=233
