@@ -51,8 +51,8 @@ alias gclf="git clean -dxf -e tags -e .*.sw? -e .venv"
 alias gbmc="git branch --merged | grep -v \"^*\" | grep -Pv \"develop-\d\d\" | xargs -r git branch -d"
 
 
-alias wd="dwdiff -cblack:red,gray:green --diff-input -P | less -RFXm"
-alias dw="dwdiff -cblack:red,gray:green -P | less -RFXm"
+alias wd="dwdiff --profile=rich --diff-input | less -RFXm"
+alias dw="dwdiff --profile=rich"
 
 alias less="less -RFXm"
 
