@@ -51,3 +51,5 @@
 	up = !echo "cd $(git rev-parse --show-toplevel) # TYPE gu TO RUN THIS"
 	back = checkout @{-1}
     hist = !git reflog | awk '/moving from/ { print $6 }' | head -10
+[difftool "vbindiff"]
+	cmd = vbindiff $LOCAL $REMOTE
