@@ -46,6 +46,7 @@ export EDITOR=vim
 export GTK2_RC_FILES=${HOME}/.gtkrc-2.0
 #export PATH
 
+export ANT_OPTS=-Dnashorn.args="--no-deprecation-warning"
 #export ANT_HOME=/usr/share/ant
 #export PYTHONSTARTUP=${HOME}/.pythonrc
 
