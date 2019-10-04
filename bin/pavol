@@ -21,5 +21,8 @@ else
     NEW_VOLUME=$SINK_VOLUME
 fi
 
-echo $SINK_VOLUME "->" $NEW_VOLUME
+printf '0x%04x (%d%%) -> 0x%04x (%d%%) \n' \
+    $SINK_VOLUME $((SINK_VOLUME * 100 / 65536)) \
+    $NEW_VOLUME $((NEW_VOLUME * 100 / 65536))
+
 pactl set-sink-volume $SINK_INDEX $NEW_VOLUME
