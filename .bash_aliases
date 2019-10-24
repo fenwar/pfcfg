@@ -21,7 +21,7 @@ alias R=". rti"
 alias apu="aptitude search ~U -F \"%c%S%M %a %p %v %V %t %r %d\""
 alias gbn="git branch --no-merged"
 alias gbm="git branch --merged"
-alias stt=". set_term_title"
+alias stt=". ${HOME}/pfcfg/bin/set_term_title"
 alias gfo="git fetch origin"
 alias gfp="git fetch --prune"
 
