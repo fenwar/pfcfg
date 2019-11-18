@@ -184,8 +184,8 @@ autocmd QuickFixCmdPost * nested copen 10
 "map [29~ i
 "imap [29~ <ESC>l
 
-set title
-set titlestring=%{$TERM_TITLE}\ %t\ %m\ (%f)\ -\ VIM!
+"set title
+"set titlestring=%{$TERM_TITLE}\ %t\ %m\ (%f)\ -\ VIM!
 
 " Change cursor shape when in insert mode "
 " solid underscore
