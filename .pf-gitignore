@@ -1,0 +1,7 @@
+*.swp
+.sw?
+tags
+.vim/.netrwbook
+.vim/.netrwhist
+src/update
+src/rti.cfg
