@@ -18,7 +18,7 @@ set incsearch
 set history=1000
 set viminfo='1000,<200,s10,h
 
-hi ColorColumn ctermbg=236 guibg=Grey10
+hi ColorColumn ctermbg=234 guibg=Grey10
 ""set cc=80
 hi MatchParen ctermfg=yellow cterm=bold ctermbg=233
 
@@ -71,9 +71,15 @@ hi Type ctermfg=225
     
 hi TrailingWhiteSpace ctermbg=52 ctermfg=None
 match TrailingWhiteSpace /\s\+$/
+
 set listchars=eol:¶,tab:»\ ,trail:·,nbsp:·
 hi nontext ctermfg=238
 hi specialkey ctermfg=238
+
+" Highlight non-ASCII characters £ "
+hi NonASCII ctermfg=11 ctermbg=238 cterm=None
+"cterm=bold
+match NonASCII /[^\x00-\x7F]/
 
 " Fix diff colours "
 hi DiffAdd ctermbg=28 cterm=bold ctermfg=None
@@ -184,8 +190,8 @@ autocmd QuickFixCmdPost * nested copen 10
 "map [29~ i
 "imap [29~ <ESC>l
 
-set title
-set titlestring=%{$TERM_TITLE}\ %t\ %m\ (%f)\ -\ VIM!
+"set title
+"set titlestring=%{$TERM_TITLE}\ %t\ %m\ (%f)\ -\ VIM!
 
 " Change cursor shape when in insert mode "
 " solid underscore
@@ -229,13 +235,13 @@ hi PFCommandTHighlightColor cterm=bold ctermbg=28 ctermfg=11
 let g:CommandTHighlightColor='PFCommandTHighlightColor'
 let g:CommandTScanDotDirectories=1
 let g:CommandTFileScanner='find'
-let g:CommandTWildIgnore=&wildignore . ",.git/*,.venv/*,*/dist/*,*/src/static/*,*/target/*,*/dist-*/*,*/node_modules/*,*/src-copy/*,*/docs/*,*.png"
+let g:CommandTWildIgnore=&wildignore . ",*/.git,*/.venv,*/dist,*/src/static,*/target,*/dist-patch,*/dist-debugtools,*/node_modules,*/src-copy,*/docs,*.png"
 let g:CommandTTagIncludeFilenames=1
 let g:CommandTInputDebounce=2
 
 map <F1> :CommandTHelp<cr>
-" Ctrl-B    CmdT buffers
-map <C-b> <C-c>:CommandTBuffer<cr>
+" Ctrl-B    CmdT buffers - obviously this doesn't work in tmux
+"map <C-b> <C-c>:CommandTBuffer<cr>
 " Ctrl-F    CmdT files, prefixed with current buffer's dir (hack implementation below)
 map <C-f> :CmdTCurDir<cr>Q
 " Ctrl-G    CmdT tags
