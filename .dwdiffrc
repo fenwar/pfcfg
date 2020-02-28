@@ -1,0 +1,18 @@
+[default]
+color red,green
+
+[rich]
+color black:red,gray:green
+start-delete=[41m
+stop-delete=[39;49m
+start-insert=[42m
+stop-insert=[39;49m
+repeat-markers
+algorithm=best
+punctuation
+
+# [adv]
+# delimiters=!$%&'()*+,-./:;<=>?@[\]^_`{|}~"#
+# white-space=\r\n\t
+# line-numbers
+# paragraph-separator=¶
