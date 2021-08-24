@@ -52,6 +52,8 @@ export ANT_OPTS=-Dnashorn.args="--no-deprecation-warning"
 
 export PYTHONSTARTUP=${HOME}/pfcfg/.pythonrc
 
+export PYTHONPATH=./lib:./src
+
 export LIBFAKETIME_PATH=$(locate libfaketime.so.1)
 
 # if ~/.ssh_env exists, source it to access the ssh-agent

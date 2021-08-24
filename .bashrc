@@ -79,7 +79,7 @@ xterm*|rxvt*)
 esac
 
 # RESET THE CURSOR
-printf '\033[5 q'
+#printf '\033[5 q'
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
