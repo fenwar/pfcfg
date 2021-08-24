@@ -1,3 +1,6 @@
 #!/bin/sh
-markdown_py $1 > /tmp/md.html
+if [ -f $1 ] ; then
+    markdown_py $1 > /tmp/md.html
+    echo "Wrote markdown at $(date)"
+fi
 refresh.sh "MARKDOWN PREVIEW"
