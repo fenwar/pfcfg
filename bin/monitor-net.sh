@@ -9,4 +9,4 @@ NETIFSTATE=/run/systemd/netif/state
 ls ${NETIFSTATE} | entr -cn bash -c '
     echo "${NETIFSTATE} last updated on $(date)" ;
     echo ;
-    networkctl status ;'
+    networkctl status -n0;'
