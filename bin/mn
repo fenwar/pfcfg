@@ -18,7 +18,7 @@ LOCALUSER=${USER}
 SHARENAME=${1}
 LOCALPATH=${LOCALBASE}/$(basename ${SHARENAME} | tr '[:upper:]' '[:lower:]')
 
-CIFS_OPTS="vers=2.0"
+CIFS_OPTS=${CIFS_OPTS:-"vers=2.1"}
 
 mkdir -p ${LOCALPATH}
 sudo mount -t cifs \
