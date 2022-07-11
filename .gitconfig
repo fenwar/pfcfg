@@ -13,6 +13,7 @@
 	default = current
 [diff]
 	tool = meld
+	renameLimit = 60000
 [merge]
 	tool = meld
 	defaultToUpstream = true
@@ -53,3 +54,5 @@
     hist = !git reflog | awk '/moving from/ { print $6 }' | head -10
 [difftool "vbindiff"]
 	cmd = vbindiff $LOCAL $REMOTE
+[pull]
+	ff = only
