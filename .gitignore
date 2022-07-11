@@ -1,13 +1,14 @@
 xfce4/desktop/*
 
-.vim/autoload/pathogen.vim
+.vim/autoload/*
+.vim/doc/*
+.vim/plugin/*
+.vim/ruby/*
+
 .vim/.VimballRecord
 .vim/Vimball
 .vim/bundle/vimroom
-.vim/plugin/command-t.vim
-.vim/doc/command-t.txt
 .vim/command-t-1.5.1.vba
-.vim/ruby/command-t
 
 bin/skippy-xd
 bin/rofi
