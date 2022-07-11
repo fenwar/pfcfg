@@ -235,7 +235,7 @@ hi PFCommandTHighlightColor cterm=bold ctermbg=28 ctermfg=11
 let g:CommandTHighlightColor='PFCommandTHighlightColor'
 let g:CommandTScanDotDirectories=1
 let g:CommandTFileScanner='find'
-let g:CommandTWildIgnore=&wildignore . ",*/.git,*/.venv,*/dist,*/src/static,*/target,*/dist-patch,*/dist-debugtools,*/node_modules,*/src-copy,*/docs,*.png"
+let g:CommandTWildIgnore=&wildignore . ",*/.git,*/.venv,*/dist,*/src/static,*/target,*/dist-patch,*/dist-debugtools,*/node_modules,*/src-copy,*.png"
 let g:CommandTTagIncludeFilenames=1
 let g:CommandTInputDebounce=2
 
@@ -272,3 +272,13 @@ fun! CmdTCurDir()
     let mapcmd=":map Q :CommandT<cr>".bcwd
     execute mapcmd
 endfun
+
+"==============="
+" Youcompleteme "
+"==============="
+let g:ycm_filetype_blacklist = {}
+let g:ycm_complete_in_comments = 1
+let g:ycm_collect_identifiers_from_comments_and_strings = 1
+let g:ycm_collect_identifiers_from_tags_files = 1
+let g:ycm_filepath_completion_use_working_dir = 1
+let g:ycm_auto_hover = ""
