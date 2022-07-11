@@ -8,4 +8,4 @@
 
 git show-ref |& \
     grep -Po '(?<=error: refs/remotes/origin/)[^ ]+' | \
-    xargs -i{} git push origin :refs/heads/{}
+    xargs -i% git push origin +:refs/heads/%
