@@ -50,6 +50,9 @@ alias gclf="git clean -dxf -e tags -e .*.sw? -e .venv"
 
 alias gbmc="git branch --merged | grep -v \"^*\" | grep -Pv \"develop-\d\d\" | xargs -r git branch -d"
 
+# List all source files, including unversioned but relevant files
+# (so for example this lists unversioned .py files without including all the .pyc's):
+alias gls="git ls-files -cmo --exclude-standard"
 
 alias wd="dwdiff --profile=rich --diff-input | less -RFXm"
 alias dw="dwdiff --profile=rich"
