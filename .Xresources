@@ -9,6 +9,16 @@
 !Xft.antialias: 1
 !Xft.rgba: rgb
 
+!!!!!!!!!!!!!!!!!!
+! xterm settings !
+!!!!!!!!!!!!!!!!!!
+
+xterm*font: xft:Arndale Mono:size=12
+xterm*geometry: 161x52
+xterm*foreground: #d0d0d0
+xterm*termName: xterm-256color
+xterm*eightBitControl: false
+xterm*metaSendsEscape: true
 
 !!!!!!!!!!!!!!!!!!!!!!!!!
 ! rxvt-unicode settings !
