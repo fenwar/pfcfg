@@ -2,6 +2,7 @@
 set nocompatible	" Use Vim defaults instead of 100% vi compatibility
 set backspace=indent,eol,start	" more powerful backspacing
 set ruler
+set more
 
 " My config:
 set t_Co=256
@@ -122,7 +123,7 @@ set makeprg=ant\ -s\ build.xml\ $*
 
 " Default to recursive grepping inside vim "
 "" set grepprg=grep\ -rnI\ --exclude=tags\ $*\ .
-set grepprg=ack\ --smart-case\ -H\ $*
+set grepprg=ack\ --smart-case\ --sort-files\ -H\ $*
 
 " Use bash login but don't run .bashrc (avoids recursive virtualenv problem) "
 set shell=/bin/bash\ --login\ --norc
@@ -133,7 +134,7 @@ set wildmode=list:full
 set wildignore+=*.pyc,*.swp
 
 " Grep word accelerator "
-map <leader>w :grep "\\b\\b"<cr>
+map <leader>w :grep "\\b\\b" src/r22*<cr>
 
 " Allow buffers with changes to be hidden "
 set hidden
@@ -174,6 +175,8 @@ command! Close execute ":b#<bar>bd#<bar>bp<bar>bn"
 command! BD execute ":b#<bar>bd#<bar>bp<bar>bn"
 command! BW execute ":b#<bar>bw#<bar>bp<bar>bn"
 
+
+
 " Quickly get rid of search highlighting. "
 
 map <leader>/ :nohls<cr>
@@ -195,9 +198,9 @@ autocmd QuickFixCmdPost * nested copen 10
 
 " Change cursor shape when in insert mode "
 " solid underscore
-let &t_SI .= "\<Esc>[3 q"
+"let &t_SI .= "\<Esc>[3 q"
 " solid block
-let &t_EI .= "\<Esc>[1 q"
+"let &t_EI .= "\<Esc>[1 q"
 
 " Pylint "
 
