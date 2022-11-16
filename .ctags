@@ -5,3 +5,4 @@
 --exclude=resemble.js
 --exclude=docs
 --exclude=.venv
+--exclude=src/static

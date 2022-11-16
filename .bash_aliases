@@ -69,3 +69,5 @@ alias dj='python src/manage.py'
 alias va='. .venv/bin/activate'
 
 alias hunkgrep="grepdiff --output-matching=hunk"
+
+alias deld="rm -r ~/HMRC/payetools-rti/userdata/*"
