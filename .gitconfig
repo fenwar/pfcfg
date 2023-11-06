@@ -56,3 +56,5 @@
 	cmd = vbindiff $LOCAL $REMOTE
 [pull]
 	ff = only
+[commit]
+	cleanup = scissors

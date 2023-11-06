@@ -44,15 +44,13 @@ URxvt*.scrollBar: false
 
 !URxvt*.font: xft:Roboto Mono-12:antialias=true,\
 !             xft:Code2000:antialias=false
-URxvt*.font: xft:Arndale Mono:size=12,\
+!URxvt*.font: xft:Arndale Mono:size=12,\
+!             xft:Code2000:antialias=false
+URxvt*.font: xft:Source Code Pro-12:style=Normal,antialias=false,\
              xft:Code2000:antialias=false
-!URxvt*.font: xft:Source Code Pro-11:style=Light,antialias=true,\
+!URxvt*.font: xft:Ubuntu Mono:size=12,style=Regular,antialias=true,\
 !             xft:Code2000:antialias=false
-!URxvt*.font: xft:Ubuntu Mono:pixelsize=16,style=Regular,antialias=true,\
-!             xft:Code2000:antialias=false
-!URxvt*.font: xft:Fira Mono:pixelsize=16,style=Regular,antialias=false,\
-!             xft:Code2000:antialias=false
-!URxvt*.font: xft:Inconsolata-13:style=Regular,\
+!URxvt*.font: xft:Inconsolata:size=13:style=Regular,antialias=true,\
 !             xft:Code2000:antialias=false
 !URxvt*.letterSpace: -1
 

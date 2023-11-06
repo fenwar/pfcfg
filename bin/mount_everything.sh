@@ -12,11 +12,11 @@ echo
 #    sshfs paulf@clive:/home/clive/clive ~/mnt/clivesrc
 #fi
 
-findmnt -t fuse.sshfs --target ~/mnt/frink > /dev/null
-if [ $? -ne 0 ] ; then
-    echo '*** Mount www on frink (dev http server) ***'
-    sshfs paulf@frink:/home/vhosts/frink ~/mnt/frink
-fi
+#findmnt -t fuse.sshfs --target ~/mnt/frink > /dev/null
+#if [ $? -ne 0 ] ; then
+#    echo '*** Mount www on frink (dev http server) ***'
+#    sshfs paulf@frink:/home/vhosts/frink ~/mnt/frink
+#fi
 
 #findmnt -t fuse.sshfs --target ~/mnt/hmrcdev > /dev/null
 #if [ $? -ne 0 ] ; then
@@ -39,7 +39,8 @@ fi
 findmnt -t cifs --target ~/mnt/archive > /dev/null
 if [ $? -ne 0 ] ; then
     echo '*** Mount archive share on PENCOM-NAS-4 (includes IT/software) ***'
-    CIFS_OPTS="vers=1.0" . mn //PENCOM-NAS-4/Archive
+    CIFS_OPTS="vers=2.0" 
+    . mn //PENCOM-NAS-4/Archive
 fi
 
 findmnt -t cifs --target ~/mnt/it > /dev/null

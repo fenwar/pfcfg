@@ -1,6 +1,26 @@
 #!/bin/sh
+CONFIG_FILE=$(mktemp)
+cat << EOF > ${CONFIG_FILE}
+{
+    "codehilite":
+    {
+        "noclasses": true
+    }
+}
+EOF
+
 if [ -f $1 ] ; then
-    markdown_py $1 > /tmp/md.html
+    markdown_py \
+        -x codehilite \
+        -x fenced_code \
+        -x sane_lists \
+        -c ${CONFIG_FILE} \
+        $1 > /tmp/md.html
     echo "Wrote markdown at $(date)"
 fi
-refresh.sh "MARKDOWN PREVIEW"
+
+if [ -n "$DISPLAY" ] ; then
+    refresh.sh "MARKDOWN PREVIEW"
+fi
+
+rm ${CONFIG_FILE}

@@ -5,4 +5,5 @@
 --exclude=resemble.js
 --exclude=docs
 --exclude=.venv
+--exclude=src/reportlab
 --exclude=src/static
