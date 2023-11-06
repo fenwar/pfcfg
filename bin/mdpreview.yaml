@@ -1,0 +1,4 @@
+# Configure markdown_py to match GitHub Enterprise markdown:
+
+codehilite:
+    lang_prefix:
