@@ -21,7 +21,8 @@ alias R=". rti"
 alias apu="aptitude search ~U -F \"%c%S%M %a %p %v %V %t %r %d\""
 alias gbn="git branch --no-merged"
 alias gbm="git branch --merged"
-alias stt=". ${HOME}/pfcfg/bin/set_term_title"
+alias gbv="git branch -vv"
+alias stt=". set_term_title"
 alias gfo="git fetch origin"
 alias gfp="git fetch --prune"
 
@@ -45,11 +46,14 @@ alias cdup="cd \$(git rev-parse --show-toplevel)"
 # alias gbi="git branch --no-merged | xargs -i__ git log -1 --format=format:\"%w($(tput cols),0,81)__ %>|(80,mtrunc)%d %N\" __"
 # alias gbi="git branch --no-merged | xargs -i__ git log -1 --format=format:\"%w($(tput cols),0,48)__%>>|(47,trunc)%h%d%n%N\" __"
 alias gbi="git branch --no-merged | grep -v \"^  archive/\" | xargs -i__ git log -1 --format=format:\"__%>>|(47,trunc)%h%d%n%w($(tput cols),48,48)%N\" __"
-alias gcln="git clean -dxn -e tags -e .*.sw? -e .venv"
-alias gclf="git clean -dxf -e tags -e .*.sw? -e .venv"
+alias gcln="git clean -dxn -e tags -e .*.sw? -e .venv -e TODO*"
+alias gclf="git clean -dxf -e tags -e .*.sw? -e .venv -e TODO*"
 
 alias gbmc="git branch --merged | grep -v \"^*\" | grep -Pv \"develop-\d\d\" | xargs -r git branch -d"
 
+# List all source files, including unversioned but relevant files
+# (so for example this lists unversioned .py files without including all the .pyc's):
+alias gls="git ls-files -cmo --exclude-standard"
 
 alias wd="dwdiff --profile=rich --diff-input | less -RFXm"
 alias dw="dwdiff --profile=rich"
@@ -66,3 +70,5 @@ alias dj='python src/manage.py'
 alias va='. .venv/bin/activate'
 
 alias hunkgrep="grepdiff --output-matching=hunk"
+
+alias deld="rm -r ~/HMRC/payetools-rti/userdata/*"
