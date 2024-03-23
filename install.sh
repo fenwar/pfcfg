@@ -7,7 +7,7 @@
 #  vim-nox vim-command-t vim-youcompleteme
 #  tree
 
-REPO_PATH=$(dirname $0)
+REPO_PATH=$(realpath $(dirname $0))
 
 ln -sf ${REPO_PATH}/.ackrc ${HOME}/.ackrc
 ln -sf ${REPO_PATH}/.bash_aliases ${HOME}/.bash_aliases
