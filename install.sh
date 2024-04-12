@@ -1,11 +1,11 @@
 #!/bin/bash
 # Install basic symlinks only
-# Assume git is already installed
+# Assume git is already installed and we have sudo
 # Other packages:
 #  tmux
 #  ack dwdiff diffutils patchutils exuberant-ctags
 #  vim-nox vim-command-t vim-youcompleteme
-#  tree
+#  tree rsync lm-sensors
 
 REPO_PATH=$(realpath $(dirname $0))
 
