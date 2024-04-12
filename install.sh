@@ -3,8 +3,8 @@
 # Assume git is already installed and we have sudo
 # Other packages:
 #  tmux
-#  ack dwdiff diffutils patchutils exuberant-ctags
-#  vim-nox vim-command-t vim-youcompleteme
+#  ack dwdiff diffutils patchutils entr
+#  vim-nox vim-command-t vim-youcompleteme exuberant-ctags
 #  tree rsync lm-sensors
 
 REPO_PATH=$(realpath $(dirname $0))
