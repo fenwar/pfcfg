@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=WhatsApp
+Icon=whatsapp
+Exec=/usr/bin/chromium --app=https://web.whatsapp.com/ --start-maximized %U
+StartupWMClass=web.whatsapp.com
+Categories=Network;WebBrowser;InstantMessaging;Chat;Telephony;
+Comment=WhatsApp (Chromium app)

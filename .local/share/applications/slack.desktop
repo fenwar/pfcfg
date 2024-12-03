@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Exec=/usr/bin/chromium --app=https://app.slack.com/client/ --start-maximized %U
+Name=Slack
+Icon=slack
+StartupWMClass=app.slack.com__client
+Categories=Network;Office;WebBrowser;InstantMessaging;Chat;
+Comment=Slack (Chromium app)

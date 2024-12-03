@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Teams
+Icon=teams
+Exec=/usr/bin/chromium --app=https://teams.microsoft.com/v2/ --start-maximized %U
+StartupWMClass=teams.microsoft.com__v2
+Categories=Network;Office;WebBrowser;InstantMessaging;Chat;
+Comment=Microsoft Office Teams (Chromium app)

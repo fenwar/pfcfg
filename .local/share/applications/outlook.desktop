@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Exec=/usr/bin/chromium --app=https://outlook.office.com/mail/ --start-maximized %U
+Icon=outlook
+Name=Outlook
+StartupWMClass=outlook.office.com__mail
+Categories=Network;Office;Email
+Comment=Microsoft Office Outlook (Chromium app)
