@@ -10,5 +10,5 @@ INPUT_MDP="0x10"
 INPUT_HDMI1="0x11"
 INPUT_HDMI2="0x12"
 
-ddcutil --sn=${SN_TROLLEY} setvcp ${VCP_INPUT} ${INPUT_MDP}
-ddcutil --sn=${SN_EXTRA} setvcp ${VCP_INPUT} ${INPUT_HDMI2}
+ddcutil --sn=${SN_TROLLEY} setvcp ${VCP_INPUT} ${INPUT_MDP} &
+ddcutil --sn=${SN_EXTRA} setvcp ${VCP_INPUT} ${INPUT_HDMI2} &
