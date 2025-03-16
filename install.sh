@@ -18,5 +18,6 @@ ln -sf ${REPO_PATH}/.vimrc ${HOME}/.vimrc
 git config --global core.excludesFile ${REPO_PATH}/.pf-gitignore
 git config --global init.defaultBranch main
 git config --global push.default current
+git config --global commit.cleanup scissors
 
 # sudo update-alternatives --set editor /usr/bin/vim.nox
