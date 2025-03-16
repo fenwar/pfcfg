@@ -2,7 +2,7 @@
 # Install basic symlinks only
 # Assume git is already installed and we have sudo
 # Other packages:
-#  tmux
+#  bash-completion tmux
 #  ack dwdiff diffutils patchutils entr
 #  vim-nox vim-command-t vim-youcompleteme exuberant-ctags
 #  tree rsync lm-sensors
