@@ -100,11 +100,11 @@ fun! GitHubUrl(file, startline, endline)
     redraw!
 endfun
 
-command! -range Ghjump call GitHubJump("%", "<line1>", "<line2>")
-fun! GitHubJump(file, startline, endline)
-    silent execute "!x-www-browser $(gh_url.sh " . a:file . " " . a:startline . " " . a:endline . ") &>/dev/null"
-    redraw!
-endfun
+"command! -range Ghjump call GitHubJump("%", "<line1>", "<line2>")
+"fun! GitHubJump(file, startline, endline)
+"    silent execute "!x-www-browser $(gh_url.sh " . a:file . " " . a:startline . " " . a:endline . ") &>/dev/null"
+"    redraw!
+"endfun
 
 " Fix mouse wheel behaviour in urxvt "
 set mouse=a
