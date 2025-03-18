@@ -1,4 +1,4 @@
 [Desktop Entry]
-Exec=/home/paulf/bin/monitors-to-desktop.sh
+Exec=/home/paulf/.local/bin/monitors-to-desktop.sh
 Icon=video-display
 Name=Monitors to Desktop

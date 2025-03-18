@@ -1,4 +1,4 @@
 [Desktop Entry]
-Exec=/home/paulf/bin/monitors-to-laptop.sh
+Exec=/home/paulf/.local/bin/monitors-to-laptop.sh
 Icon=computer-laptop
 Name=Monitors to Laptop

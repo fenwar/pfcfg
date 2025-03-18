@@ -11,7 +11,8 @@ INPUT_HDMI1="0x11"
 INPUT_HDMI2="0x12"
 
 ddcutil --sn=${SN_TROLLEY} setvcp ${VCP_INPUT} ${INPUT_HDMI1}
-ddcutil --sn=${SN_EXTRA} setvcp ${VCP_INPUT} ${INPUT_MDP}
+ddcutil --sn=${SN_EXTRA} setvcp ${VCP_INPUT} ${INPUT_DP}
 
-xrandr --output HDMI-1-0 --off
-xrandr --output DP-1-0 --off
+kscreen-doctor \
+    output.HDMI-A-1.disable \
+    output.DP-2.disable
