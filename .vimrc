@@ -96,7 +96,7 @@ command! Tgenerate execute ":!ctags -R"
 
 command! -range Ghurl call GitHubUrl("%", "<line1>", "<line2>")
 fun! GitHubUrl(file, startline, endline)
-    execute "!echo $(gh_url.sh " . a:file . " " . a:startline . " " . a:endline . ")"
+    execute "!echo $(gh-url.sh " . a:file . " " . a:startline . " " . a:endline . ")"
     redraw!
 endfun
 
