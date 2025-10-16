@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import os
 from xml.etree import ElementTree as ET
@@ -12,10 +12,10 @@ if __name__ == "__main__":
         rf = RecentFiles()
         rf.parse(XDG_PATH)
         for fn in rf.getFiles():
-            print fn.URI
+            print(fn.URI)
 
     if os.path.exists(XBEL_PATH):
         xbel_tree = ET.parse(XBEL_PATH)
         xbel = xbel_tree.getroot()
         for child in xbel:
-            print child.attrib["href"]
+            print(child.attrib["href"])
