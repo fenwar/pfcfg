@@ -1,21 +1,30 @@
 #!/usr/bin/env python3
 
 import os
+#import subprocess
+import sys
 from xml.etree import ElementTree as ET
+
 from xdg.RecentFiles import RecentFiles
 
 XDG_PATH = "/home/paulf/.recently-used"
 XBEL_PATH = "/home/paulf/.local/share/recently-used.xbel"
+XDG_OPEN = "/usr/bin/xdg-open"
 
 if __name__ == "__main__":
-    if os.path.exists(XDG_PATH):
-        rf = RecentFiles()
-        rf.parse(XDG_PATH)
-        for fn in rf.getFiles():
-            print(fn.URI)
-
-    if os.path.exists(XBEL_PATH):
-        xbel_tree = ET.parse(XBEL_PATH)
-        xbel = xbel_tree.getroot()
-        for child in xbel:
-            print(child.attrib["href"])
+    if len(sys.argv) > 1:
+        # A recent file was selected from the menu
+        #os.spawnl(os.P_NOWAIT, XDG_OPEN, XDG_OPEN, sys.argv[1])
+        os.system("{} {} &".format(XDG_OPEN, sys.argv[1]))
+    else:
+        # Generate a list of recent files for the menu
+        if os.path.exists(XDG_PATH):
+            rf = RecentFiles()
+            rf.parse(XDG_PATH)
+            for fn in rf.getFiles():
+                print(fn.URI)
+        if os.path.exists(XBEL_PATH):
+            xbel_tree = ET.parse(XBEL_PATH)
+            xbel = xbel_tree.getroot()
+            for child in xbel:
+                print(child.attrib["href"])
