@@ -1,10 +1,12 @@
-
-
 #!/bin/sh
-
 rofi \
     -show combi \
-    -combi-modi window,drun,run,Recent:/home/paulf/pfcfg/bin/xdg_recent_files.py \
-    -modi combi,drun,run,window,Recent:/home/paulf/pfcfg/bin/xdg_recent_files.py \
-    -monitor primary \
->> /tmp/rofi_out.txt
+    -combi-modes window,drun,run,Recent:/home/paulf/pfcfg/bin/xdg_recent_files.py \
+    -modes combi \
+    -monitor primary
+
+
+#    \
+#>> /tmp/rofi_out.txt
+
+# -modi combi,drun,run,window,Recent:/home/paulf/pfcfg/bin/xdg_recent_files.py \
