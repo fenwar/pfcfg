@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import os
-#import subprocess
+import subprocess
 import sys
 from xml.etree import ElementTree as ET
 
@@ -14,8 +14,11 @@ XDG_OPEN = "/usr/bin/xdg-open"
 if __name__ == "__main__":
     if len(sys.argv) > 1:
         # A recent file was selected from the menu
-        #os.spawnl(os.P_NOWAIT, XDG_OPEN, XDG_OPEN, sys.argv[1])
-        os.system("{} {} &".format(XDG_OPEN, sys.argv[1]))
+        subprocess.Popen(
+            [XDG_OPEN, sys.argv[1]],
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.STDOUT,
+            )
     else:
         # Generate a list of recent files for the menu
         if os.path.exists(XDG_PATH):
