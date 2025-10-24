@@ -7,8 +7,8 @@ from xml.etree import ElementTree as ET
 
 from xdg.RecentFiles import RecentFiles
 
-XDG_PATH = "/home/paulf/.recently-used"
-XBEL_PATH = "/home/paulf/.local/share/recently-used.xbel"
+XDG_PATH = os.path.expanduser("~/.recently-used")
+XBEL_PATH = os.path.expanduser("~/.local/share/recently-used.xbel")
 XDG_OPEN = "/usr/bin/xdg-open"
 
 if __name__ == "__main__":
