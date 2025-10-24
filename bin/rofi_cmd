@@ -1,7 +1,11 @@
 #!/bin/sh
+SCRIPT_DIR=$(dirname $0)
+RECENT_MODE="recent:${SCRIPT_DIR}/xdg_recent_files.py"
+REMMINA_MODE="remmina:${SCRIPT_DIR}/remmina_connections.py"
+
 rofi \
     -show combi \
-    -combi-modes window,drun,run,Recent:/home/paulf/pfcfg/bin/xdg_recent_files.py \
+    -combi-modes window,drun,run,${RECENT_MODE},${REMMINA_MODE} \
     -modes combi \
     -monitor primary
 
