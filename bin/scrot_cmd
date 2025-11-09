@@ -1,0 +1,17 @@
+#!/bin/bash
+
+SCREENSHOT_DIR="/home/paulf/Downloads"
+SCREENSHOT_FMT="%Y-%m-%d-%H%M%S_\$wx\$h_scrot.png"
+DISPLAY_PROG="/usr/bin/eom"
+
+/usr/bin/scrot \
+    -F "${SCREENSHOT_DIR}/${SCREENSHOT_FMT}" \
+    -e "${DISPLAY_PROG} \$f" \
+    $@
+
+
+# Original commands:
+#   Screenshot region:
+#       scrot -s -f -F '/home/paulf/Pictures/Screenshots/%Y-%m-%d-%H%M%S_$wx$h_scrot.png'
+#   Screenshot active window:
+#       scrot -u  -F '/home/paulf/Pictures/Screenshots/%Y-%m-%d-%H%M%S_$wx$h_scrot.png'
