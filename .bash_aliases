@@ -66,3 +66,5 @@ alias dj='python src/manage.py'
 alias va='. .venv/bin/activate'
 
 alias hunkgrep="grepdiff --output-matching=hunk"
+
+alias skl="ssh kodi@localhost"
