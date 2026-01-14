@@ -63,8 +63,11 @@ hi Search ctermfg=None ctermbg=20
 hi Constant ctermfg=155
 hi Comment ctermfg=81 cterm=None
 hi Directory ctermfg=69 cterm=None
-hi Todo term=bold ctermfg=11 ctermbg=none
+hi PreProc ctermfg=13
+hi Special ctermfg=14
 hi Statement ctermfg=166
+hi Title term=bold ctermfg=198
+hi Todo term=bold ctermfg=11 ctermbg=none
 hi Type ctermfg=225
 
 " Highlight trailing whitespace "      
