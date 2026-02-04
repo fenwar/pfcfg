@@ -1,0 +1,92 @@
+! Use lightdm to provide user switching
+! *newLoginCommand: dm-tool switch-to-greeter
+
+!Xft.dpi: 94
+!Xft.autohint: 0
+!Xft.lcdfilter: lcddefault
+!Xft.hintstyle: hintslight
+!Xft.hinting: 1
+!Xft.antialias: 1
+!Xft.rgba: rgb
+
+!!!!!!!!!!!!!!!!!!
+! xterm settings !
+!!!!!!!!!!!!!!!!!!
+
+xterm*font: xft:Arndale Mono:size=12
+xterm*geometry: 161x52
+xterm*foreground: #d0d0d0
+xterm*termName: xterm-256color
+xterm*eightBitControl: false
+xterm*metaSendsEscape: true
+
+!!!!!!!!!!!!!!!!!!!!!!!!!
+! rxvt-unicode settings !
+!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! Green text on translucent black background
+URxvt*.depth: 32
+URxvt*.background: [94]#000000
+URxvt*.foreground: #d0d0d0
+!URxvt*.foreground: #ffffff
+
+! Fix blue for dark backgrounds
+!URxvt*.color4: #3333ff
+!URxvt*.color12: #6666ff
+!URxvt*.colorUL: #eeee55
+URxvt*.underlineColor: #666666
+URxvt.matcher.rend.0: Uline fg14
+
+URxvt*.geometry: 161x52
+URxvt*.scrollBar: false
+
+! Set my default preferred font
+
+!URxvt*.font: xft:Roboto Mono-12:antialias=true,\
+!             xft:Code2000:antialias=false
+!URxvt*.font: xft:Arndale Mono:size=12,\
+!             xft:Code2000:antialias=false
+URxvt*.font: xft:Source Code Pro-12:style=Normal,antialias=false,\
+             xft:Code2000:antialias=false
+!URxvt*.font: xft:Ubuntu Mono:size=12,style=Regular,antialias=true,\
+!             xft:Code2000:antialias=false
+!URxvt*.font: xft:Inconsolata:size=13:style=Regular,antialias=true,\
+!             xft:Code2000:antialias=false
+!URxvt*.letterSpace: -1
+
+! Include perl font-size extension
+! See https://github.com/majutsushi/urxvt-font-size
+URxvt*.perl-ext-common: default,font-size,matcher
+URxvt*.keysym.C-equal: perl:font-size:increase
+URxvt*.keysym.C-plus: perl:font-size:increase
+URxvt*.keysym.C-minus: perl:font-size:decrease
+URxvt*.keysym.C-S-Up: perl:font-size:increase
+URxvt*.keysym.C-S-Down: perl:font-size:decrease
+
+! Use external script for the URL launcher because we cant pass arguments here
+URxvt.url-launcher: /home/paulf/pfcfg/bin/open-url-in-new-window
+
+URxvt.keysym.Control-Left:    \033[1;5D
+URxvt.keysym.Control-Right:    \033[1;5C
+
+URxvt.meta8: false
+
+! Disable iso14755 which is bound to C-S-Up/Down
+URxvt*.iso14755: false
+
+!URxvt*.cursorColor: #dddd88
+URxvt*.cursorBlink: true
+URxvt*.cursorUnderline: false
+URxvt*.pointerBlank: true
+URxvt*.pointerBlankDelay: 10
+
+URxvt*.loginShell: true
+
+URxvt*.iconFile: /usr/share/icons/mate/256x256/apps/terminal.png
+
+! Other settings to experiment with
+URxvt*.saveLines: 8192
+URxvt*.internalBorder: 2
+
+#include "/home/paulf/pfcfg/colourscheme.xresources"
+!#include "/usr/share/rofi/themes/gruvbox-dark.theme"

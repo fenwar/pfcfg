@@ -1,7 +1,10 @@
-
-# If the tab count == 1 then stay blank (only show the default window title)
+# TAB COUNT IN WINDOW TITLE
+# Format string for the Firefox extension.
+#
+# If the tab count == 1 then
+#   If the window is named show the window name
 # If there is more than one tab
 #   If the window is named show the window name
 #   Show the tab count
 
-%IfRegexMatch(%TABCOUNT%,^1$,gi,,(%IfWindowName(%WindowName% |,)%ʭ%TabCount%) )%
+%IfRegexMatch(%TABCOUNT%,^1$,gi,%IfWindowName((%WindowName%) ,)%,(%IfWindowName(%WindowName% | ,)%ʭ%TabCount%) )%
