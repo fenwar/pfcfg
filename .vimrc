@@ -232,7 +232,7 @@ hi PFCommandTHighlightColor cterm=bold ctermbg=28 ctermfg=11
 let g:CommandTHighlightColor='PFCommandTHighlightColor'
 let g:CommandTScanDotDirectories=1
 let g:CommandTFileScanner='find'
-let g:CommandTWildIgnore=&wildignore . ",.git/*,.venv/*,*/dist/*,*/src/static/*,*/target/*,*/dist-*/*,*/node_modules/*,*/src-copy/*,*.png"
+let g:CommandTWildIgnore=&wildignore . ",.git/*,.venv/*,*/dist/*,*/src/static/*,*/target/*,*/dist-*/*,*/node_modules/*,*/src-copy/*,*.png,*/logs/*"
 let g:CommandTTagIncludeFilenames=1
 let g:CommandTInputDebounce=2
 
