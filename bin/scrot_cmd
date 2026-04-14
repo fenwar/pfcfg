@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SCREENSHOT_DIR="/home/paulf/Downloads"
+SCREENSHOT_DIR="/home/paulf/Pictures/Screenshots"
 SCREENSHOT_FMT="%Y-%m-%d-%H%M%S_\$wx\$h_scrot.png"
 DISPLAY_PROG="/usr/bin/eom"
 
