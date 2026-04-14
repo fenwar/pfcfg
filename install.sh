@@ -6,6 +6,7 @@
 #  ack dwdiff diffutils patchutils entr
 #  vim-nox vim-command-t vim-youcompleteme exuberant-ctags
 #  tree rsync lm-sensors
+#  apt-file aptitude info
 
 REPO_PATH=$(realpath $(dirname $0))
 
@@ -21,3 +22,4 @@ git config --global push.default current
 git config --global commit.cleanup scissors
 
 # sudo update-alternatives --set editor /usr/bin/vim.nox
+# sudo apt-file update
