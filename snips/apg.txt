@@ -1,0 +1,3 @@
+apt install apg xsel
+
+apg -n1 -MclnS | xsel -bi
