@@ -63,8 +63,11 @@ hi Search ctermfg=None ctermbg=20
 hi Constant ctermfg=155
 hi Comment ctermfg=81 cterm=None
 hi Directory ctermfg=69 cterm=None
-hi Todo term=bold ctermfg=11 ctermbg=none
+hi PreProc ctermfg=13
+hi Special ctermfg=14
 hi Statement ctermfg=166
+hi Title term=bold ctermfg=198
+hi Todo term=bold ctermfg=11 ctermbg=none
 hi Type ctermfg=225
 
 " Highlight trailing whitespace "      
@@ -96,15 +99,15 @@ command! Tgenerate execute ":!ctags -R"
 
 command! -range Ghurl call GitHubUrl("%", "<line1>", "<line2>")
 fun! GitHubUrl(file, startline, endline)
-    execute "!echo $(gh_url.sh " . a:file . " " . a:startline . " " . a:endline . ")"
+    execute "!gh-url.sh " . a:file . " " . a:startline . " " . a:endline
     redraw!
 endfun
 
-command! -range Ghjump call GitHubJump("%", "<line1>", "<line2>")
-fun! GitHubJump(file, startline, endline)
-    silent execute "!x-www-browser $(gh_url.sh " . a:file . " " . a:startline . " " . a:endline . ") &>/dev/null"
-    redraw!
-endfun
+"command! -range Ghjump call GitHubJump("%", "<line1>", "<line2>")
+"fun! GitHubJump(file, startline, endline)
+"    silent execute "!x-www-browser $(gh_url.sh " . a:file . " " . a:startline . " " . a:endline . ") &>/dev/null"
+"    redraw!
+"endfun
 
 " Fix mouse wheel behaviour in urxvt "
 set mouse=a
@@ -229,7 +232,7 @@ hi PFCommandTHighlightColor cterm=bold ctermbg=28 ctermfg=11
 let g:CommandTHighlightColor='PFCommandTHighlightColor'
 let g:CommandTScanDotDirectories=1
 let g:CommandTFileScanner='find'
-let g:CommandTWildIgnore=&wildignore . ",.git/*,.venv/*,*/dist/*,*/src/static/*,*/target/*,*/dist-*/*,*/node_modules/*,*/src-copy/*,*/docs/*,*.png"
+let g:CommandTWildIgnore=&wildignore . ",.git/*,.venv/*,*/dist/*,*/src/static/*,*/target/*,*/dist-*/*,*/node_modules/*,*/src-copy/*,*.png,*/logs/*"
 let g:CommandTTagIncludeFilenames=1
 let g:CommandTInputDebounce=2
 

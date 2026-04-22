@@ -10,6 +10,3 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[00;32m\]\u@\h:\[\033[01;34m\]\w\[\
 
 # Use the KDE session's ssh agent
 export SSH_AUTH_SOCK=${XDG_RUNTIME_DIR}/gcr/ssh
-
-# Use the rootless Docker socket
-export DOCKER_HOST=unix://${XDG_RUNTIME_DIR}/docker.sock
