@@ -1,0 +1,3 @@
+# Delete branches that have been merged to HEAD from the remote
+
+    git branch -r --merged HEAD | grep -v "\(develop\|main\|feature\)" | sed -e 's#  origin/#+:#' | xargs echo git push origin
