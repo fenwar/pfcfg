@@ -5,6 +5,11 @@
 #     . ${HOME}/pfcfg/.profile_extras
 # fi
 
+# add scripts in pfcfg/bin to PATH if they're in this branch:
+if [ -d "$HOME/pfcfg/bin" ] ; then
+    PATH="$HOME/pfcfg/bin:$PATH"
+fi
+
 # Set Git information in the shell prompt:
 PS1='${debian_chroot:+($debian_chroot)}\[\033[00;32m\]\u@\h:\[\033[01;34m\]\w\[\033[00m\]$(__git_ps1 "(%s)")\[\033[00;32m\]\n\$\[\033[00m\] '
 
