@@ -201,6 +201,8 @@ let &t_EI .= "\<Esc>[1 q"
 au FileType python set makeprg=python\ -m\ flake8\ --exclude=legacy,migrations,message_catalogue.py\ --max-line-length=120\ --extend-ignore=E266\ %:p
 " au FileType python set efm=%A%f:%l:\ [%t%n%.%#]\ %m,%Z%p^^,%-C%.%#"
 
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
 "set background=dark
 "colorscheme solarized
 
@@ -230,9 +232,10 @@ let g:CommandTClearMap=['<C-u>']
 let g:CommandTCancelMap=['<C-c>', '<Esc>']
 hi PFCommandTHighlightColor cterm=bold ctermbg=28 ctermfg=11
 let g:CommandTHighlightColor='PFCommandTHighlightColor'
+let g:CommandTAlwaysShowDotFiles=1
 let g:CommandTScanDotDirectories=1
 let g:CommandTFileScanner='find'
-let g:CommandTWildIgnore=&wildignore . ",.git/*,.venv/*,*/dist/*,*/src/static/*,*/target/*,*/dist-*/*,*/node_modules/*,*/src-copy/*,*.png,*/logs/*"
+let g:CommandTWildIgnore=&wildignore . ",*/.git/*,*/.venv/*,*/dist/*,*/src/static/*,*/target/*,*/dist-*/*,*/node_modules/*,*/src-copy/*,*.png,*/logs/*"
 let g:CommandTTagIncludeFilenames=1
 let g:CommandTInputDebounce=2
 

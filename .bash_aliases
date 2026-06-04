@@ -72,3 +72,7 @@ alias va=". \$(git rev-parse --show-toplevel)/.venv/bin/activate"
 alias hunkgrep="grepdiff --output-matching=hunk"
 
 alias deld="rm -r ~/HMRC/payetools-rti/userdata/*"
+
+# set ECMD and pipe list of files to this
+# e.g. `ls compose.yaml | ECMD="docker compose config" ecmd
+alias ecmd="entr -c bash -c 'date ; echo -e \"\$ECMD\n\" ; \$ECMD'"
