@@ -202,6 +202,7 @@ au FileType python set makeprg=python\ -m\ flake8\ --exclude=legacy,migrations,m
 " au FileType python set efm=%A%f:%l:\ [%t%n%.%#]\ %m,%Z%p^^,%-C%.%#"
 
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+autocmd FileType yaml setlocal iskeyword+=-
 
 "set background=dark
 "colorscheme solarized
