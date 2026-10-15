@@ -198,11 +198,12 @@ let &t_EI .= "\<Esc>[1 q"
 
 " Pylint "
 
-au FileType python set makeprg=python\ -m\ flake8\ --exclude=legacy,migrations,message_catalogue.py\ --max-line-length=120\ --extend-ignore=E266\ %:p
+au FileType python set makeprg=python\ -m\ flake8\ --exclude=legacy,migrations,message_catalogue.py\ --max-line-length=120\ --extend-ignore=E266,F821\ %:p
 " au FileType python set efm=%A%f:%l:\ [%t%n%.%#]\ %m,%Z%p^^,%-C%.%#"
 
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 autocmd FileType yaml setlocal iskeyword+=-
+autocmd FileType dockerfile setlocal iskeyword+=-
 
 "set background=dark
 "colorscheme solarized
